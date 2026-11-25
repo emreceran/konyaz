@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Yapay Zekâ Ajanları: Tasarım, Keşif ve Projelendirme | Konyaz</title>
+<meta name="description" content="Mimarlık ve mühendislik ekiplerinin keşif, metraj, teklif tablosu, tasarım ve projelendirme işlerini yapay zekâ ajanlarıyla yürütmesini sağlıyoruz.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/hizmetler/yapay-zeka-ajanlari/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Yapay Zekâ Ajanları: Tasarım, Keşif ve Projelendirme">
+<meta property="og:description" content="Mimarlık ve mühendislik ekiplerinin keşif, metraj, teklif tablosu, tasarım ve projelendirme işlerini yapay zekâ ajanlarıyla yürütmesini sağlıyoruz.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/hizmetler/yapay-zeka-ajanlari/">
+<meta property="og:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png">
+<meta property="og:site_name" content="Konyaz"><meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yapay Zekâ Ajanları: Tasarım, Keşif ve Projelendirme">
+<meta name="twitter:description" content="Mimarlık ve mühendislik ekiplerinin keşif, metraj, teklif tablosu, tasarım ve projelendirme işlerini yapay zekâ ajanlarıyla yürütmesini sağlıyoruz.">
+<meta name="twitter:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#FFFFFF;--surface:#FFFFFF;--surface2:#F5F7FA;--border:#E6EAF0;--text:#0F172A;--muted:#5B6575;
+    --accent:#1A9AA0;--accent2:#13294B;--grad:linear-gradient(135deg,#13294B 0%,#1A9AA0 100%);
+    --shadow:0 1px 3px rgba(15,23,42,.05),0 4px 16px rgba(15,23,42,.04);--shadow-lg:0 16px 40px rgba(26,154,160,.14);}
+  *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'Inter','Segoe UI',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .accent{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1,h2,h3,.logo{font-family:'Archivo','Inter',sans-serif}
+  header{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);background:rgba(255,255,255,.72);border-bottom:1px solid transparent;transition:.3s}
+  header.scrolled{border-bottom-color:var(--border);background:rgba(255,255,255,.92);box-shadow:0 1px 12px rgba(15,23,42,.05)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:72px;position:relative}
+  .logo{font-weight:700;font-size:1.35rem;display:flex;align-items:center;gap:10px}.logo-img{height:44px;display:block}
+  .nav-links{display:flex;gap:30px;font-size:.94rem;color:var(--muted);position:absolute;left:50%;transform:translateX(-50%)}.nav-links a:hover{color:var(--text)}
+  .btn{display:inline-block;padding:13px 26px;border-radius:11px;font-weight:600;font-size:.94rem;transition:.22s;border:1px solid transparent;cursor:pointer}
+  .btn-primary{background:var(--grad);color:#fff}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(26,154,160,.28)}
+  .btn-ghost{border-color:var(--border);color:var(--text)}.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+  @media(max-width:820px){.nav-links{display:none}}
+  .hero{position:relative;padding:170px 0 80px;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-20%;right:-10%;width:700px;height:700px;background:radial-gradient(circle,rgba(19,41,75,.09),transparent 60%);filter:blur(30px)}
+  .hero .wrap{position:relative;z-index:1;max-width:860px}
+  .crumb{font-size:.85rem;color:var(--muted);margin-bottom:22px}.crumb a:hover{color:var(--accent)}
+  .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid var(--border);border-radius:999px;font-size:.83rem;color:var(--muted);margin-bottom:24px;background:#F1F5F9}
+  .badge b{color:var(--accent)}
+  .hero h1{font-size:clamp(2.2rem,5.5vw,3.8rem);font-weight:700;letter-spacing:-.03em;line-height:1.06;margin-bottom:22px}
+  .hero .lead{font-size:clamp(1.05rem,2.2vw,1.32rem);color:var(--muted);max-width:640px;margin-bottom:34px}
+  .cta{display:flex;gap:14px;flex-wrap:wrap}
+  section{padding:88px 0}
+  .sec-head{max-width:680px;margin-bottom:52px}.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .kicker{color:var(--accent);font-weight:600;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+  .sec-head h2{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:700;letter-spacing:-.02em;margin:12px 0 16px}
+  .sec-head p{color:var(--muted);font-size:1.08rem}
+  .prose{max-width:760px;color:#334155;font-size:1.06rem}.prose p{margin-bottom:18px}.prose strong{color:var(--text)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+  .card{padding:30px 28px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:var(--shadow);transition:.25s}
+  .card:hover{transform:translateY(-4px);border-color:var(--accent2);box-shadow:var(--shadow-lg)}
+  .card .ic{width:48px;height:48px;border-radius:12px;background:rgba(26,154,160,.08);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .card .ic svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:1.6}
+  .card h3{font-size:1.18rem;margin-bottom:9px}.card p{color:var(--muted);font-size:.96rem}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  @media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.steps{grid-template-columns:1fr}}
+  .step{padding:28px 22px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:var(--shadow)}
+  .step .n{font-family:'Archivo';font-size:2.2rem;font-weight:700;color:transparent;background:var(--grad);-webkit-background-clip:text;background-clip:text;margin-bottom:10px}
+  .step h3{font-size:1.1rem;margin-bottom:8px}.step p{color:var(--muted);font-size:.92rem}
+  .check{list-style:none;max-width:760px}
+  .check li{padding:12px 0 12px 30px;position:relative;border-bottom:1px solid var(--border);color:#334155}
+  .check li::before{content:"✓";position:absolute;left:0;top:12px;color:var(--accent);font-weight:800}.check li b{color:var(--text)}
+  .faq{max-width:820px}
+  .faq details{border:1px solid var(--border);border-radius:14px;padding:4px 22px;margin-bottom:14px;background:var(--surface)}
+  .faq summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none;font-size:1.05rem}
+  .faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";float:right;color:var(--accent);font-weight:700}
+  .faq details[open] summary::after{content:"–"}.faq p{color:var(--muted);padding:0 0 18px;font-size:.98rem}
+  .related{display:flex;flex-wrap:wrap;gap:12px}
+  .related a{padding:10px 18px;border:1px solid var(--border);border-radius:10px;background:var(--surface2);font-size:.92rem;font-weight:500;color:var(--text)}
+  .related a:hover{border-color:var(--accent);color:var(--accent)}
+  .cta-band{background:linear-gradient(135deg,rgba(19,41,75,.06),rgba(26,154,160,.05));border:1px solid var(--border);border-radius:28px;padding:64px 40px;text-align:center}
+  .cta-band h2{font-size:clamp(1.9rem,5vw,3rem);font-weight:700;margin-bottom:16px;letter-spacing:-.02em}
+  .cta-band p{color:var(--muted);max-width:520px;margin:0 auto 30px;font-size:1.08rem}
+  footer{border-top:1px solid var(--border);padding:56px 0 40px}
+  .foot{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+  .foot .col h4{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+  .foot .col a{display:block;color:var(--muted);padding:5px 0;font-size:.94rem}.foot .col a:hover{color:var(--accent)}
+  .foot-brand{max-width:280px}.foot-brand p{color:var(--muted);font-size:.92rem;margin-top:14px}
+  .copyright{text-align:center;color:var(--muted);font-size:.85rem;margin-top:44px;padding-top:28px;border-top:1px solid var(--border)}
+  .reveal{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}.reveal.show{opacity:1;transform:none}
+  .nav-links{align-items:center}
+  .nav-item{position:relative}
+  .nav-item>a{display:inline-flex;align-items:center;height:72px;cursor:pointer}
+  .dropdown{position:absolute;top:64px;left:-14px;min-width:240px;background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow-lg);padding:10px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s;z-index:60}
+  .nav-item:hover .dropdown{opacity:1;visibility:visible;transform:none}
+  .dropdown a{display:block;padding:9px 14px;border-radius:9px;color:var(--text);font-size:.9rem;white-space:nowrap}
+  .dropdown a:hover{background:var(--surface2);color:var(--accent)}
+</style>
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/hizmetler/yapay-zeka-ajanlari/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/services/ai-agents/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/services/ai-agents/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head><body>
+<header id="hdr"><div class="wrap"><nav>
+  <a href="../../" class="logo"><img class="logo-img" src="../../assets/konyaz-logo.svg" alt="Konyaz"></a>
+  <div class="nav-links">
+  <div class="nav-item"><a href="../../#hizmetler">Hizmetler ▾</a><div class="dropdown">
+    <a href="../../hizmetler/odoo-erp/">Odoo ERP Danışmanlık</a>
+    <a href="../../hizmetler/yapay-zeka-ajanlari/">Yapay Zekâ Ajanları</a>
+    <a href="../../hizmetler/odoo-ozel-modul/">Odoo Özel Modül</a>
+    <a href="../../hizmetler/odoo-mobil-uygulama/">Odoo Mobil Uygulama</a>
+    <a href="../../hizmetler/saha-satis-uygulamasi/">Saha Satış Uygulaması</a>
+    <a href="../../hizmetler/stok-barkod/">Stok & Barkod</a>
+    <a href="../../hizmetler/gorev-crm/">Görev & CRM</a>
+    <a href="../../hizmetler/erp-cozumleri/">ERP Çözümleri</a>
+    <a href="../../hizmetler/dijital-donusum/">Dijital Dönüşüm</a></div></div>
+  <div class="nav-item"><a href="../../#isler">Çözümler ▾</a><div class="dropdown">
+    <a href="../../cozumler/uretim/">Üretim ERP</a>
+    <a href="../../cozumler/muhendislik/">Mühendislik & Taahhüt</a>
+    <a href="../../cozumler/mimarlik/">Mimarlık</a></div></div>
+  <a href="../../referanslar/">Referanslar</a>
+  <a href="../../araclar/">Araçlar</a>
+  <a href="../../blog/">Blog</a>
+  <a href="../../iletisim/">İletişim</a>
+</div>
+  <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">TR ▾</summary><div><a href="../../hizmetler/yapay-zeka-ajanlari/" hreflang="tr" lang="tr" aria-current="true">Türkçe</a><a href="../../en/services/ai-agents/" hreflang="en" lang="en">English</a></div></details><!-- dil-secici:son -->
+      <a href="../../iletisim/" class="btn btn-primary" style="padding:10px 22px">Teklif Al</a>
+</nav></div></header>
+
+<div class="hero"><div class="wrap">
+  <div class="crumb"><a href="../../">Anasayfa</a> › Hizmetler › Yapay Zekâ Ajanları</div>
+  <span class="badge"><b>Yapay zekâ ajanları</b> · Hizmet</span>
+  <h1>Yapay zekâ ajanlarıyla tasarım, keşif ve projelendirme</h1>
+  <p class="lead">Mimarlık ve mühendislik ekiplerinin tekrar eden işlerini yapay zekâ ajanlarına devrediyoruz. Ajan çizimi, şartnameyi ve firmanızın kendi verisini okur; keşif listesini, metrajı, teklif tablosunu ve rapor taslağını hazırlar. Ekip kontrol eder, karar verir.</p>
+  <div class="cta"><a href="../../iletisim/" class="btn btn-primary">Benzer bir proje mi var?</a>
+    <a href="#detay" class="btn btn-ghost">Detaylar</a></div>
+</div></div>
+
+<section id="detay" style="padding-top:20px"><div class="wrap"><div class="prose reveal">
+<h2>Yapay zekâ ajanı ne demek?</h2>
+<p>Sohbet penceresinde soru sorup cevap almaktan farklı bir şey. Ajan, verilen işi adım adım kendisi yürütür: dosyaları açar, çizimden ve tablodan veri çıkarır, hesabı yapar, sonucu Excel, PDF ya da çizim olarak teslim eder; bir tutarsızlık görürse geri dönüp düzeltir. Siz işin ne olduğunu söylersiniz, ajan yapar, siz kontrol edersiniz.</p>
+<h2>Neler yaptırılabilir?</h2>
+<ul>
+<li><b>Çizimden keşif ve metraj:</b> DWG, DXF ve PDF paftalardan kalem kalem keşif listesi</li>
+<li><b>Teklif hazırlığı:</b> poz ve birim fiyat eşleştirme, teklife esas tablolar, revizyon karşılaştırması</li>
+<li><b>Tasarım:</b> alternatif çözümler, alan ve oran hesapları, hızlı deneme</li>
+<li><b>Projelendirme:</b> proje raporu, şartname ve teknik yazışma taslakları</li>
+<li><b>Kontrol:</b> pafta, liste ve tablolar arasında tutarlılık; yönetmelik ve şartname kontrol listeleri</li>
+</ul>
+<h2>Nasıl kuruyoruz?</h2>
+<ol>
+<li>En çok zaman alan ve en çok tekrar eden işi birlikte seçeriz.</li>
+<li>Ajanı firmanızın kendi örnekleri, kuralları ve fiyat listeleriyle hazırlarız.</li>
+<li>Ekibe yerinde kurulum ve gerçek projeler üzerinde uygulamalı eğitim veririz.</li>
+<li>İlk işlerde yanınızda oluruz; çıktılar kontrol edildikçe ajan iyileştirilir.</li>
+</ol>
+<h2>Veriniz</h2>
+<p>Ajan ekibinizin bilgisayarında çalışır, dosyalarınız kendi klasörlerinizde kalır. Hangi dosyanın ajana açılacağına ekip karar verir; hassas projelerde hangi verinin işleneceğini birlikte belirleriz.</p>
+<h2>ERP ile birlikte</h2>
+<p>Ajanın çıkardığı keşif ve teklif tabloları Odoo'ya aktarılabilir. Böylece teklif, proje, satın alma, imalat ve hakediş aynı veriden ilerler; aynı bilgi ikinci kez yazılmaz.</p>
+</div></div></section>
+
+<section style="background:var(--surface2);padding:64px 0"><div class="wrap">
+  <div class="sec-head reveal" style="margin-bottom:26px"><div class="kicker">İlgili İçerik</div>
+    <h2 style="font-size:clamp(1.5rem,3vw,2rem)">Daha fazlası</h2></div>
+  <div class="related reveal"><a href="../../vaka/gucal-cephe-yapay-zeka-ajanlari/">Güçal Cephe vakası</a>
+<a href="../../vaka/varaka-mimarlik-yapay-zeka-ajanlari/">Varaka Mimarlık vakası</a>
+<a href="../../cozumler/mimarlik/">Mimarlık çözümü</a>
+<a href="../../hizmetler/odoo-erp/">Odoo ERP</a>
+</div>
+</div></section>
+
+<section><div class="wrap"><div class="cta-band reveal">
+  <div class="kicker">Başlayalım</div><h2>Sizin işinizi de <span class="accent">düzene sokalım.</span></h2>
+  <p>İhtiyacınızı dinleyip size uygun çözümü kuralım. İlk görüşme ücretsiz.</p>
+  <div class="cta" style="justify-content:center">
+    <a href="../../iletisim/" class="btn btn-primary">İletişime Geçin</a>
+    <a href="mailto:info@vohdigital.com" data-umami-event="eposta-tikla" class="btn btn-ghost">info@vohdigital.com</a></div>
+</div></div></section>
+
+<footer><div class="wrap"><div class="foot">
+  <div class="foot-brand"><a href="../../" class="logo"><img class="logo-img" src="../../assets/konyaz-logo.svg" alt="Konyaz"></a>
+    <p>ERP, mobil ve web'de uçtan uca dijital çözümler. Fikirden ürüne, tek elden.</p></div>
+  <div class="col"><h4>Hizmetler</h4>
+        <a href="../../hizmetler/odoo-erp/">Odoo ERP Danışmanlık</a>
+    <a href="../../hizmetler/yapay-zeka-ajanlari/">Yapay Zekâ Ajanları</a>
+        <a href="../../hizmetler/odoo-ozel-modul/">Odoo Özel Modül</a>
+        <a href="../../hizmetler/odoo-mobil-uygulama/">Odoo Mobil Uygulama</a>
+        <a href="../../hizmetler/erp-cozumleri/">ERP Çözümleri</a>
+        <a href="../../hizmetler/dijital-donusum/">Dijital Dönüşüm</a></div>
+  <div class="col"><h4>Vaka Çalışmaları</h4>
+        <a href="../../vaka/yuzbasigil-odoo-uretim/">Yüzbaşıgil — Üretim ERP</a>
+        <a href="../../vaka/mes-muhendislik-odoo-muhasebe/">MES Mühendislik — Muhasebe</a>
+        <a href="https://vohdigital.com/vaka/29mayis-universitesi-kalite-web/">29 Mayıs Üniv. — Kalite Web</a>
+        <a href="../../vaka/29mayis-universitesi-sosyal-transkript/">29 Mayıs Üniv. — Sosyal Transkript</a></div>
+  <div class="col"><h4>Kurumsal</h4><a href="../../#surec">Süreç</a><a href="../../#neden">Neden Biz</a>
+    <a href="../../#isler">İşler</a><a href="../../blog/">Blog</a></div>
+  <div class="col"><h4>İletişim</h4>
+    <a href="mailto:info@vohdigital.com" data-umami-event="eposta-tikla">info@vohdigital.com</a><a href="../../iletisim/">İletişim sayfası</a></div>
+</div><div class="copyright">© 2026 Konyaz — Tüm hakları saklıdır. Tasarım & Yazılım. · <a href="../../kvkk/">KVKK ve gizlilik</a></div></div></footer>
+<script>
+  const hdr=document.getElementById('hdr');
+  addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>
