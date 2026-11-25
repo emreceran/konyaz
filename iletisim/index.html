@@ -1,50 +1,267 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
 <title>İletişim | Konyaz</title>
-<meta name="description" content="Konyaz ile görüşme ve ücretsiz deneme sistemi için iletişim.">
+<meta name="description" content="Konyaz ile iletişime geçin. Projenizi konuşmak için formu doldurun ya da doğrudan info@vohdigital.com adresine yazın. Adres: İçerenköy, Ataşehir/İstanbul.">
 <link rel="canonical" href="https://emreceran.github.io/konyaz/iletisim/">
-<meta property="og:type" content="website"><meta property="og:title" content="İletişim | Konyaz"><meta property="og:description" content="Konyaz ile görüşme ve ücretsiz deneme sistemi için iletişim.">
-<meta property="og:url" content="https://emreceran.github.io/konyaz/iletisim/"><meta property="og:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png"><meta property="og:locale" content="tr_TR">
-<meta name="theme-color" content="#13294B">
-<link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..112,500..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Konyaz", "url": "https://emreceran.github.io/konyaz/", "logo": "https://emreceran.github.io/konyaz/assets/konyaz-simge-512.png", "email": "info@vohdigital.com", "description": "Üretim ve proje firmaları için iş yönetimi yazılımı", "address": {"@type": "PostalAddress", "addressLocality": "Konya", "addressCountry": "TR"}}</script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="İletişim | Konyaz">
+<meta property="og:description" content="Projenizi konuşmak için bize ulaşın. Form, e-posta ve adres bilgileri.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/iletisim/">
+<meta property="og:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="İletişim | Konyaz">
+<meta name="twitter:description" content="Projenizi konuşmak için bize ulaşın. Form, e-posta ve adres bilgileri.">
+<meta name="twitter:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Konyaz","url":"https://emreceran.github.io/konyaz/","logo":"https://emreceran.github.io/konyaz/assets/konyaz-simge-512.png","email":"info@vohdigital.com","address":{"@type":"PostalAddress","streetAddress":"İçerenköy, Eryılmazlar Sk. No:3 D:11","addressLocality":"Ataşehir","addressRegion":"İstanbul","postalCode":"34752","addressCountry":"TR"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF;--surface:#FFFFFF;--surface2:#F5F7FA;
+    --border:#E6EAF0;--text:#0F172A;--muted:#5B6575;
+    --accent:#1A9AA0;--accent2:#13294B;
+    --grad:linear-gradient(135deg,#13294B 0%,#1A9AA0 100%);
+    --shadow:0 1px 3px rgba(15,23,42,.05),0 4px 16px rgba(15,23,42,.04);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'Inter','Segoe UI',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,.logo{font-family:'Archivo','Inter',sans-serif}
+
+  header{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);
+    background:rgba(255,255,255,.72);border-bottom:1px solid transparent;transition:.3s}
+  header.scrolled{border-bottom-color:var(--border);background:rgba(255,255,255,.92);box-shadow:0 1px 12px rgba(15,23,42,.05)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:72px;position:relative}
+  .logo-img{height:44px;display:block}
+  .nav-links{display:flex;gap:30px;font-size:.94rem;color:var(--muted);position:absolute;left:50%;transform:translateX(-50%)}
+  .nav-links a:hover,.nav-links a.active{color:var(--text)}
+  .btn{display:inline-block;padding:13px 26px;border-radius:11px;font-weight:600;font-size:.94rem;transition:.22s;border:1px solid transparent;cursor:pointer}
+  .btn-primary{background:var(--grad);color:#fff}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(26,154,160,.28)}
+  @media(max-width:820px){.nav-links{display:none}}
+
+  .contact{padding:150px 0 100px}
+  .kicker{color:var(--accent);font-weight:600;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+  .contact h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;letter-spacing:-.02em;margin:12px 0 14px}
+  .contact .lead{color:var(--muted);font-size:1.12rem;max-width:620px;margin-bottom:52px}
+
+  .contact-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:36px;align-items:start}
+  @media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:28px}}
+
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow)}
+  .form-card{padding:34px 32px}
+  @media(max-width:520px){.form-card{padding:26px 20px}}
+  .form-card h2{font-size:1.4rem;margin-bottom:6px}
+  .form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:24px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:520px){.row{grid-template-columns:1fr}}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:.82rem;color:var(--muted);margin-bottom:6px;font-weight:500}
+  .field input,.field textarea{width:100%;background:#F8FAFC;border:1px solid var(--border);
+    border-radius:11px;padding:13px 15px;color:var(--text);font-family:inherit;font-size:.95rem;transition:.2s}
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px rgba(26,154,160,.12)}
+  .field textarea{resize:vertical;min-height:130px}
+  .robot{margin:4px 0 16px;min-height:78px}
+  .onay{display:flex;gap:10px;align-items:flex-start;font-size:.84rem;color:var(--muted);margin:4px 0 14px;cursor:pointer;line-height:1.45}
+  .onay input{margin-top:3px}
+  .onay a{color:var(--accent);text-decoration:underline}
+  .hp{position:absolute!important;left:-9999px;opacity:0;height:0;overflow:hidden}
+  .form-card .btn-primary{width:100%;font-size:1rem;padding:15px;border:none;margin-top:4px}
+  .form-card .btn-primary[disabled]{opacity:.6;cursor:not-allowed;transform:none;box-shadow:none}
+  .form-status{margin-top:14px;font-size:.92rem;text-align:center;min-height:22px}
+  .form-status.ok{color:var(--accent)}
+  .form-status.err{color:#dc2626}
+
+  .info-card{padding:30px 28px}
+  .info-card h2{font-size:1.2rem;margin-bottom:22px}
+  .info-item{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--border)}
+  .info-item:last-of-type{border-bottom:none}
+  .info-item .ic{flex-shrink:0;width:38px;height:38px;border-radius:10px;background:#EEF2FF;display:flex;align-items:center;justify-content:center}
+  .info-item .ic svg{width:20px;height:20px;stroke:var(--accent);fill:none;stroke-width:1.7}
+  .info-item .lbl{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+  .info-item .val{font-size:.98rem;color:var(--text);font-weight:500}
+  .info-item a.val:hover{color:var(--accent)}
+  .map{margin-top:20px;border-radius:14px;overflow:hidden;border:1px solid var(--border);line-height:0}
+  .map iframe{width:100%;height:220px;border:0;display:block}
+
+  footer{border-top:1px solid var(--border);padding:40px 0;margin-top:90px}
+  .foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+  .foot a{color:var(--muted)} .foot a:hover{color:var(--accent)}
+  .foot .links{display:flex;gap:22px}
+</style>
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/iletisim/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/contact/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/elaqe/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/contact/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/kontakt/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/kontakt/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/kontakt/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/kontakt/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/contact/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
 </head>
 <body>
-<header class="ust"><div class="kap">
-<a class="logo" href="../"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.9 136" width="481.9" height="136" role="img" aria-label="Konyaz ana sayfa"><g transform="translate(8 8) scale(1.2)"><rect x="12" y="12" width="50" height="22" rx="3" fill="#13294B"/><rect x="66" y="12" width="22" height="50" rx="3" fill="#1A9AA0"/><rect x="38" y="66" width="50" height="22" rx="3" fill="#13294B"/><rect x="12" y="38" width="22" height="50" rx="3" fill="#1A9AA0"/><rect x="42" y="42" width="16" height="16" rx="2" fill="#1A9AA0"/></g><path transform="translate(156 89.952)" fill="#13294B" d="M5.50909375 0.0V-43.93471875H14.50490625V-22.0160625L37.6164375 -43.93471875H49.0211875L30.12334375 -25.89696875L49.37190625 0.0H38.256437500000004L23.75409375 -20.04225L14.50490625 -12.300875V0.0ZM78.87647532008086 0.768Q71.13365717654986 0.768 65.48935983827494 -1.7881562500000001Q59.845062500000004 -4.3443125 56.820437500000004 -9.415671875000001Q53.795812500000004 -14.487031250000001 53.795812500000004 -21.96818788900415Q53.795812500000004 -29.5116875 56.820437500000004 -34.551046875Q59.845062500000004 -39.59040625 65.48935983827494 -42.1465625Q71.13365717654986 -44.70271875 78.87647532008086 -44.70271875Q86.69165625 -44.70271875 92.312109375 -42.1465625Q97.9325625 -39.59040625 100.9571875 -34.551046875Q103.9818125 -29.5116875 103.9818125 -21.96818788900415Q103.9818125 -14.487031250000001 100.9571875 -9.415671875000001Q97.9325625 -4.3443125 92.312109375 -1.7881562500000001Q86.69165625 0.768 78.87647532008086 0.768ZM78.8888125 -6.79421875Q82.524 -6.79421875 85.435984375 -7.7235Q88.34796875 -8.65278125 90.42923437500001 -10.463984374999999Q92.51050000000001 -12.2751875 93.636890625 -14.984950520833333Q94.76328125 -17.69471354166667 94.76328125 -21.2454375V-22.68415625Q94.76328125 -26.261919520547945 93.636890625 -28.97608476027397Q92.51050000000001 -31.69025 90.42923437500001 -33.501453125Q88.34796875 -35.31265625 85.435984375 -36.226578125Q82.524 -37.1405 78.8888125 -37.1405Q75.253625 -37.1405 72.341640625 -36.226578125Q69.42965625 -35.31265625 67.34839062500001 -33.501453125Q65.26712500000001 -31.69025 64.172734375 -28.97608476027397Q63.07834375 -26.261919520547945 63.07834375 -22.68415625V-21.2454375Q63.07834375 -17.69471354166667 64.172734375 -14.984950520833333Q65.26712500000001 -12.2751875 67.34839062500001 -10.463984374999999Q69.42965625 -8.65278125 72.341640625 -7.7235Q75.253625 -6.79421875 78.8888125 -6.79421875ZM116.86909375 0.0V-43.93471875H125.38875L146.69040625 -19.36634375Q147.25615625 -18.82875 148.0420625 -17.895640625Q148.82796875 -16.96253125 149.626671875 -16.01534375Q150.425375 -15.06815625 150.922 -14.37696875H151.33415625Q151.3034375 -15.51871875 151.25735937500002 -16.919015625Q151.21128125 -18.3193125 151.21128125 -19.36634375V-43.93471875H159.856375V0.0H151.46215625L130.0965 -24.79109375Q129.00084375 -25.98915625 127.7451875 -27.53921875Q126.48953125 -29.08928125 125.80346875000001 -29.90590625H125.42203125Q125.45275 -29.07390625 125.48346875 -27.62625Q125.5141875 -26.17859375 125.5141875 -24.42246875V0.0ZM189.20950000000002 0.0V-17.82528125L170.10175 -43.93471875H180.71546875L193.74325000000002 -25.466875H194.21684375L207.27021875000003 -43.93471875H217.31050000000002L198.20531250000002 -17.82528125V0.0ZM216.71165625 0.0 236.165 -43.93471875H246.90675L266.393375 0.0H256.57068749999996L252.74349999999998 -8.94465625H229.79065624999998L225.96346875 0.0ZM232.9983125 -16.384H249.5025625L244.74865624999998 -27.7350625Q244.4619375 -28.40578125 243.98706249999998 -29.58209375Q243.51218749999998 -30.75840625 243.020671875 -32.06528125Q242.52915625 -33.37215625 242.099078125 -34.511359375Q241.66899999999998 -35.6505625 241.47187499999998 -36.1805H241.05971875Q240.5835625 -34.9005 239.94740625 -33.2365Q239.31125 -31.5725 238.72245312500002 -30.069781250000002Q238.13365625 -28.567062500000002 237.75221875 -27.70434375ZM273.54621875 0.0V-4.21375L299.85778125 -36.33921875H275.3638125V-43.93471875H314.17578125V-39.71840625L287.80278125 -7.5955H314.5981875V0.0Z"/></svg>
-</a>
-<nav class="menu" aria-label="Ana menü"><a href="../cozumler/">Çözümler</a><a href="../yontem/">Çalışma yöntemi</a><a href="../isler/">İşler</a><a href="../iletisim/" class="aktif" aria-current="page">İletişim</a></nav>
-</div></header>
-<main>
-<section class="sayfa-bas"><div class="kap"><div class="yol"><a href="../">Ana sayfa</a> › İletişim</div>
-<h1>İletişim</h1><p>İlk görüşme ve deneme sistemi ücretsizdir.</p></div></section>
-<section class="bolum"><div class="kap"><div class="izgara iki">
-<div class="kart"><h3>E-posta</h3><p style="font-size:18px"><a href="mailto:info@vohdigital.com?subject=Konyaz%20g%C3%B6r%C3%BC%C5%9Fme%20iste%C4%9Fi">info@vohdigital.com</a></p>
-<p style="margin-top:12px">Bir iş günü içinde dönüyoruz.</p>
-<div class="dugmeler"><a class="dugme" href="mailto:info@vohdigital.com?subject=Konyaz%20g%C3%B6r%C3%BC%C5%9Fme%20iste%C4%9Fi">E-posta yazın</a></div></div>
-<div class="kart"><h3>Yazarken şunları eklerseniz hızlanır</h3>
-<ul style="color:var(--soluk);padding-left:20px;margin:8px 0 0">
-<li>Firma adı ve ne ürettiğiniz ya da ne iş yaptığınız</li>
-<li>Kaç kişinin sistemi kullanacağı</li>
-<li>Bugün hangi programları kullandığınız (muhasebe dahil)</li>
-<li>En çok nerede sıkıntı yaşadığınız</li>
-<li>Deneme sistemi isteyip istemediğiniz</li>
-</ul></div>
-</div></div></section>
-</main>
-<footer class="alt"><div class="kap">
-<div><p style="color:#fff;font-family:Archivo,Inter,sans-serif;font-weight:600;font-size:20px;letter-spacing:.06em;margin-bottom:8px">KONYAZ</p>
-<p>Üretim ve proje firmaları için iş yönetimi yazılımı. Konya.</p><p><a href="mailto:info@vohdigital.com">info@vohdigital.com</a></p></div>
-<div><h3>Çözümler</h3><ul><li><a href="../cozumler/uretim-takibi/">Üretim takibi</a></li><li><a href="../cozumler/erp/">Uçtan uca ERP</a></li><li><a href="../cozumler/proje-gorev/">Proje ve görev</a></li><li><a href="../cozumler/stok-sevkiyat/">Stok ve sevkiyat</a></li><li><a href="../cozumler/telefon-uygulamalari/">Telefon uygulamaları</a></li><li><a href="../cozumler/raporlama/">Raporlama</a></li></ul></div>
-<div><h3>Konyaz</h3><ul><li><a href="../yontem/">Çalışma yöntemi</a></li><li><a href="../isler/">İşler</a></li><li><a href="../iletisim/">İletişim</a></li></ul></div>
-<p class="not">Web sitesi, Google görünürlüğü ve dijital pazarlama için kardeş firmamız <a href="https://vohdigital.com/">VOH Digital</a>.</p>
-</div></footer>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../" class="logo"><img class="logo-img" src="../assets/konyaz-logo.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../#hizmetler">Hizmetler</a>
+        <a href="../#neden">Neden Biz</a>
+        <a href="../#isler">İşler</a>
+        <a href="../araclar/">Araçlar</a>
+        <a href="../blog/">Blog</a>
+        <a href="../iletisim/" class="active">İletişim</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">TR ▾</summary><div><a href="../iletisim/" hreflang="tr" lang="tr" aria-current="true">Türkçe</a><a href="../en/contact/" hreflang="en" lang="en">English</a><a href="../az/elaqe/" hreflang="az" lang="az">Azərbaycanca</a><a href="../ar/contact/" hreflang="ar" lang="ar">العربية</a><a href="../bs/kontakt/" hreflang="bs" lang="bs">Bosanski</a><a href="../me/kontakt/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../sq/kontakt/" hreflang="sq" lang="sq">Shqip</a><a href="../mk/kontakt/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="#form" class="btn btn-primary" style="padding:10px 22px">Teklif Al</a>
+    </nav>
+  </div>
+</header>
+
+<section class="contact">
+  <div class="wrap">
+    <div class="kicker">İletişim</div>
+    <h1>Projenizi konuşalım</h1>
+    <p class="lead">İhtiyacınızı dinleyip size en uygun çözümü kuralım. Formu doldurun, en kısa sürede dönelim — ya da doğrudan yazın, arayın, uğrayın. İlk görüşme ücretsiz.</p>
+
+    <div class="contact-grid">
+
+      <div class="card form-card" id="form">
+        <h2>Bize yazın</h2>
+        <p class="sub">Kısaca ihtiyacınızdan bahsedin, size dönelim.</p>
+        <form class='lead-form' id='leadForm' method='POST' name='contact' novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <div class="row">
+            <div class="field"><label id="lf-name-e">Ad Soyad *</label><input id="lf-name" aria-labelledby="lf-name-e" name="name" type="text" required autocomplete="name"></div>
+            <div class="field"><label id="lf-email-e">E-posta *</label><input id="lf-email" aria-labelledby="lf-email-e" name="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div class="row">
+            <div class="field"><label id="lf-phone-e">Telefon</label><input id="lf-phone" aria-labelledby="lf-phone-e" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field"><label id="lf-company-e">Firma (opsiyonel)</label><input id="lf-company" aria-labelledby="lf-company-e" name="company" type="text" autocomplete="organization"></div>
+          </div>
+          <div class="field"><label id="lf-msg-e">Mesajınız *</label><textarea id="lf-msg" aria-labelledby="lf-msg-e" name="message" required placeholder="Kısaca ihtiyacınızdan bahsedin…"></textarea></div>
+          <div class="hp" aria-hidden="true"><label>Bu alanı boş bırakın<input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span><a href="../kvkk/" target="_blank" rel="noopener">Aydınlatma metnini</a> okudum. Bilgilerimin benimle iletişim kurulması amacıyla işlenmesine ve hizmet sağlayıcılar aracılığıyla yurt dışına aktarılmasına açık rıza veriyorum.</span></label>
+          <div class="robot"></div>
+          <button type="submit" class="btn btn-primary" id="lf-submit" data-umami-event="iletisim-formu">Mesajı Gönder →</button>
+          <div class="form-status" id="lf-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <aside class="card info-card">
+        <h2>İletişim bilgileri</h2>
+        <div class="info-item">
+          <span class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div>
+            <div class="lbl">Adres</div>
+            <a class="val" href="https://www.google.com/maps/search/?api=1&amp;query=İçerenköy+Eryılmazlar+Sokak+No+3+Ataşehir+İstanbul" target="_blank" rel="noopener">İçerenköy, Eryılmazlar Sk. No:3 D:11<br>34752 Ataşehir / İstanbul</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></span>
+          <div>
+            <div class="lbl">E-posta</div>
+            <a class="val" href="mailto:info@vohdigital.com" data-umami-event="eposta-tikla">info@vohdigital.com</a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://maps.google.com/maps?q=İçerenköy%20Eryılmazlar%20Sokak%20No%203%20Ataşehir%20İstanbul&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Konyaz konum"></iframe>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Tasarım &amp; Yazılım. · <a href="../kvkk/">KVKK ve gizlilik</a></div>
+    <div class="links">
+      <a href="../">Ana Sayfa</a>
+      <a href="../blog/">Blog</a>
+      <a href="mailto:info@vohdigital.com" data-umami-event="eposta-tikla">info@vohdigital.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hdr=document.getElementById('hdr');
+  addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
+
+  const lf=document.getElementById('leadForm');
+  if(lf){
+    lf.addEventListener('submit',async e=>{
+      try{ if(window.umami) umami.track('form-iletisim-gonder-dene'); }catch(x){}
+      e.preventDefault();
+      const st=document.getElementById('lf-status');
+      const btn=document.getElementById('lf-submit');
+      st.className='form-status'; st.textContent='';
+      const data=Object.fromEntries(new FormData(lf).entries());
+      if(data.website){return;}
+      if(!data.name||!data.email||!data.message){
+        st.className='form-status err'; st.textContent='Lütfen ad, e-posta ve mesaj alanlarını doldurun.'; return;
+      }
+      if(!data.izin){
+        st.className='form-status err'; st.textContent='Lütfen aydınlatma metnini okuduğunuzu onaylayan kutuyu işaretleyin.'; return;
+      }
+      const g=lf.querySelector('[name="g-recaptcha-response"]');
+      if(g&&!g.value){
+        st.className='form-status err'; st.textContent='Lütfen “Ben robot değilim” kutusunu işaretleyin.'; return;
+      }
+      const oldTxt=btn.textContent; btn.disabled=true; btn.textContent='Gönderiliyor…';
+      try{
+        const r=await fetch('/',{
+          method:'POST',
+          headers:{'Content-Type':'application/x-www-form-urlencoded'},
+          body:new URLSearchParams(new FormData(lf)).toString()
+        });
+        if(!r.ok) throw new Error('Gönderilemedi');
+        st.className='form-status ok'; st.textContent='Teşekkürler! Mesajınız ulaştı, en kısa sürede döneceğiz.';
+        try{ if(window.umami) umami.track('lead-iletisim'); }catch(x){}
+        lf.reset();
+        try{ if(window.grecaptcha) grecaptcha.reset(); }catch(x){}
+      }catch(err){
+        st.className='form-status err'; st.textContent='Bir sorun oluştu. Lütfen info@vohdigital.com adresinden yazabilirsiniz.';
+      }finally{ btn.disabled=false; btn.textContent=oldTxt; }
+    });
+  }
+</script>
 </body>
 </html>

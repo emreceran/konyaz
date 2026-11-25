@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Employee Cost Per Hour Calculator (Free) | Konyaz</title>
+<meta name="description" content="Free calculator: the true hourly cost of an employee, incl. employer costs, extras, leave and non-billable time. Worked example, takes a minute.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/en/tools/hourly-cost/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Employee Cost Per Hour Calculator (Free) | Konyaz">
+<meta property="og:description" content="Free calculator: the true hourly cost of an employee, incl. employer costs, extras, leave and non-billable time. Worked example, takes a minute.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/en/tools/hourly-cost/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Employee Cost Per Hour Calculator (Free) | Konyaz">
+<meta name="twitter:description" content="Free calculator: the true hourly cost of an employee, incl. employer costs, extras, leave and non-billable time. Worked example, takes a minute.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Employee hourly cost calculator","description":"Free calculator: the true hourly cost of an employee, incl. employer costs, extras, leave and non-billable time. Worked example, takes a minute.","url":"https://emreceran.github.io/konyaz/en/tools/hourly-cost/","inLanguage":"en","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you calculate an employee's cost per hour?","acceptedAnswer":{"@type":"Answer","text":"Divide the total annual cost by the billable hours. Example: monthly employer cost 40,000, extras 5,000, 12 salaries a year → 540,000 a year. 5 days and 45 hours a week × 52 = 2,340 hours, minus 20 days of leave and holidays (20 × 9 = 180 hours) leaves 2,160 working hours; at 75% productivity, 1,620 hours are billable. The cost per hour is 540,000 ÷ 1,620 ≈ 333. The quick method of dividing salary by monthly hours shows only 40,000 ÷ 195 ≈ 205."}},{"@type":"Question","name":"Where do I find the employer cost?","acceptedAnswer":{"@type":"Answer","text":"The payslip shows a total: the employee's gross salary plus employer social contributions and other statutory charges. Get the \"total employer cost\" line from your accountant or payroll software. If you don't know it, you can start with roughly 1.2 times the gross salary."}},{"@type":"Question","name":"What does productive time ratio mean?","acceptedAnswer":{"@type":"Answer","text":"Not every paid hour can be billed to a job: meetings, travel, waiting, training, admin. In the field and in the workshop this ratio is usually 70–80%, and lower for office-heavy work. If you don't log your hours against jobs, 75% is a reasonable starting point."}},{"@type":"Question","name":"Why isn't dividing the salary by the hours in a month enough?","acceptedAnswer":{"@type":"Answer","text":"That calculation leaves out extra costs, leave, public holidays and non-billable time. The result comes out too low, and a quote based on that low figure leaves less profit than expected when the job is done."}},{"@type":"Question","name":"How do I calculate the team average?","acceptedAnswer":{"@type":"Answer","text":"Divide the team's total monthly employer cost and total extra costs by the number of people and calculate for an average employee. If there's a big difference between skilled workers and apprentices, do two separate calculations."}}],"inLanguage":"en"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/saat-maliyeti/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/hourly-cost/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/saatliq-maya-deyeri/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/hourly-cost/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/trosak-radnog-sata/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/trosak-radnog-sata/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/kosto-per-ore/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/trosok-po-raboten-cas/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/hourly-cost/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../en/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../en/#hizmetler">Services</a>
+        <a href="../../../en/#neden">Why Us</a>
+        <a href="../../../en/#isler">Work</a>
+        <a href="../../../en/tools/" class="active">Tools</a>
+        <a href="../../../en/blog/">Blog</a>
+        <a href="../../../en/contact/">Contact</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">EN ▾</summary><div><a href="../../../araclar/saat-maliyeti/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/hourly-cost/" hreflang="en" lang="en" aria-current="true">English</a><a href="../../../az/aletler/saatliq-maya-deyeri/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/tools/hourly-cost/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/trosak-radnog-sata/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/alati/trosak-radnog-sata/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/mjete/kosto-per-ore/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/alatki/trosok-po-raboten-cas/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../en/contact/" class="btn btn-primary">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../en/tools/" class="back">← All tools</a>
+  <div class="kicker" style="margin-top:22px">Free tool</div>
+  <h1>Employee hourly cost calculator</h1>
+  <p class="lead">The hourly cost you should use when quoting and working out a job's profit is higher than the salary divided by the hours in a month. This tool shows the difference.</p>
+  <div class="tgrid">
+    <form class="panel" id="sm" onsubmit="return false">
+      <h2>For one employee</h2>
+      <div class="alan"><label for="maliyet">Monthly employer cost</label><div class="girdi"><input id="maliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>The "total employer cost" on the payslip. Gross salary plus employer social contributions.</small></div>
+      <div class="alan"><label for="yan">Monthly extra costs</label><div class="girdi"><input id="yan" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Off-payroll spending such as meals, travel, bonuses, workwear, phone and training.</small></div>
+      <div class="iki">
+        <div class="alan"><label for="maasSayisi">Salaries paid per year</label><div class="girdi"><input id="maasSayisi" type="number" inputmode="decimal" min="0" step="1"><span>salaries</span></div><small>If there are bonus salaries, enter 13 or 14.</small></div>
+        <div class="alan"><label for="izin">Annual leave and public holidays</label><div class="girdi"><input id="izin" type="number" inputmode="decimal" min="0" step="1"><span>days</span></div><small>Total working days not worked.</small></div>
+      </div>
+      <div class="iki">
+        <div class="alan"><label for="haftaSaat">Weekly working hours</label><div class="girdi"><input id="haftaSaat" type="number" inputmode="decimal" min="0" step="any"><span>hours</span></div></div>
+        <div class="alan"><label for="haftaGun">Working days per week</label><div class="girdi"><input id="haftaGun" type="number" inputmode="decimal" min="0" step="1"><span>days</span></div></div>
+      </div>
+      <div class="alan"><label for="verim">Productive time ratio</label><div class="girdi"><input id="verim" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>The share of paid time that can be billed to a job or customer.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Result</h2>
+      <div class="buyuk">
+        <div class="kutu"><div class="ad">Cost per paid hour</div><div class="deger" id="c1">–</div></div>
+        <div class="kutu ana"><div class="ad">Cost per billable hour<br>(use this in quotes)</div><div class="deger" id="c2">–</div></div>
+      </div>
+      <p class="yorum" id="smYorum"></p>
+      <div class="satir"><span>Total annual cost</span><b id="yillik">–</b></div>
+      <div class="satir"><span>Paid hours per year</span><b id="mesaiSaat">–</b></div>
+      <div class="satir"><span>Of which billable</span><b id="verimliSaat">–</b></div>
+      <div class="satir"><span>Simple salary ÷ monthly hours figure</span><b id="kolay">–</b></div>
+      <p style="margin-top:18px"><a class="btn btn-primary" id="aktar" href="../../../en/tools/project-profitability/">Calculate project profitability with this cost →</a></p>
+      <p class="not">The calculation is done in your browser; your figures go nowhere unless you send them.</p>
+    </section>
+  </div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>What does this result mean for you?</h3>
+  <p>Send us your figures and the result; we'll review them and get back to you within one business day. Free and non-binding.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Evaluate my result</button>
+</div></div>
+<div id="metin" hidden><span data-k="saatDeger">{s} hours</span><span data-k="yFark">Dividing the salary by the hours in a month gives {k}. Once leave, holidays, extra costs and non-billable time are added, the real cost of an hour is {g}, which is {f} more.</span></div>
+
+<section class="aciklama">
+  <h2>How is it calculated?</h2>
+  <ul>
+    <li><strong>Annual cost</strong> = monthly employer cost × salaries paid per year + monthly extra costs × 12</li>
+    <li><strong>Paid hours</strong> = weekly hours × 52 − hours of leave and holiday days</li>
+    <li><strong>Billable hours</strong> = paid hours × productive time ratio</li>
+    <li><strong>Hourly cost</strong> = annual cost ÷ billable hours</li>
+  </ul>
+  <p>The figure to use when quoting and working out a job's profit is the cost per billable hour. What matters is not how many hours the team works in a year, but how many of those hours are billed to a job or customer. The cost of the rest of the time has to be covered by the jobs too.</p>
+  <p>The way to know this ratio by measuring rather than guessing is to log hours against jobs every day. More on this in the article <a href="../../../en/blog/measuring-project-profitability/">how to measure project profitability</a>.</p>
+  <h2>Frequently asked questions</h2>
+<h3>How do you calculate an employee's cost per hour?</h3>
+<p>Divide the total annual cost by the billable hours. Example: monthly employer cost 40,000, extras 5,000, 12 salaries a year → 540,000 a year. 5 days and 45 hours a week × 52 = 2,340 hours, minus 20 days of leave and holidays (20 × 9 = 180 hours) leaves 2,160 working hours; at 75% productivity, 1,620 hours are billable. The cost per hour is 540,000 ÷ 1,620 ≈ 333. The quick method of dividing salary by monthly hours shows only 40,000 ÷ 195 ≈ 205.</p>
+<h3>Where do I find the employer cost?</h3>
+<p>The payslip shows a total: the employee's gross salary plus employer social contributions and other statutory charges. Get the "total employer cost" line from your accountant or payroll software. If you don't know it, you can start with roughly 1.2 times the gross salary.</p>
+<h3>What does productive time ratio mean?</h3>
+<p>Not every paid hour can be billed to a job: meetings, travel, waiting, training, admin. In the field and in the workshop this ratio is usually 70–80%, and lower for office-heavy work. If you don't log your hours against jobs, 75% is a reasonable starting point.</p>
+<h3>Why isn't dividing the salary by the hours in a month enough?</h3>
+<p>That calculation leaves out extra costs, leave, public holidays and non-billable time. The result comes out too low, and a quote based on that low figure leaves less profit than expected when the job is done.</p>
+<h3>How do I calculate the team average?</h3>
+<p>Divide the team's total monthly employer cost and total extra costs by the number of people and calculate for an average employee. If there's a big difference between skilled workers and apprentices, do two separate calculations.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Are your team's hours logged against jobs?</h3>
+    <p>Let's set up a system together where who worked how long on which job is recorded as a matter of course.</p>
+    <a href="../../../en/contact/" class="btn btn-primary">Let's talk</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Related articles</h4>
+  <a href="../../../en/blog/measuring-project-profitability/">How do you measure project profitability? →</a>
+  <a href="../../../en/blog/task-management-software/">Why does work go untracked? Task management software →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Free digitalization report</h3>
+  <p>Tell us about your business in a few steps, and we'll email you a report on which software you need for which part of your work and where to start.</p></div>
+  <a href="../../../en/free-digitalization-report/" class="btn btn-primary">Request my report</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Close">×</button>
+    <h2 id="penBaslik">Download the template</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Full name *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Company *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">Email *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Phone</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sector</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Select</option><option value="Üretim">Manufacturing</option><option value="Proje / taahhüt / inşaat">Projects / contracting / construction</option><option value="Mühendislik / mimarlık">Engineering / architecture</option><option value="Ticaret / dağıtım">Trade / distribution</option><option value="Hizmet">Services</option><option value="Diğer">Other</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Number of employees</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Select</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Anything you'd like to add</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span>I have read the <a href="../../../en/privacy/" target="_blank" rel="noopener">privacy notice</a>. I give my explicit consent to my details being processed so that I can be contacted, and to their transfer abroad through service providers.</span></label>
+    <div class="hp" aria-hidden="true"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Download</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Download the template</span>
+    <span data-k="fIndMetin">Leave your details and the download starts right away. We ask so we can let you know when new templates and tools come out, and answer your questions.</span>
+    <span data-k="fIndDugme">Send details and download</span>
+    <span data-k="fDegBaslik">Let's go over your result together</span>
+    <span data-k="fDegMetin">Leave your details; the figures you entered and the result will reach us, and we'll get back to you within one business day. Free and non-binding.</span>
+    <span data-k="fDegDugme">Send</span>
+    <span data-k="fEksik">Please enter your full name, company and a valid email address, and tick the consent box.</span>
+    <span data-k="fRobot">Please tick the “I'm not a robot” box.</span>
+    <span data-k="fGonder">Sending…</span>
+    <span data-k="fIndOk">Thank you, the download has started. If it didn't, download it here:</span>
+    <span data-k="fIndLink">Download the Excel file</span>
+    <span data-k="fDegOk">Thank you, we've received your details and your result. We'll get back to you within one business day.</span>
+    <span data-k="fHata">Something went wrong. Please try again or write to info@vohdigital.com.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Design &amp; Software. · <a href="../../../en/privacy/">Privacy</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../en/">Home</a>
+      <a href="../../../en/tools/">Tools</a>
+      <a href="../../../en/blog/">Blog</a>
+      <a href="../../../en/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>

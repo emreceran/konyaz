@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="bs" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Cijena ponude i kalkulacija marže | Konyaz</title>
+<meta name="description" content="Prava prodajna cijena iz troška i ciljane marže: razlika između dodavanja procenta na trošak i marže, koliko popust odnese i koliko više treba prodati.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/bs/alati/cijena-ponude/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cijena ponude i kalkulacija marže | Konyaz">
+<meta property="og:description" content="Prava prodajna cijena iz troška i ciljane marže: razlika između dodavanja procenta na trošak i marže, koliko popust odnese i koliko više treba prodati.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/bs/alati/cijena-ponude/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="bs_BA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cijena ponude i kalkulacija marže | Konyaz">
+<meta name="twitter:description" content="Prava prodajna cijena iz troška i ciljane marže: razlika između dodavanja procenta na trošak i marže, koliko popust odnese i koliko više treba prodati.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Kalkulator cijene ponude i marže","description":"Prava prodajna cijena iz troška i ciljane marže: razlika između dodavanja procenta na trošak i marže, koliko popust odnese i koliko više treba prodati.","url":"https://emreceran.github.io/konyaz/bs/alati/cijena-ponude/","inLanguage":"bs","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Zar marža i dodatak na trošak nisu isto?","acceptedAnswer":{"@type":"Answer","text":"Nisu. Marža je odnos dobiti i prodajne cijene; dodatak na trošak (maloprodajna razlika) je odnos dobiti i troška. Ako na proizvod s troškom 100 dodate 25%, prodajete ga za 125, ali vam je marža 20%. Za maržu od 25% cijena treba biti 133,3."}},{"@type":"Question","name":"Šta sve da uračunam u trošak?","acceptedAnswer":{"@type":"Answer","text":"Pored materijala uračunajte i radne sate, podizvođače i prevoz ako ih ima, kao i udio opštih troškova koji pada na proizvod ili posao. Za rad možete koristiti alat za trošak radnog sata. Cijena izračunata s nepotpunim troškom ispadne niska, ma kako tačna bila formula."}},{"@type":"Question","name":"Zašto popust od 10% može odnijeti pola dobiti?","acceptedAnswer":{"@type":"Answer","text":"Popust se oduzima od cijene, ali trošak ostaje isti. Zato cijeli popust ide iz dobiti. Kad je marža 25%, popust od 10% smanjuje dobit po komadu za više od trećine; da zadržite istu ukupnu dobit, morate prodati mnogo više."}},{"@type":"Question","name":"Šalju li se brojke koje unesem negdje?","acceptedAnswer":{"@type":"Answer","text":"Ne, osim ako ih sami ne pošaljete. Obračun se radi u potpunosti u vašem pregledniku i ne čuva se. Brojke do nas stižu samo ako popunite i pošaljete obrazac „Procijenite moj rezultat“, kako bismo vam se mogli javiti."}}],"inLanguage":"bs"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/teklif-fiyati/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/quote-pricing/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/teklif-qiymeti/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/quote-pricing/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/cijena-ponude/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/cijena-ponude-marza/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/cmimi-i-ofertes/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/cena-na-ponuda/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/quote-pricing/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../bs/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../bs/#hizmetler">Usluge</a>
+        <a href="../../../bs/#neden">Zašto mi</a>
+        <a href="../../../bs/#isler">Projekti</a>
+        <a href="../../../bs/alati/" class="active">Alati</a>
+        <a href="../../../bs/blog/">Blog</a>
+        <a href="../../../bs/kontakt/">Kontakt</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">BS ▾</summary><div><a href="../../../araclar/teklif-fiyati/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/quote-pricing/" hreflang="en" lang="en">English</a><a href="../../../az/aletler/teklif-qiymeti/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/tools/quote-pricing/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/cijena-ponude/" hreflang="bs" lang="bs" aria-current="true">Bosanski</a><a href="../../../me/alati/cijena-ponude-marza/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/mjete/cmimi-i-ofertes/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/alatki/cena-na-ponuda/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../bs/kontakt/" class="btn btn-primary">Zatražite ponudu</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../bs/alati/" class="back">← Svi alati</a>
+  <div class="kicker" style="margin-top:22px">Besplatan alat</div>
+  <h1>Kalkulator cijene ponude i marže</h1>
+  <p class="lead">Unesite svoj trošak i maržu koju želite. Alat pokazuje pravu prodajnu cijenu, gdje vara dodavanje procenta na trošak i koliko popust odnese od dobiti.</p>
+  <div class="tgrid">
+    <form class="panel" id="tf" onsubmit="return false">
+      <h2>Proizvod ili posao</h2>
+      <div class="alan"><label for="maliyet">Ukupni trošak</label><div class="girdi"><input id="maliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Uključeni materijal, rad, podizvođači, prevoz i udio opštih troškova. Za proizvod trošak po komadu, za posao ukupni trošak.</small></div>
+      <div class="alan"><label for="hedefMarj">Ciljana marža</label><div class="girdi"><input id="hedefMarj" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Odnos dobiti i prodajne cijene.</small></div>
+      <div class="alan"><label for="iskonto">Popust za kupca</label><div class="girdi"><input id="iskonto" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Procenat koji se skida s cijene u pregovorima ili akciji. Ako ga nema, upišite 0.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Rezultat</h2>
+      <div class="buyuk">
+        <div class="kutu ana"><div class="ad">Prodajna cijena za ciljanu maržu</div><div class="deger" id="dogruFiyat">–</div><div class="alt" id="dogruMarj"></div></div>
+        <div class="kutu"><div class="ad">Cijena nakon popusta</div><div class="deger" id="iskFiyat">–</div><div class="alt" id="iskMarj"></div></div>
+      </div>
+      <p class="yorum" id="tfYorum"></p>
+      <div class="satir"><span>Cijena kad se isti procenat doda na trošak</span><b id="ekleFiyat">–</b></div>
+      <div class="satir"><span>Ostvarena marža s tom cijenom</span><b id="ekleMarj">–</b></div>
+      <div class="satir"><span>Dodatak na trošak potreban za ciljanu maržu</span><b id="gerekEkle">–</b></div>
+      <div class="satir"><span>Dobit po komadu prije / poslije popusta</span><b id="birimKar">–</b></div>
+      <div class="satir"><span>Dodatna prodaja potrebna da se nadoknadi popust</span><b id="telafi">–</b></div>
+      <p class="not">Obračun se radi u vašem pregledniku; vaše brojke nigdje ne idu ako ih sami ne pošaljete.</p>
+    </section>
+  </div>
+  <div class="indir"><p><strong>Da sve ponude pravite u jednom fajlu</strong>Obrazac ponude koji povlači cijene iz cjenovnika, kontrola marže red po red i evidencija dobijenih / izgubljenih ponuda.</p><a class="btn btn-cizgi" href="../../../araclar/sablonlar/teklif-hazirlama-tr.xlsx" data-en-href="../../../araclar/sablonlar/teklif-hazirlama-en.xlsx" download>Preuzmi Excel šablon</a></div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Šta ovaj rezultat znači za vas?</h3>
+  <p>Pošaljite nam svoje brojke i rezultat; pregledat ćemo ih i javiti vam se u roku od jednog radnog dana. Besplatno i bez obaveze.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Procijenite moj rezultat</button>
+</div></div>
+<div id="metin" hidden><span data-k="marj">marža {m}</span><span data-k="yEkle">Ako na trošak dodate {h}, cijena je {e}, ali marža vam nije {h} nego {g}. Za maržu koju želite cijena treba biti {f}; na svakoj prodaji nedostaje {k}.</span><span data-k="yIsk"> Uz popust od {i} marža pada za {s}. Da zadržite istu ukupnu dobit, morate prodati {a} više.</span><span data-k="yIskZarar"> Uz popust od {i} cijena pada ispod troška: s tim popustom svaka prodaja donosi gubitak.</span><span data-k="yok">ne može se nadoknaditi</span></div>
+
+<section class="aciklama">
+  <h2>Kako se računa?</h2>
+  <ul>
+    <li><strong>Cijena za ciljanu maržu</strong> = trošak ÷ (1 − ciljana marža)</li>
+    <li><strong>Cijena dobijena dodavanjem na trošak</strong> = trošak × (1 + stopa). Marža ove cijene je uvijek niža od dodate stope.</li>
+    <li><strong>Marža nakon popusta</strong> = 1 − trošak ÷ (cijena × (1 − popust))</li>
+    <li><strong>Dodatna prodaja za nadoknadu</strong> = dobit po komadu prije popusta ÷ dobit po komadu poslije popusta − 1</li>
+  </ul>
+  <h3>Marža i odgovarajući dodatak na trošak</h3>
+  <table class="tablo">
+    <tr><th>Željena marža</th><th>Potrebno dodati na trošak</th></tr>
+    <tr><td>%10</td><td>%11,1</td></tr>
+    <tr><td>%15</td><td>%17,6</td></tr>
+    <tr><td>%20</td><td>%25</td></tr>
+    <tr><td>%25</td><td>%33,3</td></tr>
+    <tr><td>%30</td><td>%42,9</td></tr>
+    <tr><td>%40</td><td>%66,7</td></tr>
+  </table>
+  <p>Najčešća greška u ponudama je da se ciljana marža koristi kao procenat koji se dodaje na trošak. Druga greška je da se u trošak ne uračunaju radni sati i opšti troškovi. Kad se to dvoje spoji, na kraju godine dobit je daleko ispod planirane. Ako cijena i trošak u ponudi dolaze s istog mjesta, marža svakog reda vidi se prije nego što ponuda ode. Više u tekstu <a href="../../../bs/blog/izrada-ponuda/">vrijeme i dobit koji se gube u izradi ponuda</a>.</p>
+  <h2>Česta pitanja</h2>
+<h3>Zar marža i dodatak na trošak nisu isto?</h3>
+<p>Nisu. Marža je odnos dobiti i prodajne cijene; dodatak na trošak (maloprodajna razlika) je odnos dobiti i troška. Ako na proizvod s troškom 100 dodate 25%, prodajete ga za 125, ali vam je marža 20%. Za maržu od 25% cijena treba biti 133,3.</p>
+<h3>Šta sve da uračunam u trošak?</h3>
+<p>Pored materijala uračunajte i radne sate, podizvođače i prevoz ako ih ima, kao i udio opštih troškova koji pada na proizvod ili posao. Za rad možete koristiti <a href="../../../bs/alati/trosak-radnog-sata/">alat za trošak radnog sata</a>. Cijena izračunata s nepotpunim troškom ispadne niska, ma kako tačna bila formula.</p>
+<h3>Zašto popust od 10% može odnijeti pola dobiti?</h3>
+<p>Popust se oduzima od cijene, ali trošak ostaje isti. Zato cijeli popust ide iz dobiti. Kad je marža 25%, popust od 10% smanjuje dobit po komadu za više od trećine; da zadržite istu ukupnu dobit, morate prodati mnogo više.</p>
+<h3>Šalju li se brojke koje unesem negdje?</h3>
+<p>Ne, osim ako ih sami ne pošaljete. Obračun se radi u potpunosti u vašem pregledniku i ne čuva se. Brojke do nas stižu samo ako popunite i pošaljete obrazac „Procijenite moj rezultat“, kako bismo vam se mogli javiti.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Neka vaše ponude budu gotove za nekoliko minuta i s pravom maržom</h3>
+    <p>Postavimo sistem u kojem su proizvodi, cijene i troškovi na jednom mjestu, a marža svake ponude vidi se prije nego što ode.</p>
+    <a href="../../../bs/kontakt/" class="btn btn-primary">Razgovarajmo</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Povezani tekstovi</h4>
+  <a href="../../../bs/blog/izrada-ponuda/">Vrijeme i dobit koji se gube u izradi ponuda →</a>
+  <a href="../../../bs/blog/mjerenje-profitabilnosti-projekta/">Kako se mjeri profitabilnost projekta? →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Besplatan izvještaj o digitalizaciji</h3>
+  <p>Opišite svoje poslovanje u nekoliko koraka, a mi ćemo vam e-mailom poslati izvještaj o tome koji softver vam treba za koji posao i odakle početi.</p></div>
+  <a href="../../../bs/besplatan-izvjestaj-digitalizacija/" class="btn btn-primary">Zatražite izvještaj</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Zatvori">×</button>
+    <h2 id="penBaslik">Preuzmite šablon</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Ime i prezime *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Firma *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">E-mail *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefon</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Djelatnost</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Odaberite</option><option value="Üretim">Proizvodnja</option><option value="Proje / taahhüt / inşaat">Projekti / izvođenje radova / građevina</option><option value="Mühendislik / mimarlık">Inženjering / arhitektura</option><option value="Ticaret / dağıtım">Trgovina / distribucija</option><option value="Hizmet">Usluge</option><option value="Diğer">Ostalo</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Broj zaposlenih</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Odaberite</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Šta biste željeli dodati</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span>Pročitao/la sam <a href="../../../bs/privatnost/" target="_blank" rel="noopener">obavještenje o privatnosti</a>. Dajem izričit pristanak da se moji podaci obrađuju radi kontakta sa mnom i da se putem pružalaca usluga prenose u inostranstvo.</span></label>
+    <div class="hp" aria-hidden="true"><label>Ovo polje ostavite prazno<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Preuzmi</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Preuzmite šablon</span>
+    <span data-k="fIndMetin">Ostavite svoje podatke i preuzimanje počinje odmah. Pitamo kako bismo vas mogli obavijestiti kada izađu novi šabloni i alati i odgovoriti na vaša pitanja.</span>
+    <span data-k="fIndDugme">Pošalji podatke i preuzmi</span>
+    <span data-k="fDegBaslik">Pogledajmo vaš rezultat zajedno</span>
+    <span data-k="fDegMetin">Ostavite svoje podatke; brojke koje ste unijeli i rezultat stići će do nas, a mi ćemo vam se javiti u roku od jednog radnog dana. Besplatno i bez obaveze.</span>
+    <span data-k="fDegDugme">Pošalji</span>
+    <span data-k="fEksik">Molimo upišite ime i prezime, firmu i ispravnu e-mail adresu i označite polje za saglasnost.</span>
+    <span data-k="fRobot">Molimo označite polje „Nisam robot“.</span>
+    <span data-k="fGonder">Šaljemo…</span>
+    <span data-k="fIndOk">Hvala, preuzimanje je počelo. Ako nije, preuzmite ovdje:</span>
+    <span data-k="fIndLink">Preuzmi Excel fajl</span>
+    <span data-k="fDegOk">Hvala, vaši podaci i rezultat su stigli do nas. Javit ćemo vam se u roku od jednog radnog dana.</span>
+    <span data-k="fHata">Došlo je do greške. Molimo pokušajte ponovo ili pišite na info@vohdigital.com.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Dizajn &amp; softver. · <a href="../../../bs/privatnost/">Privatnost</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../bs/">Početna</a>
+      <a href="../../../bs/alati/">Alati</a>
+      <a href="../../../bs/blog/">Blog</a>
+      <a href="../../../bs/kontakt/">Kontakt</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Konyaz — ERP · تطبيقات الهاتف · الويب</title>
+<meta name="description" content="Konyaz استوديو برمجيات يقدّم Odoo ERP وتطبيقات الهاتف للميدان والمخزون ومواقع الشركات. حلول رقمية متكاملة من الفكرة إلى المنتج.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/ar/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Konyaz — ERP · تطبيقات الهاتف · الويب">
+<meta property="og:description" content="Odoo ERP وتطبيقات الهاتف للميدان والمخزون ومواقع الشركات. حلول رقمية متكاملة من الفكرة إلى المنتج.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/ar/">
+<meta property="og:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Konyaz — ERP · تطبيقات الهاتف · الويب">
+<meta name="twitter:description" content="Odoo ERP وتطبيقات الهاتف للميدان والمخزون ومواقع الشركات. من الفكرة إلى المنتج.">
+<meta name="twitter:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Konyaz","url":"https://emreceran.github.io/konyaz/ar/","logo":"https://emreceran.github.io/konyaz/assets/konyaz-simge-512.png","description":"استوديو برمجيات يقدّم Odoo ERP وتطبيقات الهاتف للميدان والمخزون ومواقع الشركات.","email":"info@vohdigital.com","address":{"@type":"PostalAddress","streetAddress":"İçerenköy, Eryılmazlar Sk. No:3 D:11","addressLocality":"Ataşehir","addressRegion":"İstanbul","postalCode":"34752","addressCountry":"TR"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF;--surface:#FFFFFF;--surface2:#F5F7FA;
+    --border:#E6EAF0;--text:#0F172A;--muted:#5B6575;
+    --accent:#1A9AA0;--accent2:#13294B;
+    --grad:linear-gradient(135deg,#13294B 0%,#1A9AA0 100%);
+    --shadow:0 1px 3px rgba(15,23,42,.05),0 4px 16px rgba(15,23,42,.04);
+    --shadow-lg:0 16px 40px rgba(26,154,160,.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'Inter','Segoe UI',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .accent{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1,h2,h3,.logo{font-family:'Archivo','Inter',sans-serif}
+
+  /* NAV */
+  header{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);
+    background:rgba(255,255,255,.72);border-bottom:1px solid transparent;transition:.3s}
+  header.scrolled{border-bottom-color:var(--border);background:rgba(255,255,255,.92);box-shadow:0 1px 12px rgba(15,23,42,.05)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:72px;position:relative}
+  .logo{font-weight:700;font-size:1.35rem;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+  .logo .mark{width:32px;height:32px;border-radius:9px;background:var(--grad);display:inline-flex;align-items:center;justify-content:center;font-size:.9rem;color:#04121a;font-weight:800}
+  .logo span{color:var(--muted);font-weight:400}
+  .logo-img{height:44px;display:block}
+  .nav-links{display:flex;gap:30px;font-size:.94rem;color:var(--muted);position:absolute;left:50%;transform:translateX(-50%)}
+  .nav-links a:hover{color:var(--text)}
+  .btn{display:inline-block;padding:13px 26px;border-radius:11px;font-weight:600;font-size:.94rem;transition:.22s;border:1px solid transparent;cursor:pointer}
+  .btn-primary{background:var(--grad);color:#fff}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(26,154,160,.28)}
+  .btn-ghost{border-color:var(--border);color:var(--text)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+  @media(max-width:820px){.nav-links{display:none}}
+
+  /* HERO */
+  .hero{position:relative;padding:180px 0 110px;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-20%;right:-10%;width:700px;height:700px;
+    background:radial-gradient(circle,rgba(19,41,75,.09),transparent 60%);filter:blur(30px)}
+  .hero::after{content:"";position:absolute;bottom:-30%;left:-10%;width:600px;height:600px;
+    background:radial-gradient(circle,rgba(26,154,160,.07),transparent 60%);filter:blur(30px)}
+  .hero .wrap{position:relative;z-index:1;max-width:900px}
+  .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid var(--border);
+    border-radius:999px;font-size:.83rem;color:var(--muted);margin-bottom:28px;background:#F1F5F9}
+  .badge b{color:var(--accent)}
+  .dot-live{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+  .hero h1{font-size:clamp(2.5rem,7vw,5rem);font-weight:700;letter-spacing:-.03em;line-height:1.03;margin-bottom:26px}
+  .hero .lead{font-size:clamp(1.1rem,2.5vw,1.4rem);color:var(--muted);max-width:640px;margin-bottom:38px}
+  .cta{display:flex;gap:14px;flex-wrap:wrap}
+  .trust{display:flex;gap:32px;flex-wrap:wrap;margin-top:60px;color:var(--muted);font-size:.9rem}
+  .trust b{color:var(--text);font-size:1.9rem;font-weight:800;font-family:'Archivo',sans-serif;display:block}
+
+  section{padding:100px 0}
+  .sec-head{max-width:640px;margin-bottom:60px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .kicker{color:var(--accent);font-weight:600;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+  .sec-head h2{font-size:clamp(1.9rem,4.5vw,2.9rem);font-weight:700;letter-spacing:-.02em;margin:12px 0 16px}
+  .sec-head p{color:var(--muted);font-size:1.08rem}
+
+  /* SERVICES */
+  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+  @media(max-width:820px){.svc-grid{grid-template-columns:1fr}}
+  .svc .tag{display:inline-block;margin-top:14px;padding:5px 12px;border:1px solid var(--border);border-radius:99px;font-size:.78rem;color:var(--accent2)}
+  .svc{padding:36px 32px;border:1px solid var(--border);border-radius:20px;background:var(--surface);transition:.28s;position:relative;overflow:hidden}
+  .svc::after{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);opacity:0;transition:.28s}
+  .svc:hover{transform:translateY(-5px);border-color:var(--accent2)}
+  .svc:hover::after{opacity:1}
+  .svc .ic{width:52px;height:52px;border-radius:12px;background:rgba(26,154,160,.08);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+  .svc .ic svg{width:26px;height:26px;stroke:var(--accent);fill:none;stroke-width:1.6}
+  .svc h3{font-size:1.35rem;margin-bottom:12px}
+  .svc p{color:var(--muted);margin-bottom:18px}
+  .svc ul{list-style:none}
+  .svc li{padding:6px 0 6px 26px;position:relative;color:#475569;font-size:.94rem}
+  .svc li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+
+  /* PROCESS */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step}
+  @media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.steps{grid-template-columns:1fr}}
+  .step{padding:30px 24px;border:1px solid var(--border);border-radius:18px;background:var(--surface);position:relative}
+  .step .n{font-family:'Archivo';font-size:2.4rem;font-weight:700;color:transparent;background:var(--grad);-webkit-background-clip:text;background-clip:text;margin-bottom:12px}
+  .step h3{font-size:1.15rem;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:.92rem}
+
+  /* WHY / TECH */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  @media(max-width:860px){.split{grid-template-columns:1fr;gap:36px}}
+  .why-list{list-style:none;margin-top:10px}
+  .why-list li{padding:16px 0;border-bottom:1px solid var(--border);display:flex;gap:16px;align-items:flex-start}
+  .why-list li .ic{flex-shrink:0;width:26px;height:26px}
+  .why-list li .ic svg{width:26px;height:26px;stroke:var(--accent);fill:none;stroke-width:1.6}
+  .why-list li b{display:block;margin-bottom:2px}
+  .why-list li span{color:var(--muted);font-size:.94rem}
+  .tech-card{background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:40px}
+  .tech-card h3{font-size:1.1rem;color:var(--muted);font-weight:500;margin-bottom:20px}
+  .tech-tags{display:flex;flex-wrap:wrap;gap:12px}
+  .tech-tags span{padding:10px 18px;border-radius:10px;background:var(--surface2);border:1px solid var(--border);font-size:.92rem;font-weight:500}
+  .tech-tags span:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* PORTFOLIO teaser */
+  .pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:820px){.pf-grid{grid-template-columns:1fr}}
+  .pf{border:1px solid var(--border);border-radius:18px;overflow:hidden;background:var(--surface);transition:.25s}
+  .pf:hover{transform:translateY(-5px);border-color:var(--accent2)}
+  .pf .top{height:120px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:2.6rem}
+  .pf .top.a{background:linear-gradient(135deg,#0EA5E9,#45C4C6)}
+  .pf .top.b{background:linear-gradient(135deg,#8B5CF6,#EC4899)}
+  .pf .top.c{background:linear-gradient(135deg,#10B981,#45C4C6)}
+  .pf .top.logo{background:#fff;padding:22px}
+  .pf .top.logo.dark{background:#0f1629}
+  .pf .top.logo img{max-height:100%;max-width:100%;object-fit:contain;display:block}
+  .pf .top.icon{background:linear-gradient(135deg,#EEF2FF,#E0E7FF)}
+  .pf .top.icon svg{width:40px;height:40px;stroke:var(--accent);fill:none;stroke-width:1.4}
+  .pf .b{padding:22px}
+  .pf h3{font-size:1.1rem;margin-bottom:6px}
+  .pf p{color:var(--muted);font-size:.9rem}
+
+  /* CTA */
+  .cta-band{background:linear-gradient(135deg,rgba(19,41,75,.06),rgba(26,154,160,.05));
+    border:1px solid var(--border);border-radius:28px;padding:70px 40px;text-align:center;position:relative;overflow:hidden}
+  .cta-band h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;margin-bottom:16px;letter-spacing:-.02em}
+  .cta-band p{color:var(--muted);max-width:520px;margin:0 auto 32px;font-size:1.1rem}
+
+  /* CONTACT FORM */
+  .lead-form{max-width:580px;margin:0 auto;text-align:left}
+  .lead-form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:520px){.lead-form .row{grid-template-columns:1fr}}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:.82rem;color:var(--muted);margin-bottom:6px;font-weight:500}
+  .field input,.field textarea{width:100%;background:#F8FAFC;border:1px solid var(--border);
+    border-radius:11px;padding:13px 15px;color:var(--text);font-family:inherit;font-size:.95rem;transition:.2s}
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px rgba(26,154,160,.12)}
+  .field textarea{resize:vertical;min-height:118px}
+  .hp{position:absolute!important;left:-9999px;opacity:0;height:0;overflow:hidden}
+  .lead-form .btn-primary{width:100%;font-size:1rem;padding:15px;border:none}
+  .lead-form .btn-primary[disabled]{opacity:.6;cursor:not-allowed;transform:none;box-shadow:none}
+  .form-status{margin-top:14px;font-size:.92rem;text-align:center;min-height:22px}
+  .form-status.ok{color:var(--accent)}
+  .form-status.err{color:#f87171}
+
+  footer{border-top:1px solid var(--border);padding:56px 0 40px}
+  .foot{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+  .foot .col h4{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+  .foot .col a{display:block;color:var(--muted);padding:5px 0;font-size:.94rem}
+  .foot .col a:hover{color:var(--accent)}
+  .foot-brand{max-width:280px}
+  .foot-brand p{color:var(--muted);font-size:.92rem;margin-top:14px}
+  .copyright{text-align:center;color:var(--muted);font-size:.85rem;margin-top:44px;padding-top:28px;border-top:1px solid var(--border)}
+
+  .svc,.step,.tech-card,.pf{box-shadow:var(--shadow)}
+  .svc:hover,.pf:hover{box-shadow:var(--shadow-lg)}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.show{opacity:1;transform:none}
+  .nav-links{align-items:center}
+  .nav-item{position:relative}
+  .nav-item>a{display:inline-flex;align-items:center;height:72px;cursor:pointer}
+  .dropdown{position:absolute;top:64px;left:-14px;min-width:240px;background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow-lg);padding:10px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s;z-index:60}
+  .nav-item:hover .dropdown{opacity:1;visibility:visible;transform:none}
+  .dropdown a{display:block;padding:9px 14px;border-radius:9px;color:var(--text);font-size:.9rem;white-space:nowrap}
+  .dropdown a:hover{background:var(--surface2);color:var(--accent)}
+
+/*yon*/.yon{margin-top:34px}.yon-b{font-size:.85rem;color:var(--muted);margin-bottom:10px}.yon-l{display:flex;gap:10px;flex-wrap:wrap}.yon-l a{padding:9px 16px;border:1px solid var(--border);border-radius:999px;font-size:.92rem;background:var(--surface);color:var(--text);transition:.2s}.yon-l a:hover{border-color:var(--accent);color:var(--accent)}/*/yon*/
+</style>
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../assets/konyaz-ikon-180.png">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+body,h1,h2,h3,.logo,input,textarea,button{font-family:'Noto Sans Arabic','Segoe UI',Tahoma,sans-serif}
+body{line-height:1.85}
+h1,h2,h3{letter-spacing:0!important}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../ar/" class="logo"><img class="logo-img" src="../assets/konyaz-logo.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <div class="nav-item"><a href="../ar/#hizmetler">الخدمات ▾</a><div class="dropdown">
+          <a href="../ar/services/odoo-erp/">استشارات Odoo ERP</a>
+          <a href="../ar/services/odoo-custom-modules/">وحدات Odoo الخاصة</a>
+          <a href="../ar/services/odoo-mobile-app/">تطبيقات Odoo للهاتف</a>
+          <a href="../ar/services/field-sales-app/">تطبيق المبيعات الميدانية</a>
+          <a href="../ar/services/inventory-barcode/">المخزون والباركود</a>
+          <a href="../ar/services/task-management-field-crm/">المهام و CRM</a>
+          <a href="../ar/services/erp-solutions/">حلول ERP</a>
+          <a href="../ar/services/digital-transformation/">التحول الرقمي</a></div></div>
+        <div class="nav-item"><a href="../ar/#isler">الحلول ▾</a><div class="dropdown">
+          <a href="../ar/solutions/manufacturing/">ERP الإنتاج</a>
+          <a href="../ar/solutions/engineering/">الهندسة والمقاولات</a>
+          <a href="../ar/solutions/architecture/">العمارة</a></div></div>
+        <a href="../ar/clients/">عملاؤنا</a>
+        <a href="../ar/tools/">الأدوات</a>
+        <a href="../ar/blog/">المدونة</a>
+        <a href="../ar/contact/">اتصل بنا</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">AR ▾</summary><div><a href="../" hreflang="tr" lang="tr">Türkçe</a><a href="../en/" hreflang="en" lang="en">English</a><a href="../az/" hreflang="az" lang="az">Azərbaycanca</a><a href="../ar/" hreflang="ar" lang="ar" aria-current="true">العربية</a><a href="../bs/" hreflang="bs" lang="bs">Bosanski</a><a href="../me/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../sq/" hreflang="sq" lang="sq">Shqip</a><a href="../mk/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../ar/contact/" class="btn btn-primary" style="padding:10px 22px">اطلب عرض سعر</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <span class="badge"><span class="dot-live"></span> استوديو <b>التصميم</b> والبرمجة</span>
+    <h1>حلول متكاملة<br><span class="accent">تنقل عملكم إلى العالم الرقمي.</span></h1>
+    <p class="lead">من تركيب ERP إلى تطبيقات الهاتف للميدان، ومن مواقع الشركات إلى البرمجيات الخاصة: نبني كل عملياتكم الرقمية من الفكرة إلى المنتج ومن جهة واحدة.</p>
+    <div class="cta">
+      <a href="../ar/contact/" class="btn btn-primary">لنتحدث عن مشروعكم</a>
+      <a href="../ar/free-digitalization-report/" class="btn btn-ghost">تقرير التحول الرقمي المجاني</a>
+    </div>
+<!-- yol:yon -->
+    <div class="yon">
+      <div class="yon-b">عمّ تبحث؟</div>
+      <div class="yon-l">
+        <a href="../ar/solutions/manufacturing/">متابعة الإنتاج</a>
+        <a href="../ar/solutions/engineering/">المشاريع والمقاولات</a>
+        <a href="../ar/services/odoo-mobile-app/">تطبيق جوال ميداني</a>
+        <a href="../ar/tools/">أدوات مجانية</a>
+      </div>
+    </div>
+<!-- /yol:yon -->
+    <div class="trust">
+      <div><b>50+</b> وحدة Odoo خاصة</div>
+      <div><b>15+</b> مشروعاً للشركات</div>
+      <div><b>6+</b> تطبيقات هاتف</div>
+      <div><b>5+</b> سنوات خبرة</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="hizmetler">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="kicker">خدماتنا</div>
+      <h2>متخصصون في مجالين: التصميم والبرمجة</h2>
+      <p>نصمّم الوجه الخارجي لشركتكم ونطوّر الأنظمة التي تسيّر عملها. من موقعكم إلى مستندات العمل اليومية، ومن ERP إلى تطبيق الهاتف، من جهة واحدة.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg></div>
+        <h3>هوية الشركة</h3>
+        <p>وجه شركتكم على الشاشة وعلى الورق. نصمّم مظهر شركتكم متّسقاً ومهنياً، من الموقع إلى عروض الأسعار ومستندات الشحن.</p>
+        <ul>
+          <li>مواقع الشركات (سريعة، متوافقة مع الهاتف، SEO)</li>
+          <li>عرض السعر، الفاتورة الأولية، الفاتورة وسند التسليم</li>
+          <li>نماذج الشحن والتسليم وأوامر العمل والصيانة</li>
+          <li>نماذج الموارد البشرية: التوظيف، الرواتب، الإجازات والتقييم</li>
+        </ul>
+        <span class="tag">تسليم بصيغة Excel أو PDF أو مدمجاً في نظام ERP عندكم</span>
+      </div>
+
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 7 4 12 9 17"/><polyline points="15 7 20 12 15 17"/></svg></div>
+        <h3>تطوير البرمجيات</h3>
+        <p>الأنظمة التي تسيّر عملكم. نطوّر حلولاً مترابطة تعمل تلقائياً، من ERP إلى تطبيق الهاتف.</p>
+        <ul>
+          <li>تركيب Odoo ERP ووحدات خاصة بالشركة</li>
+          <li><a href="../ar/services/odoo-mobile-app/" style="color:inherit;border-bottom:1px solid var(--border)">تطبيقات Odoo للهاتف: الميدان، المخزون، CRM (React Native)</a></li>
+          <li>ربط الأنظمة وأتمتة العمليات</li>
+          <li>لوحات المتابعة والتقارير</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="surec" style="background:var(--surface2)">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="kicker">كيف نعمل</div>
+      <h2>من الفكرة إلى المنتج في 4 خطوات</h2>
+      <p>عمل شفاف، على مراحل، يتقدّم معكم.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><h3>الاستكشاف والتحليل</h3><p>نستمع إلى عملكم وحاجتكم الحقيقية. نحدّد النقطة الأكثر إيلاماً والأسرع حلاً.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3>التصميم والخطة</h3><p>نوضّح النطاق والبنية وخارطة الطريق ونقسّمها إلى مراحل. خطة واضحة بلا مفاجآت.</p></div>
+      <div class="step reveal"><div class="n">03</div><h3>التطوير</h3><p>نبني الوحدات والتطبيق، نعرضها عليكم بانتظام، ونتقدّم بحسب ملاحظاتكم.</p></div>
+      <div class="step reveal"><div class="n">04</div><h3>التشغيل والدعم</h3><p>نقل البيانات، تدريب الفريق، والتشغيل الفعلي. ونبقى إلى جانبكم بعد ذلك.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY + TECH -->
+<section id="neden">
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="kicker">لماذا Konyaz</div>
+      <h2 style="font-size:clamp(1.9rem,4.5vw,2.9rem);font-weight:700;margin:12px 0 8px;letter-spacing:-.02em">اعملوا مع<br>الفريق الصحيح</h2>
+      <ul class="why-list">
+        <li><span class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><div><b>مسؤولية كاملة من البداية إلى النهاية</b><span>ERP والهاتف والربط: ندير الثلاثة من جهة واحدة. فلا تتوزّع المسؤولية.</span></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"/><polyline points="3 13 12 18 21 13"/></svg></span><div><b>انتقال آمن على مراحل</b><span>لا كل شيء دفعة واحدة: نرتّب النقطة الأهم أولاً ثم نوسّع.</span></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.5-2"/></svg></span><div><b>مفتوح المصدر وملك لكم</b><span>لا تكلفة ترخيص مع Odoo Community، والبيانات والنظام تحت سيطرتكم.</span></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><polyline points="8.5 13 7 21 12 18 17 21 15.5 13"/></svg></span><div><b>خبرة مجرَّبة</b><span>أكثر من 15 مشروعاً، من إنتاج الأبنية مسبقة الصنع إلى شركات الهندسة، ومن الميدان إلى المستودع.</span></div></li>
+      </ul>
+    </div>
+    <div class="tech-card reveal">
+      <h3>التقنيات التي نستخدمها</h3>
+      <div class="tech-tags">
+        <span>Odoo 18</span><span>Python</span><span>PostgreSQL</span><span>OWL / QWeb</span>
+        <span>React Native</span><span>Expo</span><span>TypeScript</span><span>NestJS</span>
+        <span>Node.js</span><span>Cloudflare</span><span>HTML / CSS</span><span>الربط المحاسبي</span>
+        <span>Docker</span><span>REST / JSON-RPC</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO teaser -->
+<section id="isler" style="background:var(--surface2)">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="kicker">أعمال مختارة</div>
+      <h2>مشاريع نفّذناها</h2>
+      <p>مختارات من حلول بنيناها لشركات في قطاعات مختلفة.</p>
+    </div>
+    <div class="pf-grid">
+      <div class="pf reveal"><div class="top logo"><img src="../assets/logos/yuzbasigil.png" alt="شعار Yüzbaşıgil Prefabrik"></div><div class="b"><h3><a href="../ar/case-studies/yuzbasigil-odoo-manufacturing/" style="color:inherit">Yüzbaşıgil Prefabrik</a></h3><p>إدارة إنتاج متكاملة على Odoo: متابعة الإنتاج والشحن والتركيب على أساس المشروع. <a href="../ar/case-studies/yuzbasigil-odoo-manufacturing/" style="color:var(--accent);font-weight:600">دراسة حالة ←</a></p></div></div>
+      <div class="pf reveal"><div class="top logo"><img src="../assets/logos/yamanlar.png" alt="شعار Yamanlar Kapı"></div><div class="b"><h3>Yamanlar Kapı</h3><p>نظام على Odoo لإدارة الإنتاج والشحن والتركيب بالمشاريع في صناعة الأبواب.</p></div></div>
+      <div class="pf reveal"><div class="top logo dark"><img src="../assets/logos/mes.png" alt="شعار MES Mühendislik"></div><div class="b"><h3><a href="../ar/case-studies/mes-muhendislik-odoo-accounting/" style="color:inherit">MES Mühendislik</a></h3><p>ERP متكامل: المبيعات والمخزون والمشتريات والمحاسبة والمصاريف والدوام، على أساس المشروع. <a href="../ar/case-studies/mes-muhendislik-odoo-accounting/" style="color:var(--accent);font-weight:600">دراسة حالة ←</a></p></div></div>
+      <div class="pf reveal"><div class="top logo"><img src="../assets/logos/29mayis.png" alt="شعار İstanbul 29 Mayıs Üniversitesi"></div><div class="b"><h3><a href="https://vohdigital.com/ar/case-studies/29mayis-university-quality-website/" style="color:inherit">İstanbul 29 Mayıs Üniversitesi</a></h3><p>موقع تعريفي حديث لنظام ضمان الجودة مع إدارة محتوى لا تحتاج معرفة بالبرمجة. <a href="https://vohdigital.com/ar/case-studies/29mayis-university-quality-website/" style="color:var(--accent);font-weight:600">دراسة حالة ←</a></p></div></div>
+      <div class="pf reveal"><div class="top logo"><img src="../assets/logos/29mayis.png" alt="شعار İstanbul 29 Mayıs Üniversitesi"></div><div class="b"><h3><a href="../ar/case-studies/29mayis-university-social-transcript/" style="color:inherit">İstanbul 29 Mayıs Üniversitesi</a></h3><p>تطبيق ويب يوثّق تطوّر الطلاب خارج الدروس بالنقاط والاعتماد. <a href="../ar/case-studies/29mayis-university-social-transcript/" style="color:var(--accent);font-weight:600">دراسة حالة ←</a></p></div></div>
+      <div class="pf reveal"><div class="top logo"><img src="../assets/logos/ozenel.png" alt="شعار Özenel Enerji"></div><div class="b"><h3>Özenel Enerji</h3><p>تركيب ERP متكامل: كل العمليات على أساس المشروع في نظام واحد.</p></div></div>
+      <div class="pf reveal"><div class="top icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"/><line x1="10.5" y1="18" x2="13.5" y2="18"/></svg></div><div class="b"><h3><a href="../ar/services/odoo-mobile-app/" style="color:inherit">تطبيقات Odoo للهاتف</a></h3><p>تطبيقات هاتف مرتبطة بـ Odoo للمخزون بالباركود وللمبيعات الميدانية بوضعين. <a href="../ar/services/odoo-mobile-app/" style="color:var(--accent);font-weight:600">التفاصيل ←</a></p></div></div>
+      <div class="pf reveal"><div class="top icon"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z"/></svg></div><div class="b"><h3>الموقع و CRM</h3><p>حلول موقع الشركة و CRM لشركات الهندسة والمكاتب المعمارية.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<!-- rapor-tanitim:bas -->
+<section id="rapor">
+  <style>
+  .rp-kutu{display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:34px 36px;border:1px solid var(--border);border-radius:22px;background:var(--surface)}
+  .rp-kutu h2{margin:10px 0 10px}
+  .rp-kutu p{color:var(--muted);max-width:620px}
+  .rp-kutu ul{margin:14px 0 0 18px;color:var(--muted);font-size:.95rem}
+  </style>
+  <div class="wrap">
+    <div class="rp-kutu reveal">
+      <div>
+        <div class="kicker">مجاناً</div>
+        <h2>تقرير تحول رقمي مُعدّ خصيصاً لشركتك</h2>
+        <p>عرّفنا بعملك في بضع خطوات، وخلال 3 أيام عمل نرسل إليك بالبريد الإلكتروني تقريراً يوضح أين تحتاج إلى CRM أو ERP أو تخطيط الإنتاج أو تطبيق للفرق الميدانية، ومن أين تبدأ.</p>
+        <ul><li>ملخص وضعك الحالي وخريطة احتياجاتك</li><li>3 خطوات ذات أولوية وخريطة طريق</li><li>مجاني ودون أي التزام</li></ul>
+      </div>
+      <a href="../ar/free-digitalization-report/" class="btn btn-primary">اطلب تقريري ←</a>
+    </div>
+  </div>
+</section>
+<!-- rapor-tanitim:son -->
+<!-- rehberler:bas -->
+<section id="rehberler">
+  <style>
+  .rh-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+  .rh{display:block;padding:22px;border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);transition:.2s}
+  .rh:hover{border-color:var(--accent)}
+  .rh span{color:var(--accent);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+  .rh h3{font-size:1.12rem;margin:10px 0 8px}
+  .rh p{color:var(--muted);font-size:.93rem}
+  </style>
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="kicker">أدلّة</div>
+      <h2>إدارة عملكم بالبرمجيات</h2>
+      <p>مقالات نشرح فيها متى يصبح البرنامج لازماً في متابعة الإنتاج والمشاريع والمهام والربحية والمالية.</p>
+    </div>
+    <div class="rh-grid">
+      <a class="rh reveal" href="../ar/blog/production-management-software/"><span>إدارة الإنتاج</span><h3>متى يصبح برنامج إدارة الإنتاج ضرورياً؟</h3><p>أين يضيع المال في إنتاج يسير بـ Excel وأوامر العمل الورقية، وما فائدة البرنامج، ومن أين يُبدأ؟</p></a>
+      <a class="rh reveal" href="../ar/blog/project-management-software/"><span>إدارة المشاريع</span><h3>متى يصبح برنامج إدارة المشاريع ضرورياً؟</h3><p>لماذا لا يبقى جدول Excel محدَّثاً، وكيف يزيح تأخير صغير موعد التسليم، وكيف يوزَّع الفريق نفسه على ثلاثة مشاريع؟</p></a>
+      <a class="rh reveal" href="../ar/blog/task-management-software/"><span>إدارة المهام</span><h3>لماذا تبقى الأعمال بلا متابعة؟ برنامج إدارة المهام</h3><p>لماذا تُنسى الأعمال التي تُعطى شفهياً وعبر WhatsApp، وماذا يغيّر سجل المهمة، وكيف يتقبّله الفريق؟</p></a>
+      <a class="rh reveal" href="../ar/blog/measuring-project-profitability/"><span>ربحية المشاريع</span><h3>كيف تُقاس ربحية المشاريع؟ رؤيتها والعمل جارٍ</h3><p>ربح آخر السنة لا يُظهر أيّ مشروع خسر. أربعة سجلات يجب إمساكها لتقييد التكلفة على المشروع.</p></a>
+      <a class="rh reveal" href="../ar/blog/finance-accounting-software/"><span>المالية والمحاسبة</span><h3>لماذا تحتاجون برنامجاً للمتابعة المالية والمحاسبة؟</h3><p>في الصندوق مال، لكن ماذا بعد ثلاثة أسابيع؟ جمع التدفق النقدي ومتابعة المستحقات والفوترة في سجل واحد.</p></a>
+    </div>
+  </div>
+</section>
+<!-- rehberler:son -->
+<section id="iletisim">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div class="kicker">لنبدأ</div>
+      <h2>لنتحدث <span class="accent">عن مشروعكم.</span></h2>
+      <p>لنستمع إلى حاجتكم ونبنِ الحل الأنسب لكم. اللقاء الأول مجاني.</p>
+      <div class="cta" style="justify-content:center;margin-top:8px">
+        <a href="../ar/contact/" class="btn btn-primary">تواصلوا معنا</a>
+        <a href="mailto:info@vohdigital.com" data-umami-event="eposta-tikla" class="btn btn-ghost">info@vohdigital.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand">
+        <a href="../ar/" class="logo"><img class="logo-img" src="../assets/konyaz-logo.svg" alt="Konyaz"></a>
+        <p>حلول رقمية متكاملة في ERP والهاتف والويب. من الفكرة إلى المنتج، من جهة واحدة.</p>
+      </div>
+      <div class="col">
+        <h4>الخدمات</h4>
+        <a href="../ar/services/odoo-erp/">استشارات Odoo ERP</a>
+        <a href="../ar/services/odoo-custom-modules/">وحدات Odoo الخاصة</a>
+        <a href="../ar/services/odoo-mobile-app/">تطبيقات Odoo للهاتف</a>
+        <a href="../ar/services/field-sales-app/">تطبيق المبيعات الميدانية</a>
+        <a href="../ar/services/inventory-barcode/">المخزون والباركود</a>
+        <a href="../ar/services/task-management-field-crm/">المهام و CRM</a>
+        <a href="../ar/services/erp-solutions/">حلول ERP</a>
+        <a href="../ar/services/digital-transformation/">التحول الرقمي</a>
+      </div>
+      <div class="col">
+        <h4>الحلول</h4>
+        <a href="../ar/solutions/manufacturing/">ERP الإنتاج</a>
+        <a href="../ar/solutions/engineering/">الهندسة والمقاولات</a>
+        <a href="../ar/solutions/architecture/">العمارة</a>
+      </div>
+      <div class="col">
+        <h4>الشركة</h4>
+        <a href="#surec">طريقة العمل</a>
+        <a href="#neden">لماذا نحن</a>
+        <a href="#isler">أعمالنا</a>
+        <a href="../ar/blog/">المدونة</a>
+      </div>
+      <div class="col">
+        <h4>اتصل بنا</h4>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=İçerenköy+Eryılmazlar+Sokak+No+3+Ataşehir+İstanbul" target="_blank" rel="noopener">İçerenköy, Eryılmazlar Sk.<br>No:3 D:11, 34752 Ataşehir/İstanbul</a>
+        <a href="mailto:info@vohdigital.com" data-umami-event="eposta-tikla">info@vohdigital.com</a>
+        <a href="../ar/contact/">صفحة الاتصال</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Konyaz — جميع الحقوق محفوظة. التصميم والبرمجة. · <a href="../ar/privacy/">الخصوصية</a></div>
+  </div>
+</footer>
+
+<script>
+  const hdr=document.getElementById('hdr');
+  addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // İletişim formu → Netlify function → Odoo CRM (crm.lead)
+  const lf=document.getElementById('leadForm');
+  if(lf){
+    lf.addEventListener('submit',async e=>{
+      try{ if(window.umami) umami.track('form-iletisim-gonder-dene'); }catch(x){}
+      e.preventDefault();
+      const st=document.getElementById('lf-status');
+      const btn=document.getElementById('lf-submit');
+      st.className='form-status'; st.textContent='';
+      const data=Object.fromEntries(new FormData(lf).entries());
+      if(data.website){return;}                       // honeypot dolu → bot, sessizce yut
+      if(!data.name||!data.email||!data.message){
+        st.className='form-status err'; st.textContent='يرجى ملء حقول الاسم والبريد الإلكتروني والرسالة.'; return;
+      }
+      const oldTxt=btn.textContent; btn.disabled=true; btn.textContent='جارٍ الإرسال…';
+      try{
+        const r=await fetch('/api/lead',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(data)
+        });
+        if(!r.ok) throw new Error('Gönderilemedi');
+        st.className='form-status ok'; st.textContent='شكراً! وصلت رسالتكم وسنعود إليكم في أقرب وقت.';
+        try{ if(window.umami) umami.track('lead-iletisim-anasayfa'); }catch(x){}
+        lf.reset();
+      }catch(err){
+        st.className='form-status err'; st.textContent='حدثت مشكلة. يمكنكم الكتابة إلى info@vohdigital.com.';
+      }finally{ btn.disabled=false; btn.textContent=oldTxt; }
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="az" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Sifariş nə vaxt bitir? Təhvil tarixi hesablama | Konyaz</title>
+<meta name="description" content="Say, saatlıq istehsal sürəti, iş saatı və dəzgahda gözləyən işi daxil edin; sifarişin bitmə gününü və istənən tarixə çatıb-çatmadığını görün.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/az/aletler/tehvil-tarixi/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sifariş nə vaxt bitir? Təhvil tarixi hesablama | Konyaz">
+<meta property="og:description" content="Say, saatlıq istehsal sürəti, iş saatı və dəzgahda gözləyən işi daxil edin; sifarişin bitmə gününü və istənən tarixə çatıb-çatmadığını görün.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/az/aletler/tehvil-tarixi/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="az_AZ">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sifariş nə vaxt bitir? Təhvil tarixi hesablama | Konyaz">
+<meta name="twitter:description" content="Say, saatlıq istehsal sürəti, iş saatı və dəzgahda gözləyən işi daxil edin; sifarişin bitmə gününü və istənən tarixə çatıb-çatmadığını görün.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"İstehsalın təhvil tarixi kalkulyatoru","description":"Say, saatlıq istehsal sürəti, iş saatı və dəzgahda gözləyən işi daxil edin; sifarişin bitmə gününü və istənən tarixə çatıb-çatmadığını görün.","url":"https://emreceran.github.io/konyaz/az/aletler/tehvil-tarixi/","inLanguage":"az","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Səmərəlilik nisbətinə nə yazmalıyam?","acceptedAnswer":{"@type":"Answer","text":"Dəzgahın kağız üzərindəki sürəti ilə real çıxardığı məhsul sayı arasındakı nisbət. Qəza, sazlama, material gözləmə və zay məhsul bu nisbəti aşağı salır. Ölçməmisinizsə, 60–70%-lə başlayın; OEE aləti ilə öz nisbətinizi tapa bilərsiniz."}},{"@type":"Question","name":"Dəzgahda gözləyən iş niyə vacibdir?","acceptedAnswer":{"@type":"Answer","text":"Sifariş dəzgaha bu gün girmirsə, bitmə günü də o qədər sürüşür. Təhvil tarixi verilərkən ən çox unudulan maddə əvvəl bitməli olan işlərdir. Bir neçə dəzgahdan keçən işlərdə növbəsi ən uzun olan dəzgahı əsas götürün."}},{"@type":"Question","name":"Rəsmi bayramlar nəzərə alınır?","acceptedAnswer":{"@type":"Answer","text":"Xeyr, yalnız həftəlik istirahət günləri nəzərə alınır. Arada bayram və ya rəsmi istirahət günü varsa, həmin günləri \"dəzgahda gözləyən iş\" sahəsinə əlavə edin. Excel şablonumuzda bayramların siyahısı var."}},{"@type":"Question","name":"Daxil etdiyim rəqəmlər haraya isə göndərilir?","acceptedAnswer":{"@type":"Answer","text":"Siz göndərməsəniz, xeyr. Hesablama tamamilə brauzerinizdə aparılır və yadda saxlanmır. Məlumatlar bizə yalnız “Nəticəmi qiymətləndirin” formasını doldurub göndərsəniz, sizə geri dönə bilməyimiz üçün çatır."}}],"inLanguage":"az"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/termin-hesaplama/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/lead-time-calculator/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/tehvil-tarixi/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/lead-time-calculator/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/rok-isporuke/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/rok-proizvodnje/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/afati-i-prodhimit/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/rok-na-proizvodstvo/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/lead-time-calculator/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+h1,h2,h3,.logo{font-family:'Inter','Segoe UI',system-ui,sans-serif}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../az/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../az/#hizmetler">Xidmətlər</a>
+        <a href="../../../az/#neden">Niyə biz</a>
+        <a href="../../../az/#isler">İşlərimiz</a>
+        <a href="../../../az/aletler/" class="active">Alətlər</a>
+        <a href="../../../az/blog/">Bloq</a>
+        <a href="../../../az/elaqe/">Əlaqə</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">AZ ▾</summary><div><a href="../../../araclar/termin-hesaplama/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/lead-time-calculator/" hreflang="en" lang="en">English</a><a href="../../../az/aletler/tehvil-tarixi/" hreflang="az" lang="az" aria-current="true">Azərbaycanca</a><a href="../../../ar/tools/lead-time-calculator/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/rok-isporuke/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/alati/rok-proizvodnje/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/mjete/afati-i-prodhimit/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/alatki/rok-na-proizvodstvo/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../az/elaqe/" class="btn btn-primary">Təklif al</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../az/aletler/" class="back">← Bütün alətlər</a>
+  <div class="kicker" style="margin-top:22px">Pulsuz alət</div>
+  <h1>İstehsalın təhvil tarixi kalkulyatoru</h1>
+  <p class="lead">Müştəri "nə vaxt təhvil verərsiniz?" deyə soruşanda təxminlə yox, hesabla cavab verin. Alət sifarişin bitmə gününü və istənən tarixə çatıb-çatmadığını göstərir.</p>
+  <div class="tgrid">
+    <form class="panel" id="tm" onsubmit="return false">
+      <h2>Sifariş və dəzgah</h2>
+      <div class="iki">
+        <div class="alan"><label for="adet">Sifarişin sayı</label><div class="girdi"><input id="adet" type="number" inputmode="decimal" min="0" step="1"><span>ədəd</span></div></div>
+        <div class="alan"><label for="hiz">Saatlıq istehsal sürəti</label><div class="girdi"><input id="hiz" type="number" inputmode="decimal" min="0" step="any"><span>ədəd/saat</span></div><small>Dəzgahın və ya xəttin normal sürəti.</small></div>
+      </div>
+      <div class="iki">
+        <div class="alan"><label for="gunSaat">Gündəlik iş vaxtı</label><div class="girdi"><input id="gunSaat" type="number" inputmode="decimal" min="0" step="any"><span>saat</span></div><small>İki növbədirsə, 16 yazın.</small></div>
+        <div class="alan"><label for="haftaGun">Həftədə iş günü</label><div class="girdi"><input id="haftaGun" type="number" inputmode="decimal" min="0" step="1"><span>gün</span></div></div>
+      </div>
+      <div class="iki">
+        <div class="alan"><label for="verim">Səmərəlilik nisbəti</label><div class="girdi"><input id="verim" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Dayanma, sazlama və zay payı.</small></div>
+        <div class="alan"><label for="kurulum">Hazırlıq və sazlama vaxtı</label><div class="girdi"><input id="kurulum" type="number" inputmode="decimal" min="0" step="any"><span>saat</span></div><small>Qəlib dəyişmə, ilk məhsulun təsdiqi.</small></div>
+      </div>
+      <div class="alan"><label for="bekleyen">Dəzgahda növbədə gözləyən iş</label><div class="girdi"><input id="bekleyen" type="number" inputmode="decimal" min="0" step="any"><span>iş günü</span></div><small>Bu sifariş başlamazdan əvvəl bitməli olan işlərin müddəti.</small></div>
+      <div class="alan"><label for="terminTarih">Müştərinin istədiyi tarix</label><div class="girdi"><input id="terminTarih" type="date"></div></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Nəticə</h2>
+      <div class="buyuk">
+        <div class="kutu ana"><div class="ad">Təxmini bitmə günü</div><div class="deger" id="bitis">–</div><div class="alt" id="bitisAlt"></div></div>
+        <div class="kutu"><div class="ad">İstehsal müddəti</div><div class="deger" id="sure">–</div><div class="alt" id="sureSaat"></div></div>
+      </div>
+      <p class="yorum" id="tmYorum"></p>
+      <div class="satir"><span>İstehsalın başlama günü</span><b id="baslama">–</b></div>
+      <div class="satir"><span>Bu gündən istənən tarixə qalan</span><b id="kalan">–</b></div>
+      <div class="satir"><span>Tarixə çatmaq üçün lazım olan iş vaxtı</span><b id="gerekSaat">–</b></div>
+      <div class="satir"><span>Səmərəlilik 100% olsaydı, bitmə</span><b id="tamVerim">–</b></div>
+      <p class="not">Rəsmi bayramlar nəzərə alınmır. Hesablama brauzerinizdə aparılır; siz göndərməsəniz, məlumatlarınız heç yerə getmir.</p>
+    </section>
+  </div>
+  <div class="indir"><p><strong>Bütün sifarişləri dəzgah növbəsi ilə planlaşdırmaq üçün</strong>Hər dəzgah üzrə güc, sifariş növbəsi, təhvil tarixi xəbərdarlığı, bayram günləri və gün-gün plan cədvəli olan Excel şablonu.</p><a class="btn btn-cizgi" href="../../../araclar/sablonlar/uretim-plani-kapasite-tr.xlsx" data-en-href="../../../araclar/sablonlar/uretim-plani-kapasite-en.xlsx" download>Excel şablonunu yüklə</a></div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Bu nəticə sizin üçün nə deməkdir?</h3>
+  <p>Rəqəmlərinizi və nəticəni bizə göndərin; bir iş günü ərzində qiymətləndirib sizə geri dönək. Pulsuzdur və heç bir öhdəlik yaratmır.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Nəticəmi qiymətləndirin</button>
+</div></div>
+<div id="metin" hidden><span data-k="gunDeger">{s} iş günü</span><span data-k="saatDeger">{s} saat</span><span data-k="saatGun">gündə {s} saat</span><span data-k="yYetisir">Sifariş istənən tarixə çatır; bitmə ilə təhvil tarixi arasında {g} iş günü ehtiyat var.</span><span data-k="ySinir">Sifariş tarixə güclə çatır, arada {g} iş günü ehtiyat var. Bir qəza və ya material gecikməsi tarixi qaçırtdırar.</span><span data-k="yGec">Sifariş istənən tarixi {g} iş günü gecikdirir. Çatması üçün gündə {s} saat işləmək lazımdır; ya da təhvil tarixini {t} kimi verin.</span><span data-k="yImkansiz">Sifariş istənən tarixi {g} iş günü gecikdirir və qarşısındakı işlər bitmədən başlaya bilmir. Təhvil tarixini {t} kimi verin və ya növbəni dəyişin.</span><span data-k="yok">çatmır</span></div>
+
+<section class="aciklama">
+  <h2>Hesablama necə aparılır?</h2>
+  <ul>
+    <li><strong>İstehsal müddəti (saat)</strong> = say ÷ (saatlıq sürət × səmərəlilik nisbəti) + hazırlıq vaxtı</li>
+    <li><strong>İstehsal müddəti (iş günü)</strong> = istehsal saatı ÷ gündəlik iş vaxtı, yuxarı yuvarlaqlaşdırılır</li>
+    <li><strong>Başlama günü</strong> dəzgahda gözləyən iş bitdikdən sonrakı ilk iş günüdür. Bitmə günü başlamadan etibarən istehsal müddəti qədər iş günü sayılaraq tapılır.</li>
+  </ul>
+  <p>Bir sifarişin təhvil tarixini hesablamaq asandır. Çətin olan eyni dəzgahı bölüşən onlarla sifarişin növbəsini hər dəyişiklikdə yenidən hesablamaqdır. Təcili iş araya girəndə arxadakı hər sifarişin bitmə günü sürüşür və bu sürüşmə yalnız planın hamısı bir yerdə saxlanılırsa görünür. Ətraflı <a href="../../../az/blog/istehsal-idareetme-proqrami/">istehsal idarəetmə proqramı</a> yazısında.</p>
+  <h2>Tez-tez verilən suallar</h2>
+<h3>Səmərəlilik nisbətinə nə yazmalıyam?</h3>
+<p>Dəzgahın kağız üzərindəki sürəti ilə real çıxardığı məhsul sayı arasındakı nisbət. Qəza, sazlama, material gözləmə və zay məhsul bu nisbəti aşağı salır. Ölçməmisinizsə, 60–70%-lə başlayın; <a href="../../../az/aletler/oee-hesablama/">OEE aləti ilə</a> öz nisbətinizi tapa bilərsiniz.</p>
+<h3>Dəzgahda gözləyən iş niyə vacibdir?</h3>
+<p>Sifariş dəzgaha bu gün girmirsə, bitmə günü də o qədər sürüşür. Təhvil tarixi verilərkən ən çox unudulan maddə əvvəl bitməli olan işlərdir. Bir neçə dəzgahdan keçən işlərdə növbəsi ən uzun olan dəzgahı əsas götürün.</p>
+<h3>Rəsmi bayramlar nəzərə alınır?</h3>
+<p>Xeyr, yalnız həftəlik istirahət günləri nəzərə alınır. Arada bayram və ya rəsmi istirahət günü varsa, həmin günləri "dəzgahda gözləyən iş" sahəsinə əlavə edin. Excel şablonumuzda bayramların siyahısı var.</p>
+<h3>Daxil etdiyim rəqəmlər haraya isə göndərilir?</h3>
+<p>Siz göndərməsəniz, xeyr. Hesablama tamamilə brauzerinizdə aparılır və yadda saxlanmır. Məlumatlar bizə yalnız “Nəticəmi qiymətləndirin” formasını doldurub göndərsəniz, sizə geri dönə bilməyimiz üçün çatır.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Təhvil tarixini hər sifariş üçün ayrıca hesablamayın</h3>
+    <p>Sifarişlərin dəzgah növbəsinin və bitmə günlərinin özü yeniləndiyi bir istehsal planı quraq.</p>
+    <a href="../../../az/elaqe/" class="btn btn-primary">Danışaq</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Əlaqəli yazılar</h4>
+  <a href="../../../az/blog/istehsal-idareetme-proqrami/">İstehsal idarəetmə proqramı nə vaxt mütləqdir? →</a>
+  <a href="../../../az/blog/layihe-esasli-istehsal-ucotu/">Prefabrik və sifarişlə istehsalda layihə əsaslı uçot →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Pulsuz rəqəmsallaşma hesabatı</h3>
+  <p>İşinizi bir neçə addımda təsvir edin; hansı işdə hansı proqrama ehtiyacınız olduğunu və haradan başlamağın lazım olduğunu göstərən hesabatı e-poçtla göndərək.</p></div>
+  <a href="../../../az/pulsuz-reqemsallasma-hesabati/" class="btn btn-primary">Hesabatımı istəyirəm</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Bağla">×</button>
+    <h2 id="penBaslik">Şablonu yükləyin</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Ad, soyad *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Şirkət *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">E-poçt *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefon</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sahə</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Seçin</option><option value="Üretim">İstehsal</option><option value="Proje / taahhüt / inşaat">Layihə / podrat / tikinti</option><option value="Mühendislik / mimarlık">Mühəndislik / memarlıq</option><option value="Ticaret / dağıtım">Ticarət / distribusiya</option><option value="Hizmet">Xidmət</option><option value="Diğer">Digər</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">İşçi sayı</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Seçin</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Əlavə etmək istədikləriniz</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span><a href="../../../az/mexfilik/" target="_blank" rel="noopener">Məlumatlandırma mətnini</a> oxudum. Məlumatlarımın mənimlə əlaqə saxlanılması məqsədilə emal edilməsinə və xidmət təminatçıları vasitəsilə xaricə ötürülməsinə açıq razılıq verirəm.</span></label>
+    <div class="hp" aria-hidden="true"><label>Bu sahəni boş saxlayın<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Yüklə</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Şablonu yükləyin</span>
+    <span data-k="fIndMetin">Məlumatlarınızı qoyun, yükləmə dərhal başlasın. Yeni şablon və alət çıxanda sizə xəbər verə bilməyimiz və suallarınızı cavablandırmağımız üçün soruşuruq.</span>
+    <span data-k="fIndDugme">Məlumatları göndər və yüklə</span>
+    <span data-k="fDegBaslik">Nəticənizi birlikdə dəyərləndirək</span>
+    <span data-k="fDegMetin">Məlumatlarınızı qoyun; daxil etdiyiniz rəqəmlər və nəticə bizə çatsın, bir iş günü ərzində sizə geri dönək. Pulsuzdur və heç bir öhdəlik yaratmır.</span>
+    <span data-k="fDegDugme">Göndər</span>
+    <span data-k="fEksik">Zəhmət olmasa ad-soyad, şirkət və düzgün e-poçt ünvanı yazın, razılıq qutusunu işarələyin.</span>
+    <span data-k="fRobot">Zəhmət olmasa “Mən robot deyiləm” qutusunu işarələyin.</span>
+    <span data-k="fGonder">Göndərilir…</span>
+    <span data-k="fIndOk">Təşəkkür edirik, yükləmə başladı. Başlamayıbsa, buradan yükləyin:</span>
+    <span data-k="fIndLink">Excel faylını yüklə</span>
+    <span data-k="fDegOk">Təşəkkür edirik, məlumatlarınız və nəticəniz bizə çatdı. Bir iş günü ərzində sizə geri dönəcəyik.</span>
+    <span data-k="fHata">Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin və ya info@vohdigital.com ünvanına yazın.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Dizayn &amp; Proqram təminatı. · <a href="../../../az/mexfilik/">Məxfilik</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../az/">Ana səhifə</a>
+      <a href="../../../az/aletler/">Alətlər</a>
+      <a href="../../../az/blog/">Bloq</a>
+      <a href="../../../az/elaqe/">Əlaqə</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>

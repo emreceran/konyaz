@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="bs" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Kalkulator troška radnog sata radnika (besplatno) | Konyaz</title>
+<meta name="description" content="Besplatni kalkulator: stvarni trošak radnog sata radnika, uz trošak poslodavca, dodatne troškove, odmore i vrijeme koje se ne fakturiše. Sa primjerom.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/bs/alati/trosak-radnog-sata/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kalkulator troška radnog sata radnika (besplatno) | Konyaz">
+<meta property="og:description" content="Besplatni kalkulator: stvarni trošak radnog sata radnika, uz trošak poslodavca, dodatne troškove, odmore i vrijeme koje se ne fakturiše. Sa primjerom.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/bs/alati/trosak-radnog-sata/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="bs_BA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kalkulator troška radnog sata radnika (besplatno) | Konyaz">
+<meta name="twitter:description" content="Besplatni kalkulator: stvarni trošak radnog sata radnika, uz trošak poslodavca, dodatne troškove, odmore i vrijeme koje se ne fakturiše. Sa primjerom.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Kalkulator troška radnog sata zaposlenog","description":"Besplatni kalkulator: stvarni trošak radnog sata radnika, uz trošak poslodavca, dodatne troškove, odmore i vrijeme koje se ne fakturiše. Sa primjerom.","url":"https://emreceran.github.io/konyaz/bs/alati/trosak-radnog-sata/","inLanguage":"bs","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kako se računa trošak radnog sata radnika?","acceptedAnswer":{"@type":"Answer","text":"Ukupan godišnji trošak podijelite sa satima upisanim na poslove. Primjer: mjesečni trošak poslodavca 40.000, dodatni troškovi 5.000, 12 plata godišnje → godišnje 540.000. 5 dana i 45 sati sedmično × 52 = 2.340 sati; kad se oduzme 20 dana odmora i praznika (20 × 9 = 180 sati), ostaje 2.160 radnih sati; uz 75% efikasnosti na poslove se upisuje 1.620 sati. Trošak sata je 540.000 ÷ 1.620 ≈ 333, dok brzi račun (plata podijeljena sa satima u mjesecu) pokazuje samo 40.000 ÷ 195 ≈ 205."}},{"@type":"Question","name":"Gdje da nađem trošak poslodavca?","acceptedAnswer":{"@type":"Answer","text":"Na platnoj listi postoji ukupan iznos u kojem su na bruto platu dodani doprinosi poslodavca i ostala zakonska davanja. Od računovođe ili iz programa za plate uzmite stavku „ukupni trošak poslodavca“. Ako je ne znate, možete početi s otprilike 1,2 puta bruto plate."}},{"@type":"Question","name":"Šta znači stopa produktivnog rada?","acceptedAnswer":{"@type":"Answer","text":"Ne može se cijelo radno vrijeme knjižiti na posao: sastanci, put, čekanje, obuka, kancelarijski poslovi. Na terenu i u radionici ta stopa je najčešće 70–80%, a u kancelarijskim poslovima niža. Ako sate ne knjižite na poslove, 75% je razuman početak."}},{"@type":"Question","name":"Zašto nije dovoljno platu podijeliti sa satima u mjesecu?","acceptedAnswer":{"@type":"Answer","text":"Takva računica izostavlja dodatne troškove, godišnje odmore, praznike i vrijeme koje se ne može knjižiti na posao. Rezultat ispadne niži nego što jeste, a ponuda data s tom niskom brojkom na kraju posla donese manje dobiti od očekivane."}},{"@type":"Question","name":"Kako da izračunam prosjek za tim?","acceptedAnswer":{"@type":"Answer","text":"Ukupni mjesečni trošak poslodavca i ukupne dodatne troškove tima podijelite brojem ljudi i računajte za prosječnog zaposlenog. Ako je razlika između majstora i pomoćnika velika, napravite dvije odvojene računice."}}],"inLanguage":"bs"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/saat-maliyeti/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/hourly-cost/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/saatliq-maya-deyeri/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/hourly-cost/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/trosak-radnog-sata/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/trosak-radnog-sata/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/kosto-per-ore/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/trosok-po-raboten-cas/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/hourly-cost/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../bs/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../bs/#hizmetler">Usluge</a>
+        <a href="../../../bs/#neden">Zašto mi</a>
+        <a href="../../../bs/#isler">Projekti</a>
+        <a href="../../../bs/alati/" class="active">Alati</a>
+        <a href="../../../bs/blog/">Blog</a>
+        <a href="../../../bs/kontakt/">Kontakt</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">BS ▾</summary><div><a href="../../../araclar/saat-maliyeti/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/hourly-cost/" hreflang="en" lang="en">English</a><a href="../../../az/aletler/saatliq-maya-deyeri/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/tools/hourly-cost/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/trosak-radnog-sata/" hreflang="bs" lang="bs" aria-current="true">Bosanski</a><a href="../../../me/alati/trosak-radnog-sata/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/mjete/kosto-per-ore/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/alatki/trosok-po-raboten-cas/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../bs/kontakt/" class="btn btn-primary">Zatražite ponudu</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../bs/alati/" class="back">← Svi alati</a>
+  <div class="kicker" style="margin-top:22px">Besplatan alat</div>
+  <h1>Kalkulator troška radnog sata zaposlenog</h1>
+  <p class="lead">Trošak sata koji treba koristiti u ponudama i u računanju dobiti posla veći je od brojke koju dobijete kad platu podijelite sa satima u mjesecu. Ovaj alat pokazuje tu razliku.</p>
+  <div class="tgrid">
+    <form class="panel" id="sm" onsubmit="return false">
+      <h2>Za jednog zaposlenog</h2>
+      <div class="alan"><label for="maliyet">Mjesečni trošak poslodavca</label><div class="girdi"><input id="maliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>„Ukupni trošak poslodavca“ s platne liste. Bruto plata plus doprinosi poslodavca.</small></div>
+      <div class="alan"><label for="yan">Mjesečni dodatni troškovi</label><div class="girdi"><input id="yan" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Troškovi van platne liste: topli obrok, prevoz, bonusi, radna odjeća, telefon, obuka.</small></div>
+      <div class="iki">
+        <div class="alan"><label for="maasSayisi">Broj plata isplaćenih godišnje</label><div class="girdi"><input id="maasSayisi" type="number" inputmode="decimal" min="0" step="1"><span>plata</span></div><small>Ako postoji 13. ili 14. plata, upišite 13 ili 14.</small></div>
+        <div class="alan"><label for="izin">Godišnji odmor i praznici</label><div class="girdi"><input id="izin" type="number" inputmode="decimal" min="0" step="1"><span>dana</span></div><small>Ukupno neradnih radnih dana.</small></div>
+      </div>
+      <div class="iki">
+        <div class="alan"><label for="haftaSaat">Sedmični rad</label><div class="girdi"><input id="haftaSaat" type="number" inputmode="decimal" min="0" step="any"><span>sati</span></div></div>
+        <div class="alan"><label for="haftaGun">Radnih dana u sedmici</label><div class="girdi"><input id="haftaGun" type="number" inputmode="decimal" min="0" step="1"><span>dana</span></div></div>
+      </div>
+      <div class="alan"><label for="verim">Stopa produktivnog rada</label><div class="girdi"><input id="verim" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Dio radnog vremena koji se može knjižiti na posao ili kupca.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Rezultat</h2>
+      <div class="buyuk">
+        <div class="kutu"><div class="ad">Trošak po satu radnog vremena</div><div class="deger" id="c1">–</div></div>
+        <div class="kutu ana"><div class="ad">Trošak po satu knjiženom na posao<br>(koristite u ponudi)</div><div class="deger" id="c2">–</div></div>
+      </div>
+      <p class="yorum" id="smYorum"></p>
+      <div class="satir"><span>Ukupni godišnji trošak</span><b id="yillik">–</b></div>
+      <div class="satir"><span>Radno vrijeme godišnje</span><b id="mesaiSaat">–</b></div>
+      <div class="satir"><span>Dio koji se može knjižiti na posao</span><b id="verimliSaat">–</b></div>
+      <div class="satir"><span>Jednostavna računica: plata podijeljena sa satima u mjesecu</span><b id="kolay">–</b></div>
+      <p style="margin-top:18px"><a class="btn btn-primary" id="aktar" href="../../../bs/alati/profitabilnost-projekta/">Izračunaj profitabilnost projekta s ovim troškom →</a></p>
+      <p class="not">Obračun se radi u vašem pregledniku; vaše brojke nigdje ne idu ako ih sami ne pošaljete.</p>
+    </section>
+  </div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Šta ovaj rezultat znači za vas?</h3>
+  <p>Pošaljite nam svoje brojke i rezultat; pregledat ćemo ih i javiti vam se u roku od jednog radnog dana. Besplatno i bez obaveze.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Procijenite moj rezultat</button>
+</div></div>
+<div id="metin" hidden><span data-k="saatDeger">{s} sati</span><span data-k="yFark">Računica u kojoj se plata dijeli sa satima u mjesecu pokazuje {k}. Kad se dodaju odmori, praznici, dodatni troškovi i vrijeme koje se ne knjiži na posao, stvarni trošak jednog sata je {g}, odnosno {f} više.</span></div>
+
+<section class="aciklama">
+  <h2>Kako se računa?</h2>
+  <ul>
+    <li><strong>Godišnji trošak</strong> = mjesečni trošak poslodavca × broj plata godišnje + mjesečni dodatni troškovi × 12</li>
+    <li><strong>Radni sati</strong> = sedmični sati × 52 − sati godišnjeg odmora i praznika</li>
+    <li><strong>Sati knjiženi na posao</strong> = radni sati × stopa produktivnog rada</li>
+    <li><strong>Trošak sata</strong> = godišnji trošak ÷ sati knjiženi na posao</li>
+  </ul>
+  <p>Brojka koju treba koristiti u ponudama i u računanju dobiti posla je trošak po satu knjiženom na posao. Ne odlučuje koliko sati tim radi godišnje, nego koliki se dio tih sati knjiži na posao ili kupca. Trošak preostalog vremena takođe moraju pokriti poslovi.</p>
+  <p>Ovu stopu ćete znati mjerenjem, a ne procjenom, samo ako se sati svaki dan knjiže na poslove. Više u tekstu <a href="../../../bs/blog/mjerenje-profitabilnosti-projekta/">kako mjeriti profitabilnost projekta</a>.</p>
+  <h2>Česta pitanja</h2>
+<h3>Kako se računa trošak radnog sata radnika?</h3>
+<p>Ukupan godišnji trošak podijelite sa satima upisanim na poslove. Primjer: mjesečni trošak poslodavca 40.000, dodatni troškovi 5.000, 12 plata godišnje → godišnje 540.000. 5 dana i 45 sati sedmično × 52 = 2.340 sati; kad se oduzme 20 dana odmora i praznika (20 × 9 = 180 sati), ostaje 2.160 radnih sati; uz 75% efikasnosti na poslove se upisuje 1.620 sati. Trošak sata je 540.000 ÷ 1.620 ≈ 333, dok brzi račun (plata podijeljena sa satima u mjesecu) pokazuje samo 40.000 ÷ 195 ≈ 205.</p>
+<h3>Gdje da nađem trošak poslodavca?</h3>
+<p>Na platnoj listi postoji ukupan iznos u kojem su na bruto platu dodani doprinosi poslodavca i ostala zakonska davanja. Od računovođe ili iz programa za plate uzmite stavku „ukupni trošak poslodavca“. Ako je ne znate, možete početi s otprilike 1,2 puta bruto plate.</p>
+<h3>Šta znači stopa produktivnog rada?</h3>
+<p>Ne može se cijelo radno vrijeme knjižiti na posao: sastanci, put, čekanje, obuka, kancelarijski poslovi. Na terenu i u radionici ta stopa je najčešće 70–80%, a u kancelarijskim poslovima niža. Ako sate ne knjižite na poslove, 75% je razuman početak.</p>
+<h3>Zašto nije dovoljno platu podijeliti sa satima u mjesecu?</h3>
+<p>Takva računica izostavlja dodatne troškove, godišnje odmore, praznike i vrijeme koje se ne može knjižiti na posao. Rezultat ispadne niži nego što jeste, a ponuda data s tom niskom brojkom na kraju posla donese manje dobiti od očekivane.</p>
+<h3>Kako da izračunam prosjek za tim?</h3>
+<p>Ukupni mjesečni trošak poslodavca i ukupne dodatne troškove tima podijelite brojem ljudi i računajte za prosječnog zaposlenog. Ako je razlika između majstora i pomoćnika velika, napravite dvije odvojene računice.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Knjiže li se sati vašeg tima na poslove?</h3>
+    <p>Postavimo zajedno sistem u kojem se samo od sebe evidentira ko je koliko radio na kojem poslu.</p>
+    <a href="../../../bs/kontakt/" class="btn btn-primary">Razgovarajmo</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Povezani tekstovi</h4>
+  <a href="../../../bs/blog/mjerenje-profitabilnosti-projekta/">Kako se mjeri profitabilnost projekta? →</a>
+  <a href="../../../bs/blog/softver-za-upravljanje-zadacima/">Zašto poslovi ostaju bez praćenja? Softver za upravljanje zadacima →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Besplatan izvještaj o digitalizaciji</h3>
+  <p>Opišite svoje poslovanje u nekoliko koraka, a mi ćemo vam e-mailom poslati izvještaj o tome koji softver vam treba za koji posao i odakle početi.</p></div>
+  <a href="../../../bs/besplatan-izvjestaj-digitalizacija/" class="btn btn-primary">Zatražite izvještaj</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Zatvori">×</button>
+    <h2 id="penBaslik">Preuzmite šablon</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Ime i prezime *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Firma *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">E-mail *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefon</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Djelatnost</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Odaberite</option><option value="Üretim">Proizvodnja</option><option value="Proje / taahhüt / inşaat">Projekti / izvođenje radova / građevina</option><option value="Mühendislik / mimarlık">Inženjering / arhitektura</option><option value="Ticaret / dağıtım">Trgovina / distribucija</option><option value="Hizmet">Usluge</option><option value="Diğer">Ostalo</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Broj zaposlenih</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Odaberite</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Šta biste željeli dodati</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span>Pročitao/la sam <a href="../../../bs/privatnost/" target="_blank" rel="noopener">obavještenje o privatnosti</a>. Dajem izričit pristanak da se moji podaci obrađuju radi kontakta sa mnom i da se putem pružalaca usluga prenose u inostranstvo.</span></label>
+    <div class="hp" aria-hidden="true"><label>Ovo polje ostavite prazno<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Preuzmi</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Preuzmite šablon</span>
+    <span data-k="fIndMetin">Ostavite svoje podatke i preuzimanje počinje odmah. Pitamo kako bismo vas mogli obavijestiti kada izađu novi šabloni i alati i odgovoriti na vaša pitanja.</span>
+    <span data-k="fIndDugme">Pošalji podatke i preuzmi</span>
+    <span data-k="fDegBaslik">Pogledajmo vaš rezultat zajedno</span>
+    <span data-k="fDegMetin">Ostavite svoje podatke; brojke koje ste unijeli i rezultat stići će do nas, a mi ćemo vam se javiti u roku od jednog radnog dana. Besplatno i bez obaveze.</span>
+    <span data-k="fDegDugme">Pošalji</span>
+    <span data-k="fEksik">Molimo upišite ime i prezime, firmu i ispravnu e-mail adresu i označite polje za saglasnost.</span>
+    <span data-k="fRobot">Molimo označite polje „Nisam robot“.</span>
+    <span data-k="fGonder">Šaljemo…</span>
+    <span data-k="fIndOk">Hvala, preuzimanje je počelo. Ako nije, preuzmite ovdje:</span>
+    <span data-k="fIndLink">Preuzmi Excel fajl</span>
+    <span data-k="fDegOk">Hvala, vaši podaci i rezultat su stigli do nas. Javit ćemo vam se u roku od jednog radnog dana.</span>
+    <span data-k="fHata">Došlo je do greške. Molimo pokušajte ponovo ili pišite na info@vohdigital.com.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Dizajn &amp; softver. · <a href="../../../bs/privatnost/">Privatnost</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../bs/">Početna</a>
+      <a href="../../../bs/alati/">Alati</a>
+      <a href="../../../bs/blog/">Blog</a>
+      <a href="../../../bs/kontakt/">Kontakt</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>

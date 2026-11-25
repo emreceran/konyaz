@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="mk" dir="ltr"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>ERP и следење на производство за фирми | Konyaz</title>
+<meta name="description" content="Odoo ERP за производни фирми: производство по проект, работен налог, MRP, норматив (BOM), испорака и монтажа, контролна табла за производство.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/mk/resenija/proizvodstvo/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ERP и следење на производство за производни фирми">
+<meta property="og:description" content="Производство по проект, работен налог, MRP, следење на испорака и монтажа, контролна табла. Со Odoo.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/mk/resenija/proizvodstvo/">
+<meta property="og:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png">
+<meta property="og:site_name" content="Konyaz"><meta property="og:locale" content="mk_MK">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ERP и следење на производство за производни фирми">
+<meta name="twitter:description" content="Производство по проект, работен налог, MRP, следење на испорака и монтажа, контролна табла. Со Odoo.">
+<meta name="twitter:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"Üretim ERP ve Üretim Takibi Çözümü","provider":{"@type":"Organization","name":"Konyaz","url":"https://emreceran.github.io/konyaz/mk/"},"areaServed":{"@type":"Country","name":"Северна Македонија"},"description":"Odoo ERP за производни фирми: производство по проект, работен налог, MRP, норматив (BOM), испорака и монтажа, контролна табла за производство.","url":"https://emreceran.github.io/konyaz/mk/resenija/proizvodstvo/","inLanguage":"mk"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Почетна","item":"https://emreceran.github.io/konyaz/mk/"},{"@type":"ListItem","position":2,"name":"Решенија","item":"/#isler"},{"@type":"ListItem","position":3,"name":"Производство","item":"https://emreceran.github.io/konyaz/mk/resenija/proizvodstvo/"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Произведуваме по проект (по нарачка), дали е соодветно?","acceptedAnswer":{"@type":"Answer","text":"Да, токму тоа е нашата специјалност. Го поставуваме така што секоја работа/проект можете да ја планирате и да ѝ ги пресметате трошоците одделно."}},{"@type":"Question","name":"Како ќе внесуваме податоци од погонот?","acceptedAnswer":{"@type":"Answer","text":"Статусот на работниот налог и движењето на материјалот се внесуваат од терен/погон преку мобилна апликација или терминал; веднаш се книжат во ERP."}},{"@type":"Question","name":"Во кои производни дејности имате искуство?","acceptedAnswer":{"@type":"Answer","text":"Имаме воведувања од почеток до крај во изработка по проект, пред сè кај префабрикувани објекти и производство на врати."}},{"@type":"Question","name":"Дали работи со нашите постојни машини/системи за податоци?","acceptedAnswer":{"@type":"Answer","text":"Интеграцијата ја поставуваме според вашите процеси; ги пренесуваме постојните податоци и ги обезбедуваме потребните врски."}}],"inLanguage":"mk"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#FFFFFF;--surface:#FFFFFF;--surface2:#F5F7FA;--border:#E6EAF0;--text:#0F172A;--muted:#5B6575;
+    --accent:#1A9AA0;--accent2:#13294B;--grad:linear-gradient(135deg,#13294B 0%,#1A9AA0 100%);
+    --shadow:0 1px 3px rgba(15,23,42,.05),0 4px 16px rgba(15,23,42,.04);--shadow-lg:0 16px 40px rgba(26,154,160,.14);}
+  *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'Inter','Segoe UI',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .accent{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1,h2,h3,.logo{font-family:'Archivo','Inter',sans-serif}
+  header{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);background:rgba(255,255,255,.72);border-bottom:1px solid transparent;transition:.3s}
+  header.scrolled{border-bottom-color:var(--border);background:rgba(255,255,255,.92);box-shadow:0 1px 12px rgba(15,23,42,.05)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:72px;position:relative}
+  .logo{font-weight:700;font-size:1.35rem;display:flex;align-items:center;gap:10px}.logo-img{height:44px;display:block}
+  .nav-links{display:flex;gap:30px;font-size:.94rem;color:var(--muted);position:absolute;left:50%;transform:translateX(-50%)}.nav-links a:hover{color:var(--text)}
+  .btn{display:inline-block;padding:13px 26px;border-radius:11px;font-weight:600;font-size:.94rem;transition:.22s;border:1px solid transparent;cursor:pointer}
+  .btn-primary{background:var(--grad);color:#fff}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(26,154,160,.28)}
+  .btn-ghost{border-color:var(--border);color:var(--text)}.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+  @media(max-width:820px){.nav-links{display:none}}
+  .hero{position:relative;padding:170px 0 80px;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-20%;right:-10%;width:700px;height:700px;background:radial-gradient(circle,rgba(19,41,75,.09),transparent 60%);filter:blur(30px)}
+  .hero .wrap{position:relative;z-index:1;max-width:860px}
+  .crumb{font-size:.85rem;color:var(--muted);margin-bottom:22px}.crumb a:hover{color:var(--accent)}
+  .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid var(--border);border-radius:999px;font-size:.83rem;color:var(--muted);margin-bottom:24px;background:#F1F5F9}
+  .badge b{color:var(--accent)}
+  .hero h1{font-size:clamp(2.2rem,5.5vw,3.8rem);font-weight:700;letter-spacing:-.03em;line-height:1.06;margin-bottom:22px}
+  .hero .lead{font-size:clamp(1.05rem,2.2vw,1.32rem);color:var(--muted);max-width:640px;margin-bottom:34px}
+  .cta{display:flex;gap:14px;flex-wrap:wrap}
+  section{padding:88px 0}
+  .sec-head{max-width:680px;margin-bottom:52px}.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .kicker{color:var(--accent);font-weight:600;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+  .sec-head h2{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:700;letter-spacing:-.02em;margin:12px 0 16px}
+  .sec-head p{color:var(--muted);font-size:1.08rem}
+  .prose{max-width:760px;color:#334155;font-size:1.06rem}.prose p{margin-bottom:18px}.prose strong{color:var(--text)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+  .card{padding:30px 28px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:var(--shadow);transition:.25s}
+  .card:hover{transform:translateY(-4px);border-color:var(--accent2);box-shadow:var(--shadow-lg)}
+  .card .ic{width:48px;height:48px;border-radius:12px;background:rgba(26,154,160,.08);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .card .ic svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:1.6}
+  .card h3{font-size:1.18rem;margin-bottom:9px}.card p{color:var(--muted);font-size:.96rem}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  @media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.steps{grid-template-columns:1fr}}
+  .step{padding:28px 22px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:var(--shadow)}
+  .step .n{font-family:'Archivo';font-size:2.2rem;font-weight:700;color:transparent;background:var(--grad);-webkit-background-clip:text;background-clip:text;margin-bottom:10px}
+  .step h3{font-size:1.1rem;margin-bottom:8px}.step p{color:var(--muted);font-size:.92rem}
+  .check{list-style:none;max-width:760px}
+  .check li{padding:12px 0 12px 30px;position:relative;border-bottom:1px solid var(--border);color:#334155}
+  .check li::before{content:"✓";position:absolute;left:0;top:12px;color:var(--accent);font-weight:800}.check li b{color:var(--text)}
+  .faq{max-width:820px}
+  .faq details{border:1px solid var(--border);border-radius:14px;padding:4px 22px;margin-bottom:14px;background:var(--surface)}
+  .faq summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none;font-size:1.05rem}
+  .faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";float:right;color:var(--accent);font-weight:700}
+  .faq details[open] summary::after{content:"–"}.faq p{color:var(--muted);padding:0 0 18px;font-size:.98rem}
+  .related{display:flex;flex-wrap:wrap;gap:12px}
+  .related a{padding:10px 18px;border:1px solid var(--border);border-radius:10px;background:var(--surface2);font-size:.92rem;font-weight:500;color:var(--text)}
+  .related a:hover{border-color:var(--accent);color:var(--accent)}
+  .cta-band{background:linear-gradient(135deg,rgba(19,41,75,.06),rgba(26,154,160,.05));border:1px solid var(--border);border-radius:28px;padding:64px 40px;text-align:center}
+  .cta-band h2{font-size:clamp(1.9rem,5vw,3rem);font-weight:700;margin-bottom:16px;letter-spacing:-.02em}
+  .cta-band p{color:var(--muted);max-width:520px;margin:0 auto 30px;font-size:1.08rem}
+  footer{border-top:1px solid var(--border);padding:56px 0 40px}
+  .foot{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+  .foot .col h4{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+  .foot .col a{display:block;color:var(--muted);padding:5px 0;font-size:.94rem}.foot .col a:hover{color:var(--accent)}
+  .foot-brand{max-width:280px}.foot-brand p{color:var(--muted);font-size:.92rem;margin-top:14px}
+  .copyright{text-align:center;color:var(--muted);font-size:.85rem;margin-top:44px;padding-top:28px;border-top:1px solid var(--border)}
+  .reveal{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}.reveal.show{opacity:1;transform:none}
+  .nav-links{align-items:center}
+  .nav-item{position:relative}
+  .nav-item>a{display:inline-flex;align-items:center;height:72px;cursor:pointer}
+  .dropdown{position:absolute;top:64px;left:-14px;min-width:240px;background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow-lg);padding:10px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s;z-index:60}
+  .nav-item:hover .dropdown{opacity:1;visibility:visible;transform:none}
+  .dropdown a{display:block;padding:9px 14px;border-radius:9px;color:var(--text);font-size:.9rem;white-space:nowrap}
+  .dropdown a:hover{background:var(--surface2);color:var(--accent)}
+
+/*yol*/.yol{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:18px}.yol a{display:flex;flex-direction:column;padding:24px 22px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--shadow);transition:.2s}.yol a:hover{border-color:var(--accent2);transform:translateY(-3px)}.yol .t{font-weight:600;font-size:1.06rem;margin-bottom:6px;color:var(--text)}.yol .d{color:var(--muted);font-size:.94rem;flex:1}.yol .ok{color:var(--accent);font-weight:600;font-size:.9rem;margin-top:14px}/*/yol*/
+</style>
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/cozumler/uretim/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/solutions/manufacturing/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/heller/istehsal/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/solutions/manufacturing/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/rjesenja/proizvodnja/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/rjesenja/proizvodnja/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/zgjidhje/prodhim/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/resenija/proizvodstvo/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/solutions/manufacturing/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+h1,h2,h3,.logo{font-family:'Inter','Segoe UI',system-ui,sans-serif}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head><body>
+<header id="hdr"><div class="wrap"><nav>
+  <a href="../../../mk/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo.svg" alt="Konyaz"></a>
+  <div class="nav-links">
+  <div class="nav-item"><a href="../../../mk/#hizmetler">Услуги ▾</a><div class="dropdown">
+    <a href="../../../mk/uslugi/odoo-erp/">Odoo ERP консалтинг</a>
+    <a href="../../../mk/uslugi/odoo-moduli-po-merka/">Odoo модули по мерка</a>
+    <a href="../../../mk/uslugi/odoo-mobilna-aplikacija/">Odoo мобилна апликација</a>
+    <a href="../../../mk/uslugi/aplikacija-za-terenska-prodazba/">Апликација за теренска продажба</a>
+    <a href="../../../mk/uslugi/magacin-barkod/">Магацин & баркод</a>
+    <a href="../../../mk/uslugi/zadaci-crm/">Задачи & CRM</a>
+    <a href="../../../mk/uslugi/erp-resenija/">ERP решенија</a>
+    <a href="../../../mk/uslugi/digitalna-transformacija/">Дигитална трансформација</a></div></div>
+  <div class="nav-item"><a href="../../../mk/#isler">Решенија ▾</a><div class="dropdown">
+    <a href="../../../mk/resenija/proizvodstvo/">ERP за производство</a>
+    <a href="../../../mk/resenija/inzenering/">Инженеринг & изведба</a>
+    <a href="../../../mk/resenija/arhitektura/">Архитектура</a></div></div>
+  <a href="../../../mk/referenci/">Референци</a>
+  <a href="../../../mk/alatki/">Алатки</a>
+  <a href="../../../mk/blog/">Блог</a>
+  <a href="../../../mk/kontakt/">Контакт</a>
+</div>
+  <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">MK ▾</summary><div><a href="../../../cozumler/uretim/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/solutions/manufacturing/" hreflang="en" lang="en">English</a><a href="../../../az/heller/istehsal/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/solutions/manufacturing/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/rjesenja/proizvodnja/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/rjesenja/proizvodnja/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/zgjidhje/prodhim/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/resenija/proizvodstvo/" hreflang="mk" lang="mk" aria-current="true">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../mk/kontakt/" class="btn btn-primary" style="padding:10px 22px">Побарај понуда</a>
+</nav></div></header>
+
+<div class="hero"><div class="wrap">
+  <div class="crumb"><a href="../../../mk/">Почетна</a> › <a href="../../../mk/#isler">Решенија</a> › Производство</div>
+  <span class="badge"><b>Производство & MRP</b> · изработка по проект</span>
+  <h1><span class="accent">ERP</span> за производни фирми</h1>
+  <p class="lead">Од работен налог до испорака, од материјал до монтажа, целото производство го следиме во еден систем. Odoo решенија докажани кај фирми што произведуваат по проект.</p>
+  <div class="cta"><a href="../../../mk/kontakt/" class="btn btn-primary">Да разговараме за вашиот проект</a>
+    <a href="#neler" class="btn btn-ghost">Што содржи?</a></div>
+</div></div>
+
+<section style="padding-top:20px"><div class="wrap"><div class="prose reveal">
+<p><strong>Најскапото нешто во производството е невидливоста.</strong> Која работа каде е, кој материјал недостига, кога е испораката — ако тоа е расфрлано на хартија и во Excel, доцнењата и трошоците излегуваат од контрола.</p><p>Вашето производство го моделираме во Odoo <strong>по проект</strong>: работен налог, норматив (BOM), фази на производство, испорака и монтажа во еден тек. Мобилни податоци од погонот, а за раководството <strong>контролна табла за производство во живо.</strong> Го воведовме од почеток до крај кај производители на префабрикувани елементи и кај фирми за изработка по нарачка.</p>
+</div></div></section>
+
+<section id="neler" style="background:var(--surface2)"><div class="wrap">
+  <div class="sec-head center reveal"><div class="kicker">Можности</div>
+    <h2>Следење на производството од почеток до крај</h2><p>Прегледност во еден систем, од нарачка до монтажа.</p></div>
+  <div class="grid"><div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 12 15 2 8.5 12 2"/><polyline points="2 15.5 12 22 22 15.5"/></svg></div><h3>Производство по проект</h3><p>Секоја работа/проект планирајте ја и следете ја одделно.</p></div>
+<div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Работен налог &amp; MRP</h3><p>Работни налози, планирање на потребите од материјал и работни места.</p></div>
+<div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><line x1="12" y1="13" x2="12" y2="21"/></svg></div><h3>Материјал &amp; BOM</h3><p>Норматив (BOM), резервација на залиха и предупредување за материјал што недостига.</p></div>
+<div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="13" height="10" rx="1"/><path d="M14 9h4l3 3v4h-7z"/><circle cx="6" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg></div><h3>Испорака &amp; монтажа</h3><p>Следење од производство до испорака и до статусот на монтажата на терен.</p></div>
+<div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="20" y2="20"/><rect x="6" y="11" width="3" height="7"/><rect x="11" y="6" width="3" height="12"/><rect x="16" y="9" width="3" height="9"/></svg></div><h3>Контролна табла за производство</h3><p>Табла во живо: која работа каде е, зафатеност и доцнења.</p></div>
+<div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg></div><h3>Трошоци &amp; профитабилност</h3><p>Анализа на вистинскиот трошок и добивката по проект.</p></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker">Како функционира</div>
+    <h2>Се поставува според вашето производство</h2><p>Не готов калап; моделираме според вашиот тек на производство.</p></div>
+  <div class="steps"><div class="step reveal"><div class="n">01</div><h3>Анализа на процесот</h3><p>Го утврдуваме вашиот тек на производство и тесните грла.</p></div>
+<div class="step reveal"><div class="n">02</div><h3>Odoo MRP + по мерка</h3><p>Го поставуваме MRP и ги додаваме модулите специфични за вас.</p></div>
+<div class="step reveal"><div class="n">03</div><h3>Мобилно од погон</h3><p>Поврзуваме мобилен внес на податоци од погонот и теренот.</p></div>
+<div class="step reveal"><div class="n">04</div><h3>Контролна табла</h3><p>Табла за производство и профитабилност во живо за раководството.</p></div></div>
+</div></section>
+
+<section style="background:var(--surface2)"><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker">Зошто Konyaz</div><h2>Зошто со нас во производството?</h2></div>
+  <ul class="check reveal"><li><b>Вистински референци од производство:</b> воведовме Odoo од почеток до крај кај префабрикувани елементи и производство на врати.</li><li><b>Искуство со работа по проект:</b> ги познаваме фирмите што не произведуваат сериски, туку по нарачка/проект.</li><li><b>Погон + канцеларија:</b> мобилни податоци од погонот, табла во живо за раководството — без прекин.</li><li><b>Модули по мерка:</b> каде што стандардниот MRP не е доволен, дополнуваме со модул по мерка.</li><li><b>Без трошок за лиценци:</b> врз Odoo Community, во ваша сопственост.</li></ul>
+</div></section>
+
+
+<!-- yol:sektor -->
+<section><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker">Примери од праксата</div><h2>Нашата работа во производството</h2><p>Системите што ги изградивме работат во реална употреба. Во студиите на случај опишавме како настанаа.</p></div>
+  <div class="yol reveal">
+    <a href="../../../mk/studija-na-slucaj/yuzbasigil-odoo-proizvodstvo/"><span class="t">Yüzbaşıgil Prefabrik</span><span class="d">Проектно производство на монтажни елементи: нарачки, план на калапи, производство и испорака во еден тек во Odoo.</span><span class="ok">Прочитајте ја студијата на случај →</span></a>
+    <a href="../../../mk/studija-na-slucaj/mes-muhendislik-odoo-smetkovodstvo/"><span class="t">MES Mühendislik</span><span class="d">ERP што останал на стара верзија е префрлен на актуелната; сметководство и следење проекти во еден систем.</span><span class="ok">Прочитајте ја студијата на случај →</span></a>
+    <a href="../../../mk/referenci/"><span class="t">Сите референци</span><span class="d">Фирми и институции со кои соработуваме.</span><span class="ok">Погледнете ги референците →</span></a>
+  </div>
+</div></section>
+<!-- /yol:sektor -->
+
+<section><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker">Чести прашања</div><h2>За ERP за производство</h2></div>
+  <div class="faq reveal"><details><summary>Произведуваме по проект (по нарачка), дали е соодветно?</summary><p>Да, токму тоа е нашата специјалност. Го поставуваме така што секоја работа/проект можете да ја планирате и да ѝ ги пресметате трошоците одделно.</p></details>
+<details><summary>Како ќе внесуваме податоци од погонот?</summary><p>Статусот на работниот налог и движењето на материјалот се внесуваат од терен/погон преку мобилна апликација или терминал; веднаш се книжат во ERP.</p></details>
+<details><summary>Во кои производни дејности имате искуство?</summary><p>Имаме воведувања од почеток до крај во изработка по проект, пред сè кај префабрикувани објекти и производство на врати.</p></details>
+<details><summary>Дали работи со нашите постојни машини/системи за податоци?</summary><p>Интеграцијата ја поставуваме според вашите процеси; ги пренесуваме постојните податоци и ги обезбедуваме потребните врски.</p></details></div>
+</div></section>
+
+<section style="background:var(--surface2);padding:64px 0"><div class="wrap">
+  <div class="sec-head reveal" style="margin-bottom:26px"><div class="kicker">Поврзани содржини</div>
+    <h2 style="font-size:clamp(1.5rem,3vw,2rem)">Повеќе</h2></div>
+  <div class="related reveal"><a href="../../../mk/blog/softver-za-upravuvanje-so-proizvodstvo/">Кога станува потребен софтвер за управување со производство?</a><a href="../../../mk/blog/sledenje-proizvodstvo-po-proekt/">Производство &amp; следење по проект</a>
+<a href="../../../mk/blog/inzenering-profitabilnost-na-proekt/">Профитабилност на проект</a>
+<a href="../../../mk/uslugi/erp-resenija/">ERP решенија</a>
+<a href="../../../mk/blog/odoo-community-cena/">Цена на Odoo Community</a></div>
+</div></section>
+
+<section><div class="wrap"><div class="cta-band reveal">
+  <div class="kicker">Да почнеме</div><h2>Да го <span class="accent">направиме видливо вашето производство.</span></h2><p>Ќе го сослушаме вашиот тек на производство и ќе го поставиме системот што ви одговара. Првиот разговор е бесплатен.</p>
+  <div class="cta" style="justify-content:center">
+    <a href="../../../mk/kontakt/" class="btn btn-primary">Контактирајте нè</a>
+    <a href="mailto:info@vohdigital.com" data-umami-event="eposta-tikla" class="btn btn-ghost">info@vohdigital.com</a></div>
+</div></div></section>
+
+<footer><div class="wrap"><div class="foot">
+  <div class="foot-brand"><a href="../../../mk/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo.svg" alt="Konyaz"></a>
+    <p>Дигитални решенија од почеток до крај за ERP, мобилни апликации и веб. Од идеја до производ, на едно место.</p></div>
+  <div class="col"><h4>Услуги</h4>
+        <a href="../../../mk/uslugi/odoo-erp/">Odoo ERP консалтинг</a>
+        <a href="../../../mk/uslugi/odoo-moduli-po-merka/">Odoo модули по мерка</a>
+        <a href="../../../mk/uslugi/odoo-mobilna-aplikacija/">Odoo мобилна апликација</a>
+        <a href="../../../mk/uslugi/aplikacija-za-terenska-prodazba/">Апликација за теренска продажба</a>
+        <a href="../../../mk/uslugi/magacin-barkod/">Магацин & баркод</a>
+        <a href="../../../mk/uslugi/zadaci-crm/">Задачи & CRM</a>
+        <a href="../../../mk/uslugi/erp-resenija/">ERP решенија</a>
+        <a href="../../../mk/uslugi/digitalna-transformacija/">Дигитална трансформација</a></div>
+  <div class="col"><h4>Решенија</h4>
+        <a href="../../../mk/resenija/proizvodstvo/">ERP за производство</a>
+        <a href="../../../mk/resenija/inzenering/">Инженеринг & изведба</a>
+        <a href="../../../mk/resenija/arhitektura/">Архитектура</a></div>
+  <div class="col"><h4>Компанија</h4><a href="../../../mk/#surec">Процес</a><a href="../../../mk/#neden">Зошто ние</a>
+    <a href="../../../mk/#isler">Проекти</a><a href="../../../mk/blog/">Блог</a></div>
+  <div class="col"><h4>Контакт</h4>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=İçerenköy+Eryılmazlar+Sokak+No+3+Ataşehir+İstanbul" target="_blank" rel="noopener">İçerenköy, Eryılmazlar Sk.<br>No:3 D:11, 34752 Ataşehir/İstanbul</a>
+    <a href="mailto:info@vohdigital.com" data-umami-event="eposta-tikla">info@vohdigital.com</a><a href="../../../mk/kontakt/">Страница за контакт</a></div>
+</div><div class="copyright">© 2026 Konyaz — Сите права се задржани. Дизајн & софтвер. · <a href="../../../mk/privatnost/">Приватност</a></div></div></footer>
+<script>
+  const hdr=document.getElementById('hdr');
+  addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>

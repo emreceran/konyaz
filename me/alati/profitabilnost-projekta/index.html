@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="sr-Latn-ME" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Kalkulator profitabilnosti projekta | Konyaz</title>
+<meta name="description" content="Unesite iznos ponude, materijal, sate rada i opšte troškove; vidite prividni i stvarni profit posla i koliko sati možete raditi bez gubitka.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/me/alati/profitabilnost-projekta/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kalkulator profitabilnosti projekta | Konyaz">
+<meta property="og:description" content="Unesite iznos ponude, materijal, sate rada i opšte troškove; vidite prividni i stvarni profit posla i koliko sati možete raditi bez gubitka.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/me/alati/profitabilnost-projekta/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="sr_ME">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kalkulator profitabilnosti projekta | Konyaz">
+<meta name="twitter:description" content="Unesite iznos ponude, materijal, sate rada i opšte troškove; vidite prividni i stvarni profit posla i koliko sati možete raditi bez gubitka.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Kalkulator profitabilnosti projekta","description":"Unesite iznos ponude, materijal, sate rada i opšte troškove; vidite prividni i stvarni profit posla i koliko sati možete raditi bez gubitka.","url":"https://emreceran.github.io/konyaz/me/alati/profitabilnost-projekta/","inLanguage":"sr-Latn-ME","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Koliki udio opštih troškova da upišem?","acceptedAnswer":{"@type":"Answer","text":"Saberite prošlogodišnje troškove koji se ne knjiže direktno na projekte, kao što su zakup, kancelarijsko osoblje, vozila i softver, pa ih podijelite sa godišnjim prometom. Dobijeni procenat je vaš udio opštih troškova. Ako ga ne znate, počnite sa 10–15% i rezultat provjerite i sa 20%."}},{"@type":"Question","name":"Gdje da nađem trošak radnog sata?","acceptedAnswer":{"@type":"Answer","text":"Ukupni godišnji trošak zaposlenog treba podijeliti sa brojem sati koji se tokom godine zaista mogu knjižiti na posao. Kalkulator troška radnog sata to računa i rezultat prenosi ovdje."}},{"@type":"Question","name":"Zašto je razlika između prividnog i stvarnog profita tako velika?","acceptedAnswer":{"@type":"Answer","text":"Troškovi za koje stiže faktura (materijal, podizvođači, prevoz) lako se vide. Sati koje vaš tim potroši na posao i opšti troškovi firme ne dolaze sa fakturom i često uopšte ne uđu u računicu. Razlika su upravo ove dvije stavke."}},{"@type":"Question","name":"Da li se brojke koje unesem negdje šalju?","acceptedAnswer":{"@type":"Answer","text":"Ne, osim ako ih sami ne pošaljete. Obračun se radi u potpunosti u vašem pregledaču i ne čuva se. Brojke do nas stižu samo ako popunite i pošaljete obrazac „Procijenite moj rezultat“, kako bismo vam se mogli javiti."}}],"inLanguage":"sr-Latn-ME"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/proje-karliligi/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/project-profitability/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/layihe-gelirliliyi/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/project-profitability/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/profitabilnost-projekta/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/profitabilnost-projekta/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/perfitueshmeria-e-projektit/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/profitabilnost-na-proekt/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/project-profitability/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../me/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../me/#hizmetler">Usluge</a>
+        <a href="../../../me/#neden">Zašto mi</a>
+        <a href="../../../me/#isler">Radovi</a>
+        <a href="../../../me/alati/" class="active">Alati</a>
+        <a href="../../../me/blog/">Blog</a>
+        <a href="../../../me/kontakt/">Kontakt</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">ME ▾</summary><div><a href="../../../araclar/proje-karliligi/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/project-profitability/" hreflang="en" lang="en">English</a><a href="../../../az/aletler/layihe-gelirliliyi/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/tools/project-profitability/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/profitabilnost-projekta/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/alati/profitabilnost-projekta/" hreflang="sr-ME" lang="sr-Latn-ME" aria-current="true">Crnogorski</a><a href="../../../sq/mjete/perfitueshmeria-e-projektit/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/alatki/profitabilnost-na-proekt/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../me/kontakt/" class="btn btn-primary">Zatražite ponudu</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../me/alati/" class="back">← Svi alati</a>
+  <div class="kicker" style="margin-top:22px">Besplatan alat</div>
+  <h1>Kalkulator profitabilnosti projekta</h1>
+  <p class="lead">Unesite iznos ponude i troškove posla. Alat jedno pored drugog pokazuje prividni profit, kad se gledaju samo troškovi sa fakturom, i stvarni profit koji ostaje kad se dodaju sati tima i opšti troškovi.</p>
+  <div class="tgrid">
+    <form class="panel" id="pk" onsubmit="return false">
+      <h2>Brojke posla</h2>
+      <div class="alan"><label for="tutar">Iznos ponude / ugovora</label><div class="girdi"><input id="tutar" type="number" inputmode="decimal" min="0" step="any"><span>¤ · bez PDV-a</span></div></div>
+      <div class="iki">
+        <div class="alan"><label for="malzeme">Materijal i nabavka</label><div class="girdi"><input id="malzeme" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div></div>
+        <div class="alan"><label for="taseron">Podizvođači i spoljne usluge</label><div class="girdi"><input id="taseron" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div></div>
+      </div>
+      <div class="alan"><label for="diger">Ostali direktni troškovi</label><div class="girdi"><input id="diger" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Troškovi vezani samo za ovaj posao: prevoz, put, smještaj, iznajmljena oprema.</small></div>
+      <div class="iki">
+        <div class="alan"><label for="saat">Sati koje je tim potrošio na ovaj posao</label><div class="girdi"><input id="saat" type="number" inputmode="decimal" min="0" step="any"><span>sati</span></div><small>Zbir za sve zaposlene.</small></div>
+        <div class="alan"><label for="saatMaliyet">Trošak jednog radnog sata</label><div class="girdi"><input id="saatMaliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤/sat</span></div><small>Ako ga ne znate, izračunajte ga <a href="../../../me/alati/trosak-radnog-sata/" style="color:var(--accent)">kalkulatorom troška radnog sata</a>.</small></div>
+      </div>
+      <div class="alan"><label for="genel">Udio opštih troškova</label><div class="girdi"><input id="genel" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Udio troškova kao što su zakup, kancelarija, uprava i vozila u prometu.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Rezultat</h2>
+      <div class="buyuk">
+        <div class="kutu"><div class="ad">Prividni profit<br>(samo troškovi sa fakturom)</div><div class="deger" id="gorunen">–</div><div class="alt" id="gorunenMarj"></div></div>
+        <div class="kutu ana"><div class="ad">Stvarni profit<br>(sa satima tima i opštim troškovima)</div><div class="deger" id="gercek">–</div><div class="alt" id="gercekMarj"></div></div>
+      </div>
+      <div class="serit" id="serit"></div>
+      <div class="lejant"><span><b style="background:#1A9AA0"></b>Materijal</span><span><b style="background:#45C4C6"></b>Podizvođači</span><span><b style="background:#94A3B8"></b>Ostalo</span><span><b style="background:#F59E0B"></b>Sati tima</span><span><b style="background:#7FA3C7"></b>Opšti troškovi</span><span><b style="background:#34D399"></b>Profit</span></div>
+      <p class="yorum" id="pkYorum"></p>
+      <div class="satir"><span>Najviše sati koje možete raditi bez gubitka</span><b id="basabas">–</b></div>
+      <div class="satir"><span>Koliko donosi svaki sat rada na ovom poslu</span><b id="saatKazanc">–</b></div>
+      <div class="satir"><span>Stvarni profit ako se rad produži za 20%</span><b id="sapma">–</b></div>
+      <p class="not">Obračun se radi u vašem pregledaču; vaše brojke nigdje ne idu ako ih sami ne pošaljete.</p>
+    </section>
+  </div>
+  <div class="indir"><p><strong>Za praćenje svih vaših projekata</strong>Excel šablon sa budžetom i ostvarenjem po projektu, evidencijom sati i troškova i upozorenjem na odstupanje.</p><a class="btn btn-cizgi" href="../../../araclar/sablonlar/proje-karlilik-takibi-tr.xlsx" data-en-href="../../../araclar/sablonlar/proje-karlilik-takibi-en.xlsx" download>Preuzmi Excel šablon</a></div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Što ovaj rezultat znači za vas?</h3>
+  <p>Pošaljite nam svoje brojke i rezultat; pregledaćemo ih i javiti vam se u roku od jednog radnog dana. Besplatno i bez obaveze.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Procijenite moj rezultat</button>
+</div></div>
+<div id="metin" hidden><span data-k="marj">marža {m}</span><span data-k="saatDeger">{s} sati</span><span data-k="yok">ne može se izračunati</span><span data-k="yZarar">Ovaj posao donosi gubitak. Kad se gledaju samo troškovi sa fakturom, izgleda profitabilno; kad se dodaju sati tima i opšti troškovi, nastaje razlika od {f} i profit pada u minus.</span><span data-k="yInce">Profita ima, ali je tanak: stvarna marža je {m}. Razlika od {f} u odnosu na prividni profit dolazi od sati tima i opštih troškova. Ako se rad malo produži, profit se brzo topi.</span><span data-k="yIyi">Ovaj posao donosi profit, stvarna marža je {m}. Ipak, razlika od {f} u odnosu na prividni profit pokazuje koliko zavarava računica bez sati tima.</span></div>
+
+<section class="aciklama">
+  <h2>Kako se računa?</h2>
+  <p>Većina firmi koje rade po projektima računa profit posla tako što od iznosa ponude oduzme fakture za materijal i podizvođače. Ta brojka zavarava, jer sati vašeg tima koji radi posao i opšti troškovi koji drže firmu ne dolaze sa fakturom.</p>
+  <ul>
+    <li><strong>Prividni profit</strong> = iznos ponude − materijal − podizvođači − ostali direktni troškovi</li>
+    <li><strong>Stvarni profit</strong> = prividni profit − (odrađeni sati × trošak sata) − (iznos ponude × udio opštih troškova)</li>
+    <li><strong>Broj sati koje možete raditi bez gubitka</strong> dobija se kad se iznos koji ostane nakon svih troškova osim sati tima podijeli sa troškom sata. Ako posao pređe taj broj sati, počinje gubitak.</li>
+  </ul>
+  <p>Najviše se griješi u satima. Sati predviđeni u ponudi i sati stvarno potrošeni do kraja posla najčešće nisu isti, a ta razlika se vidi samo ako se sati knjiže na posao. U sistemu u kojem se sati svaki dan knjiže na posao ova slika se može pratiti dok posao traje, a ne tek kad se završi. Više o tome u tekstu <a href="../../../me/blog/mjerenje-profitabilnosti-projekta/">kako mjeriti profitabilnost projekta</a>.</p>
+  <h2>Česta pitanja</h2>
+<h3>Koliki udio opštih troškova da upišem?</h3>
+<p>Saberite prošlogodišnje troškove koji se ne knjiže direktno na projekte, kao što su zakup, kancelarijsko osoblje, vozila i softver, pa ih podijelite sa godišnjim prometom. Dobijeni procenat je vaš udio opštih troškova. Ako ga ne znate, počnite sa 10–15% i rezultat provjerite i sa 20%.</p>
+<h3>Gdje da nađem trošak radnog sata?</h3>
+<p>Ukupni godišnji trošak zaposlenog treba podijeliti sa brojem sati koji se tokom godine zaista mogu knjižiti na posao. <a href="../../../me/alati/trosak-radnog-sata/">Kalkulator troška radnog sata</a> to računa i rezultat prenosi ovdje.</p>
+<h3>Zašto je razlika između prividnog i stvarnog profita tako velika?</h3>
+<p>Troškovi za koje stiže faktura (materijal, podizvođači, prevoz) lako se vide. Sati koje vaš tim potroši na posao i opšti troškovi firme ne dolaze sa fakturom i često uopšte ne uđu u računicu. Razlika su upravo ove dvije stavke.</p>
+<h3>Da li se brojke koje unesem negdje šalju?</h3>
+<p>Ne, osim ako ih sami ne pošaljete. Obračun se radi u potpunosti u vašem pregledaču i ne čuva se. Brojke do nas stižu samo ako popunite i pošaljete obrazac „Procijenite moj rezultat“, kako bismo vam se mogli javiti.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Želite li sve svoje poslove da vidite ovako?</h3>
+    <p>Hajde da zajedno uvedemo sistem u kojem se sati i troškovi knjiže na posao, a profit se vidi dok posao traje.</p>
+    <a href="../../../me/kontakt/" class="btn btn-primary">Razgovarajmo</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Povezani tekstovi</h4>
+  <a href="../../../me/blog/mjerenje-profitabilnosti-projekta/">Kako se mjeri profitabilnost projekta? →</a>
+  <a href="../../../me/blog/izrada-ponude/">Vrijeme i profit koji se gube u izradi ponude →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Besplatan izvještaj o digitalizaciji</h3>
+  <p>Opišite svoje poslovanje u nekoliko koraka, a mi ćemo vam e-mailom poslati izvještaj o tome koji softver vam treba za koji posao i odakle početi.</p></div>
+  <a href="../../../me/besplatan-izvjestaj-digitalizacija/" class="btn btn-primary">Zatražite izvještaj</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Zatvori">×</button>
+    <h2 id="penBaslik">Preuzmite šablon</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Ime i prezime *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Firma *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">E-mail *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefon</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Djelatnost</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Odaberite</option><option value="Üretim">Proizvodnja</option><option value="Proje / taahhüt / inşaat">Projekti / izvođenje radova / građevina</option><option value="Mühendislik / mimarlık">Inženjering / arhitektura</option><option value="Ticaret / dağıtım">Trgovina / distribucija</option><option value="Hizmet">Usluge</option><option value="Diğer">Ostalo</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Broj zaposlenih</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Odaberite</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Što biste željeli dodati</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span>Pročitao/la sam <a href="../../../me/privatnost/" target="_blank" rel="noopener">obavještenje o privatnosti</a>. Dajem izričit pristanak da se moji podaci obrađuju radi kontakta sa mnom i da se putem pružalaca usluga prenose u inostranstvo.</span></label>
+    <div class="hp" aria-hidden="true"><label>Ovo polje ostavite prazno<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Preuzmi</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Preuzmite šablon</span>
+    <span data-k="fIndMetin">Ostavite svoje podatke i preuzimanje počinje odmah. Pitamo da bismo vas mogli obavijestiti kada izađu novi šabloni i alati i odgovoriti na vaša pitanja.</span>
+    <span data-k="fIndDugme">Pošalji podatke i preuzmi</span>
+    <span data-k="fDegBaslik">Hajde da zajedno procijenimo vaš rezultat</span>
+    <span data-k="fDegMetin">Ostavite svoje podatke; brojke koje ste unijeli i rezultat stići će do nas, a mi ćemo vam se javiti u roku od jednog radnog dana. Besplatno i bez obaveze.</span>
+    <span data-k="fDegDugme">Pošalji</span>
+    <span data-k="fEksik">Molimo vas da upišete ime i prezime, firmu i ispravnu e-mail adresu i da označite polje za saglasnost.</span>
+    <span data-k="fRobot">Molimo označite polje „Nisam robot“.</span>
+    <span data-k="fGonder">Šalje se…</span>
+    <span data-k="fIndOk">Hvala, preuzimanje je počelo. Ako nije, preuzmite ovdje:</span>
+    <span data-k="fIndLink">Preuzmi Excel fajl</span>
+    <span data-k="fDegOk">Hvala, vaši podaci i rezultat su stigli do nas. Javićemo vam se u roku od jednog radnog dana.</span>
+    <span data-k="fHata">Došlo je do greške. Molimo pokušajte ponovo ili pišite na info@vohdigital.com.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Dizajn &amp; softver. · <a href="../../../me/privatnost/">Privatnost</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../me/">Početna</a>
+      <a href="../../../me/alati/">Alati</a>
+      <a href="../../../me/blog/">Blog</a>
+      <a href="../../../me/kontakt/">Kontakt</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="sq" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Llogaritësi i kostos për orë të punonjësit (falas) | Konyaz</title>
+<meta name="description" content="Llogaritës falas: kostoja e vërtetë e një ore pune të punonjësit, me kostot e punëdhënësit, shpenzimet shtesë, pushimet dhe kohën e pafaturuar. Me shembull.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/sq/mjete/kosto-per-ore/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Llogaritësi i kostos për orë të punonjësit (falas) | Konyaz">
+<meta property="og:description" content="Llogaritës falas: kostoja e vërtetë e një ore pune të punonjësit, me kostot e punëdhënësit, shpenzimet shtesë, pushimet dhe kohën e pafaturuar. Me shembull.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/sq/mjete/kosto-per-ore/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="sq_AL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Llogaritësi i kostos për orë të punonjësit (falas) | Konyaz">
+<meta name="twitter:description" content="Llogaritës falas: kostoja e vërtetë e një ore pune të punonjësit, me kostot e punëdhënësit, shpenzimet shtesë, pushimet dhe kohën e pafaturuar. Me shembull.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Kalkulator i kostos për orë të punonjësit","description":"Llogaritës falas: kostoja e vërtetë e një ore pune të punonjësit, me kostot e punëdhënësit, shpenzimet shtesë, pushimet dhe kohën e pafaturuar. Me shembull.","url":"https://emreceran.github.io/konyaz/sq/mjete/kosto-per-ore/","inLanguage":"sq","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Si llogaritet kostoja për orë e një punonjësi?","acceptedAnswer":{"@type":"Answer","text":"Ndani koston totale vjetore me orët e regjistruara në punë. Shembull: kostoja mujore e punëdhënësit 40.000, shpenzime shtesë 5.000, 12 paga në vit → 540.000 në vit. 5 ditë dhe 45 orë në javë × 52 = 2.340 orë; pasi zbriten 20 ditë pushime dhe festa (20 × 9 = 180 orë), mbeten 2.160 orë pune; me efikasitet 75%, 1.620 orë regjistrohen në punë. Kostoja për orë është 540.000 ÷ 1.620 ≈ 333, ndërsa llogaritja e shpejtë (paga e ndarë me orët e muajit) tregon vetëm 40.000 ÷ 195 ≈ 205."}},{"@type":"Question","name":"Ku ta gjej koston e punëdhënësit?","acceptedAnswer":{"@type":"Answer","text":"Në listëpagesë ka një shumë totale ku pagës bruto të punonjësit i shtohen kontributet shoqërore të punëdhënësit dhe detyrimet e tjera ligjore. Merrni nga kontabilisti ose nga programi i pagave rreshtin \"kostoja totale për punëdhënësin\". Nëse nuk e dini, mund të nisni me rreth 1,2 herë pagën bruto."}},{"@type":"Question","name":"Çfarë do të thotë shkalla e punës produktive?","acceptedAnswer":{"@type":"Answer","text":"Jo gjithë orari i punës mund t'i ngarkohet një pune: mbledhje, udhëtime, pritje, trajnime, punë zyre. Në terren dhe në punishte kjo shkallë zakonisht është 70–80%, në punët kryesisht zyre më e ulët. Nëse orët nuk i ngarkoni punëve, 75% është një pikënisje e arsyeshme."}},{"@type":"Question","name":"Pse nuk mjafton të pjesëtosh pagën me orët e muajit?","acceptedAnswer":{"@type":"Answer","text":"Ajo llogari lë jashtë shpenzimet shtesë, lejet, festat zyrtare dhe kohën që nuk i ngarkohet asnjë pune. Rezultati del më i ulët se në të vërtetë; oferta e bërë me këtë shifër të ulët lë më pak fitim se sa pritej kur mbaron puna."}},{"@type":"Question","name":"Si ta llogaris mesataren e ekipit?","acceptedAnswer":{"@type":"Answer","text":"Pjesëtoni me numrin e njerëzve koston totale mujore të punëdhënësit dhe shpenzimet shtesë totale të ekipit dhe llogaritni për një punonjës mesatar. Nëse diferenca mes mjeshtërve dhe ndihmësve është e madhe, bëni dy llogari të veçanta."}}],"inLanguage":"sq"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/saat-maliyeti/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/hourly-cost/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/saatliq-maya-deyeri/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/hourly-cost/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/trosak-radnog-sata/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/trosak-radnog-sata/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/kosto-per-ore/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/trosok-po-raboten-cas/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/hourly-cost/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../sq/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../sq/#hizmetler">Shërbimet</a>
+        <a href="../../../sq/#neden">Pse ne</a>
+        <a href="../../../sq/#isler">Punët</a>
+        <a href="../../../sq/mjete/" class="active">Mjete</a>
+        <a href="../../../sq/blog/">Blog</a>
+        <a href="../../../sq/kontakt/">Kontakt</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">SQ ▾</summary><div><a href="../../../araclar/saat-maliyeti/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/hourly-cost/" hreflang="en" lang="en">English</a><a href="../../../az/aletler/saatliq-maya-deyeri/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/tools/hourly-cost/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/trosak-radnog-sata/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/alati/trosak-radnog-sata/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/mjete/kosto-per-ore/" hreflang="sq" lang="sq" aria-current="true">Shqip</a><a href="../../../mk/alatki/trosok-po-raboten-cas/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../sq/kontakt/" class="btn btn-primary">Kërko ofertë</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../sq/mjete/" class="back">← Të gjitha mjetet</a>
+  <div class="kicker" style="margin-top:22px">Mjet falas</div>
+  <h1>Kalkulator i kostos për orë të punonjësit</h1>
+  <p class="lead">Kostoja për orë që duhet të përdorni në oferta dhe në llogarinë e fitimit të një pune është më e lartë se shifra që del kur paga pjesëtohet me orët e muajit. Ky mjet e tregon diferencën.</p>
+  <div class="tgrid">
+    <form class="panel" id="sm" onsubmit="return false">
+      <h2>Për një punonjës</h2>
+      <div class="alan"><label for="maliyet">Kostoja mujore e punëdhënësit</label><div class="girdi"><input id="maliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>"Kostoja totale për punëdhënësin" në listëpagesë. Paga bruto plus kontributet e punëdhënësit.</small></div>
+      <div class="alan"><label for="yan">Shpenzime shtesë mujore</label><div class="girdi"><input id="yan" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Shpenzime jashtë listëpagesës, si ushqimi, transporti, shpërblimet, veshjet e punës, telefoni, trajnimet.</small></div>
+      <div class="iki">
+        <div class="alan"><label for="maasSayisi">Numri i pagave në vit</label><div class="girdi"><input id="maasSayisi" type="number" inputmode="decimal" min="0" step="1"><span>paga</span></div><small>Nëse ka paga shtesë, shkruani 13 ose 14.</small></div>
+        <div class="alan"><label for="izin">Leje vjetore dhe festa zyrtare</label><div class="girdi"><input id="izin" type="number" inputmode="decimal" min="0" step="1"><span>ditë</span></div><small>Totali i ditëve të punës kur nuk punohet.</small></div>
+      </div>
+      <div class="iki">
+        <div class="alan"><label for="haftaSaat">Orë pune në javë</label><div class="girdi"><input id="haftaSaat" type="number" inputmode="decimal" min="0" step="any"><span>orë</span></div></div>
+        <div class="alan"><label for="haftaGun">Ditë pune në javë</label><div class="girdi"><input id="haftaGun" type="number" inputmode="decimal" min="0" step="1"><span>ditë</span></div></div>
+      </div>
+      <div class="alan"><label for="verim">Shkalla e punës produktive</label><div class="girdi"><input id="verim" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Pjesa e orarit që mund t'i ngarkohet një pune ose një klienti.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Rezultati</h2>
+      <div class="buyuk">
+        <div class="kutu"><div class="ad">Kostoja për orë orari</div><div class="deger" id="c1">–</div></div>
+        <div class="kutu ana"><div class="ad">Kostoja për orë të ngarkuar në punë<br>(përdoreni në ofertë)</div><div class="deger" id="c2">–</div></div>
+      </div>
+      <p class="yorum" id="smYorum"></p>
+      <div class="satir"><span>Kostoja totale vjetore</span><b id="yillik">–</b></div>
+      <div class="satir"><span>Orë pune në vit</span><b id="mesaiSaat">–</b></div>
+      <div class="satir"><span>Pjesa e tyre që i ngarkohet punëve</span><b id="verimliSaat">–</b></div>
+      <div class="satir"><span>Llogaria e thjeshtë: paga pjesëtuar me orët e muajit</span><b id="kolay">–</b></div>
+      <p style="margin-top:18px"><a class="btn btn-primary" id="aktar" href="../../../sq/mjete/perfitueshmeria-e-projektit/">Llogarit përfitueshmërinë e projektit me këtë kosto →</a></p>
+      <p class="not">Llogaritja bëhet në shfletuesin tuaj; shifrat tuaja nuk shkojnë askund nëse nuk i dërgoni ju.</p>
+    </section>
+  </div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Çfarë do të thotë ky rezultat për ju?</h3>
+  <p>Na dërgoni shifrat tuaja dhe rezultatin; do t’i shqyrtojmë dhe do t’ju kthejmë përgjigje brenda një dite pune. Falas dhe pa asnjë detyrim.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Vlerësoni rezultatin tim</button>
+</div></div>
+<div id="metin" hidden><span data-k="saatDeger">{s} orë</span><span data-k="yFark">Llogaria që pjesëton pagën me orët e muajit tregon {k}. Kur shtohen lejet, festat, shpenzimet shtesë dhe koha që nuk i ngarkohet punës, kostoja reale e një ore është {g}, pra {f} më shumë.</span></div>
+
+<section class="aciklama">
+  <h2>Si bëhet llogaria?</h2>
+  <ul>
+    <li><strong>Kostoja vjetore</strong> = kostoja mujore e punëdhënësit × numri i pagave në vit + shpenzimet shtesë mujore × 12</li>
+    <li><strong>Orët e orarit</strong> = orët në javë × 52 − orët e ditëve të lejes dhe festave</li>
+    <li><strong>Orët e ngarkuara në punë</strong> = orët e orarit × shkalla e punës produktive</li>
+    <li><strong>Kostoja për orë</strong> = kostoja vjetore ÷ orët e ngarkuara në punë</li>
+  </ul>
+  <p>Shifra që duhet përdorur kur përgatitet oferta dhe llogaritet fitimi i një pune është kostoja për orë të ngarkuar në punë. Vendimtare nuk është sa orë punon ekipi në vit, por sa prej tyre i ngarkohen një pune ose një klienti. Kostoja e kohës që mbetet duhet gjithsesi të mbulohet nga punët.</p>
+  <p>Mënyra për ta ditur këtë shkallë duke e matur, jo me hamendje, është që orët t'i ngarkohen punëve çdo ditë. Më shumë në shkrimin <a href="../../../sq/blog/matja-e-perfitueshmerise-se-projektit/">si matet përfitueshmëria e projektit</a>.</p>
+  <h2>Pyetje të shpeshta</h2>
+<h3>Si llogaritet kostoja për orë e një punonjësi?</h3>
+<p>Ndani koston totale vjetore me orët e regjistruara në punë. Shembull: kostoja mujore e punëdhënësit 40.000, shpenzime shtesë 5.000, 12 paga në vit → 540.000 në vit. 5 ditë dhe 45 orë në javë × 52 = 2.340 orë; pasi zbriten 20 ditë pushime dhe festa (20 × 9 = 180 orë), mbeten 2.160 orë pune; me efikasitet 75%, 1.620 orë regjistrohen në punë. Kostoja për orë është 540.000 ÷ 1.620 ≈ 333, ndërsa llogaritja e shpejtë (paga e ndarë me orët e muajit) tregon vetëm 40.000 ÷ 195 ≈ 205.</p>
+<h3>Ku ta gjej koston e punëdhënësit?</h3>
+<p>Në listëpagesë ka një shumë totale ku pagës bruto të punonjësit i shtohen kontributet shoqërore të punëdhënësit dhe detyrimet e tjera ligjore. Merrni nga kontabilisti ose nga programi i pagave rreshtin "kostoja totale për punëdhënësin". Nëse nuk e dini, mund të nisni me rreth 1,2 herë pagën bruto.</p>
+<h3>Çfarë do të thotë shkalla e punës produktive?</h3>
+<p>Jo gjithë orari i punës mund t'i ngarkohet një pune: mbledhje, udhëtime, pritje, trajnime, punë zyre. Në terren dhe në punishte kjo shkallë zakonisht është 70–80%, në punët kryesisht zyre më e ulët. Nëse orët nuk i ngarkoni punëve, 75% është një pikënisje e arsyeshme.</p>
+<h3>Pse nuk mjafton të pjesëtosh pagën me orët e muajit?</h3>
+<p>Ajo llogari lë jashtë shpenzimet shtesë, lejet, festat zyrtare dhe kohën që nuk i ngarkohet asnjë pune. Rezultati del më i ulët se në të vërtetë; oferta e bërë me këtë shifër të ulët lë më pak fitim se sa pritej kur mbaron puna.</p>
+<h3>Si ta llogaris mesataren e ekipit?</h3>
+<p>Pjesëtoni me numrin e njerëzve koston totale mujore të punëdhënësit dhe shpenzimet shtesë totale të ekipit dhe llogaritni për një punonjës mesatar. Nëse diferenca mes mjeshtërve dhe ndihmësve është e madhe, bëni dy llogari të veçanta.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>A u ngarkohen punëve orët e ekipit tuaj?</h3>
+    <p>Ta ngremë bashkë një rregull ku regjistrohet vetë kush sa ka punuar dhe në cilën punë.</p>
+    <a href="../../../sq/kontakt/" class="btn btn-primary">Le të flasim</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Artikuj të ngjashëm</h4>
+  <a href="../../../sq/blog/matja-e-perfitueshmerise-se-projektit/">Si matet përfitueshmëria e projektit? →</a>
+  <a href="../../../sq/blog/program-menaxhimi-i-detyrave/">Pse mbeten punët pa u ndjekur? Programi për menaxhimin e detyrave →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Raport falas për dixhitalizimin</h3>
+  <p>Na tregoni për biznesin tuaj në disa hapa dhe do t’ju dërgojmë me email një raport se cilin softuer ju duhet për cilën punë dhe nga ku të filloni.</p></div>
+  <a href="../../../sq/raport-falas-dixhitalizimi/" class="btn btn-primary">Kërkoni raportin</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Mbyll">×</button>
+    <h2 id="penBaslik">Shkarkoni shabllonin</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Emri dhe mbiemri *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Kompania *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">Email *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefoni</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sektori</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Zgjidhni</option><option value="Üretim">Prodhim</option><option value="Proje / taahhüt / inşaat">Projekte / kontraktim / ndërtim</option><option value="Mühendislik / mimarlık">Inxhinieri / arkitekturë</option><option value="Ticaret / dağıtım">Tregti / shpërndarje</option><option value="Hizmet">Shërbime</option><option value="Diğer">Tjetër</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Numri i punonjësve</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Zgjidhni</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Çfarë dëshironi të shtoni</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span>E kam lexuar <a href="../../../sq/privatesia/" target="_blank" rel="noopener">njoftimin e privatësisë</a>. Jap pëlqimin tim të shprehur që të dhënat e mia të përpunohen me qëllim kontaktimit me mua dhe të transferohen jashtë vendit nëpërmjet ofruesve të shërbimeve.</span></label>
+    <div class="hp" aria-hidden="true"><label>Lëreni bosh këtë fushë<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Shkarko</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Shkarkoni shabllonin</span>
+    <span data-k="fIndMetin">Lini të dhënat tuaja dhe shkarkimi fillon menjëherë. I kërkojmë që t’ju njoftojmë kur dalin shabllone dhe mjete të reja dhe t’u përgjigjemi pyetjeve tuaja.</span>
+    <span data-k="fIndDugme">Dërgo të dhënat dhe shkarko</span>
+    <span data-k="fDegBaslik">Ta shqyrtojmë bashkë rezultatin tuaj</span>
+    <span data-k="fDegMetin">Lini të dhënat tuaja; shifrat që keni futur dhe rezultati do të na vijnë, dhe do t’ju kthejmë përgjigje brenda një dite pune. Falas dhe pa asnjë detyrim.</span>
+    <span data-k="fDegDugme">Dërgo</span>
+    <span data-k="fEksik">Ju lutemi shkruani emrin dhe mbiemrin, kompaninë dhe një adresë të vlefshme email-i, dhe shënoni kutinë e pëlqimit.</span>
+    <span data-k="fRobot">Ju lutemi shënoni kutinë “Unë nuk jam robot”.</span>
+    <span data-k="fGonder">Po dërgohet…</span>
+    <span data-k="fIndOk">Faleminderit, shkarkimi filloi. Nëse nuk filloi, shkarkojeni këtu:</span>
+    <span data-k="fIndLink">Shkarko skedarin Excel</span>
+    <span data-k="fDegOk">Faleminderit, të dhënat dhe rezultati juaj na erdhën. Do t’ju kthejmë përgjigje brenda një dite pune.</span>
+    <span data-k="fHata">Ndodhi një gabim. Ju lutemi provoni përsëri ose na shkruani në info@vohdigital.com.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Dizajn &amp; Softuer. · <a href="../../../sq/privatesia/">Privatësia</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../sq/">Kryefaqja</a>
+      <a href="../../../sq/mjete/">Mjete</a>
+      <a href="../../../sq/blog/">Blog</a>
+      <a href="../../../sq/kontakt/">Kontakt</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Is Odoo Community Enough, or Do You Need Enterprise?</title>
+<meta name="description" content="You do not have to pay an annual licence for a business ERP. The limits of Odoo Community, how Enterprise differs and what the right setup gives you.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/en/blog/odoo-community-cost/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do you need an Enterprise licence? How far you can go with Odoo Community">
+<meta property="og:description" content="You do not have to pay an annual licence for a business ERP. The limits of Odoo Community, how Enterprise differs and what the right setup gives you.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/en/blog/odoo-community-cost/">
+<meta property="og:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-07-18">
+<meta property="article:section" content="Cost &amp; Technical">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Do you need an Enterprise licence? How far you can go with Odoo Community">
+<meta name="twitter:description" content="You do not have to pay an annual licence for a business ERP. The limits of Odoo Community, how Enterprise differs and what the right setup gives you.">
+<meta name="twitter:image" content="https://emreceran.github.io/konyaz/assets/konyaz-paylasim.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Do you need an Enterprise licence? How far you can go with Odoo Community","description":"You do not have to pay an annual licence for a business ERP. The limits of Odoo Community, how Enterprise differs and what the right setup gives you.","image":"https://emreceran.github.io/konyaz/assets/konyaz-logo.svg","datePublished":"2026-07-18","dateModified":"2026-07-18","inLanguage":"en","author":{"@type":"Organization","name":"Konyaz"},"publisher":{"@type":"Organization","name":"Konyaz","logo":{"@type":"ImageObject","url":"https://emreceran.github.io/konyaz/assets/konyaz-logo.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://emreceran.github.io/konyaz/en/blog/odoo-community-cost/"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/blog/odoo-community-maliyet/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/blog/odoo-community-cost/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/blog/odoo-community-xerci/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/blog/odoo-community-cost/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/blog/odoo-community-cijena/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/blog/odoo-community-troskovi/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/blog/odoo-community-kostoja/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/blog/odoo-community-cena/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/blog/odoo-community-cost/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../en/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../en/#hizmetler">Services</a>
+        <a href="../../../en/#neden">Why Us</a>
+        <a href="../../../en/#isler">Work</a>
+        <a href="../../../en/tools/">Tools</a>
+        <a href="../../../en/blog/" class="active">Blog</a>
+        <a href="../../../en/contact/">Contact</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">EN ▾</summary><div><a href="../../../blog/odoo-community-maliyet/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/blog/odoo-community-cost/" hreflang="en" lang="en" aria-current="true">English</a><a href="../../../az/blog/odoo-community-xerci/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/blog/odoo-community-cost/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/blog/odoo-community-cijena/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/blog/odoo-community-troskovi/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/blog/odoo-community-kostoja/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/blog/odoo-community-cena/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../en/contact/" class="btn btn-primary">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<article class="article">
+  <a href="../../../en/blog/" class="back">← All articles</a>
+  <div class="kicker" style="margin-top:22px">Cost & Technical</div>
+  <h1>Do you need an Enterprise licence? How far you can go with Odoo Community</h1>
+  <div class="ameta"><span>18 July 2026</span><span>·</span><span>6 min read</span></div>
+
+  <p class="lead">For most business owners the word "ERP" first brings a price tag to mind: a monthly licence per user, annual renewal, rising cost. But that is not the only way to set up a business system. You can go a long way with Odoo Community without paying for licences — provided it is set up properly.</p>
+
+  <h2>What is the difference between Community and Enterprise?</h2>
+  <p>Odoo comes in two editions. <strong>Community</strong> is open source and free; it includes most of the core, such as sales, purchasing, inventory, manufacturing (MRP), project and CRM. <strong>Enterprise</strong> adds a paid layer: some ready-made accounting features, Studio (customisation without code), certain ready-made apps and official support.</p>
+  <p>The critical point is this: most of what Enterprise adds has an equivalent or an alternative on the Community side. The difference lies not in "can it be done" but in "how is it done".</p>
+
+  <blockquote>Enterprise is a convenience, not a luxury. With the right partner you can build most of that convenience without paying for licences.</blockquote>
+
+  <h2>How far does Community go?</h2>
+  <ul>
+    <li><strong>Sales, quotes, orders, inventory, purchasing</strong> — in the core, and can be strengthened with company-specific modules.</li>
+    <li><strong>Manufacturing (MRP), project management, CRM</strong> — more than enough for manufacturing and engineering companies.</li>
+    <li><strong>Accounting</strong> — full accounting does not come natively with Community; but with open-source add-ons and the right setup, financial statements, customer and supplier account tracking and reporting can be put in place.</li>
+    <li><strong>Company-specific modules</strong> — with Python/OWL you can write whatever business logic you want on top of Community. The limit is imagination, not licensing.</li>
+  </ul>
+
+  <h2>So what is the risk?</h2>
+  <p>The price of Community is not a licence but the need for <strong>a proper implementation</strong>. A Community system put together with the wrong add-ons and haphazard patches never feels settled — especially on the accounting side. That is a problem of setup, not of edition. This is why Community is the most economical option in the right hands and the most frustrating in the wrong ones.</p>
+
+  <h2>Our approach</h2>
+  <p>As a studio we use Odoo Community ourselves: we run our own business on it. We implement it in different sectors, from precast manufacturing to engineering firms, with no licence cost and with the data and the system remaining entirely the customer's property. Where needed, we expand it in phases.</p>
+
+  <p class="ilgili-hizmet"><strong>Related services:</strong> <a href="../../../en/services/odoo-erp/">Odoo ERP consulting and implementation</a>, <a href="../../../en/services/odoo-custom-modules/">custom Odoo module development</a>, <a href="../../../en/services/erp-solutions/">ERP solutions for small and mid-sized businesses</a>.</p>
+
+  <div class="cta-box">
+    <h3>Can you have a business ERP without paying for licences?</h3>
+    <p>Let's look together at whether Community is enough for your needs.</p>
+    <a href="../../../en/contact/" class="btn btn-primary">Let's Talk About Your Project</a>
+  </div>
+</article>
+
+<div class="related">
+  <h4>Related articles</h4>
+  <a href="../../../en/blog/excel-to-erp/">From Excel to ERP: why spreadsheets stop being enough as your business grows →</a>
+  <a href="../../../en/blog/production-project-tracking/">Project-based production tracking for precast and other manufacturers →</a>
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Design &amp; Software. · <a href="../../../en/privacy/">Privacy</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../en/">Home</a>
+      <a href="../../../en/blog/">Blog</a>
+      <a href="../../../en/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+</body>
+</html>

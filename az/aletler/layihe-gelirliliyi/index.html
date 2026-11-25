@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="az" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Layihə gəlirliliyi kalkulyatoru | Konyaz</title>
+<meta name="description" content="Təklif məbləğini, materialı, iş saatını və ümumi xərcləri daxil edin; işin görünən və real mənfəətini, zərərsiz işlənə biləcək saatı görün.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/az/aletler/layihe-gelirliliyi/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Layihə gəlirliliyi kalkulyatoru | Konyaz">
+<meta property="og:description" content="Təklif məbləğini, materialı, iş saatını və ümumi xərcləri daxil edin; işin görünən və real mənfəətini, zərərsiz işlənə biləcək saatı görün.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/az/aletler/layihe-gelirliliyi/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="az_AZ">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Layihə gəlirliliyi kalkulyatoru | Konyaz">
+<meta name="twitter:description" content="Təklif məbləğini, materialı, iş saatını və ümumi xərcləri daxil edin; işin görünən və real mənfəətini, zərərsiz işlənə biləcək saatı görün.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Layihə gəlirliliyi kalkulyatoru","description":"Təklif məbləğini, materialı, iş saatını və ümumi xərcləri daxil edin; işin görünən və real mənfəətini, zərərsiz işlənə biləcək saatı görün.","url":"https://emreceran.github.io/konyaz/az/aletler/layihe-gelirliliyi/","inLanguage":"az","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ümumi xərc payını neçə yazmalıyam?","acceptedAnswer":{"@type":"Answer","text":"Keçən ilin icarə, ofis işçiləri, avtomobil, proqram təminatı kimi layihəyə birbaşa yazılmayan xərclərini toplayıb illik dövriyyənizə bölün. Çıxan nisbət sizin ümumi xərc payınızdır. Bilmirsinizsə, 10–15%-lə başlayın və nəticəni bir də 20%-lə yoxlayın."}},{"@type":"Question","name":"Saatlıq maya dəyərini haradan tapım?","acceptedAnswer":{"@type":"Answer","text":"Bir işçinin sizə illik ümumi xərcini il ərzində həqiqətən işə yazıla bilən saatlara bölmək lazımdır. Saatlıq maya dəyəri aləti bunu hesablayır və nəticəni bura ötürür."}},{"@type":"Question","name":"Görünən mənfəətlə real mənfəət arasındakı fərq niyə bu qədər böyükdür?","acceptedAnswer":{"@type":"Answer","text":"Fakturası gələn xərclər (material, subpodratçı, daşıma) asan görünür. Öz komandanızın işə sərf etdiyi saat və şirkətin ümumi xərcləri isə faktura ilə gəlmir, çox vaxt hesaba heç düşmür. Fərq məhz bu iki maddədir."}},{"@type":"Question","name":"Daxil etdiyim rəqəmlər haraya isə göndərilir?","acceptedAnswer":{"@type":"Answer","text":"Siz göndərməsəniz, xeyr. Hesablama tamamilə brauzerinizdə aparılır və yadda saxlanmır. Rəqəmlər bizə yalnız “Nəticəmi qiymətləndirin” formasını doldurub göndərsəniz, sizə geri dönə bilməyimiz üçün çatır."}}],"inLanguage":"az"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/proje-karliligi/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/project-profitability/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/layihe-gelirliliyi/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/project-profitability/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/profitabilnost-projekta/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/profitabilnost-projekta/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/perfitueshmeria-e-projektit/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/profitabilnost-na-proekt/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/project-profitability/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+h1,h2,h3,.logo{font-family:'Inter','Segoe UI',system-ui,sans-serif}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../az/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../az/#hizmetler">Xidmətlər</a>
+        <a href="../../../az/#neden">Niyə biz</a>
+        <a href="../../../az/#isler">İşlərimiz</a>
+        <a href="../../../az/aletler/" class="active">Alətlər</a>
+        <a href="../../../az/blog/">Bloq</a>
+        <a href="../../../az/elaqe/">Əlaqə</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">AZ ▾</summary><div><a href="../../../araclar/proje-karliligi/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/project-profitability/" hreflang="en" lang="en">English</a><a href="../../../az/aletler/layihe-gelirliliyi/" hreflang="az" lang="az" aria-current="true">Azərbaycanca</a><a href="../../../ar/tools/project-profitability/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/profitabilnost-projekta/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/alati/profitabilnost-projekta/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/mjete/perfitueshmeria-e-projektit/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/alatki/profitabilnost-na-proekt/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../az/elaqe/" class="btn btn-primary">Təklif al</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../az/aletler/" class="back">← Bütün alətlər</a>
+  <div class="kicker" style="margin-top:22px">Pulsuz alət</div>
+  <h1>Layihə gəlirliliyi kalkulyatoru</h1>
+  <p class="lead">Bir işin təklif məbləğini və xərclərini daxil edin. Alət fakturası gələn xərclərə görə görünən mənfəəti və komanda saatı ilə ümumi xərclər əlavə edildikdən sonra qalan real mənfəəti yan-yana göstərir.</p>
+  <div class="tgrid">
+    <form class="panel" id="pk" onsubmit="return false">
+      <h2>İşin rəqəmləri</h2>
+      <div class="alan"><label for="tutar">Təklif / müqavilə məbləği</label><div class="girdi"><input id="tutar" type="number" inputmode="decimal" min="0" step="any"><span>¤ · ƏDV-siz</span></div></div>
+      <div class="iki">
+        <div class="alan"><label for="malzeme">Material və kənar alışlar</label><div class="girdi"><input id="malzeme" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div></div>
+        <div class="alan"><label for="taseron">Subpodratçı və kənar xidmətlər</label><div class="girdi"><input id="taseron" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div></div>
+      </div>
+      <div class="alan"><label for="diger">Digər birbaşa xərclər</label><div class="girdi"><input id="diger" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Daşıma, yol, yaşayış, icarə avadanlıq kimi yalnız bu işə aid xərclər.</small></div>
+      <div class="iki">
+        <div class="alan"><label for="saat">Komandanın bu işə sərf etdiyi saat</label><div class="girdi"><input id="saat" type="number" inputmode="decimal" min="0" step="any"><span>saat</span></div><small>Bütün işçilərin cəmi.</small></div>
+        <div class="alan"><label for="saatMaliyet">Bir iş saatının maya dəyəri</label><div class="girdi"><input id="saatMaliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤/saat</span></div><small>Bilmirsinizsə, <a href="../../../az/aletler/saatliq-maya-deyeri/" style="color:var(--accent)">saatlıq maya dəyəri aləti ilə</a> hesablayın.</small></div>
+      </div>
+      <div class="alan"><label for="genel">Ümumi xərc payı</label><div class="girdi"><input id="genel" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>İcarə, ofis, idarəetmə, avtomobil kimi xərclərin dövriyyədəki payı.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Nəticə</h2>
+      <div class="buyuk">
+        <div class="kutu"><div class="ad">Görünən mənfəət<br>(yalnız fakturalı xərclər)</div><div class="deger" id="gorunen">–</div><div class="alt" id="gorunenMarj"></div></div>
+        <div class="kutu ana"><div class="ad">Real mənfəət<br>(komanda saatı və ümumi xərclər daxil)</div><div class="deger" id="gercek">–</div><div class="alt" id="gercekMarj"></div></div>
+      </div>
+      <div class="serit" id="serit"></div>
+      <div class="lejant"><span><b style="background:#1A9AA0"></b>Material</span><span><b style="background:#45C4C6"></b>Subpodratçı</span><span><b style="background:#94A3B8"></b>Digər</span><span><b style="background:#F59E0B"></b>Komanda saatı</span><span><b style="background:#7FA3C7"></b>Ümumi xərclər</span><span><b style="background:#34D399"></b>Mənfəət</span></div>
+      <p class="yorum" id="pkYorum"></p>
+      <div class="satir"><span>Zərərsiz işlənə biləcək maksimum saat</span><b id="basabas">–</b></div>
+      <div class="satir"><span>Bu işdə işlənən hər saatın gətirdiyi</span><b id="saatKazanc">–</b></div>
+      <div class="satir"><span>İş saatı 20% uzansa, real mənfəət</span><b id="sapma">–</b></div>
+      <p class="not">Hesablama brauzerinizdə aparılır; siz göndərməsəniz, rəqəmləriniz heç yerə getmir.</p>
+    </section>
+  </div>
+  <div class="indir"><p><strong>Bütün layihələrinizi izləmək üçün</strong>Hər layihə üzrə büdcə və faktiki, saat və xərc qeydi, kənarlaşma xəbərdarlığı olan Excel şablonu.</p><a class="btn btn-cizgi" href="../../../araclar/sablonlar/proje-karlilik-takibi-tr.xlsx" data-en-href="../../../araclar/sablonlar/proje-karlilik-takibi-en.xlsx" download>Excel şablonunu yüklə</a></div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Bu nəticə sizin üçün nə deməkdir?</h3>
+  <p>Rəqəmlərinizi və nəticəni bizə göndərin; bir iş günü ərzində qiymətləndirib sizə geri dönək. Pulsuzdur və heç bir öhdəlik yaratmır.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Nəticəmi qiymətləndirin</button>
+</div></div>
+<div id="metin" hidden><span data-k="marj">marja {m}</span><span data-k="saatDeger">{s} saat</span><span data-k="yok">hesablana bilmir</span><span data-k="yZarar">Bu iş zərər edir. Fakturası gələn xərclərə baxanda gəlirli görünür; komandanın saatı və ümumi xərclər əlavə edilincə {f} fərq yaranır və mənfəət mənfiyə düşür.</span><span data-k="yInce">Mənfəət var, amma nazikdir: real marja {m}. Görünən mənfəətlə aradakı {f} fərq komanda saatından və ümumi xərclərdən gəlir. İş saatı bir az uzansa, mənfəət sürətlə əriyər.</span><span data-k="yIyi">Bu iş mənfəət gətirir, real marja {m}. Yenə də görünən mənfəətlə aradakı {f} fərq komanda saatı yazılmadan aparılan hesabın nə qədər yanıltdığını göstərir.</span></div>
+
+<section class="aciklama">
+  <h2>Hesablama necə aparılır?</h2>
+  <p>Layihə əsasında işləyən şirkətlərin çoxu bir işin mənfəətini təklif məbləğindən material və subpodratçı fakturalarını çıxmaqla hesablayır. Bu rəqəm yanıldıcıdır, çünki işi görən öz komandanızın saatı və şirkəti ayaqda saxlayan ümumi xərclər faktura ilə gəlmir.</p>
+  <ul>
+    <li><strong>Görünən mənfəət</strong> = təklif məbləği − material − subpodratçı − digər birbaşa xərclər</li>
+    <li><strong>Real mənfəət</strong> = görünən mənfəət − (işlənən saat × saatlıq maya dəyəri) − (təklif məbləği × ümumi xərc payı)</li>
+    <li><strong>Zərərsiz işlənə biləcək saat</strong> komanda saatından başqa bütün xərclər çıxıldıqdan sonra qalan məbləğin saatlıq maya dəyərinə bölünməsi ilə tapılır. İş bu saatı aşsa, zərər başlayır.</li>
+  </ul>
+  <p>Ən çox yanılan maddə saatdır. Təklif verilərkən nəzərdə tutulan saatla iş bitəndə sərf olunan saat çox vaxt eyni olmur və bu fərq yalnız saatlar işə yazılırsa görünür. Saatların hər gün işə yazıldığı sistemdə bu mənzərəni iş bitmədən, iş gedərkən izləmək olar. Ətraflı <a href="../../../az/blog/layihe-gelirliliyi-olcme/">layihənin gəlirliliyi necə ölçülür</a> yazısında.</p>
+  <h2>Tez-tez verilən suallar</h2>
+<h3>Ümumi xərc payını neçə yazmalıyam?</h3>
+<p>Keçən ilin icarə, ofis işçiləri, avtomobil, proqram təminatı kimi layihəyə birbaşa yazılmayan xərclərini toplayıb illik dövriyyənizə bölün. Çıxan nisbət sizin ümumi xərc payınızdır. Bilmirsinizsə, 10–15%-lə başlayın və nəticəni bir də 20%-lə yoxlayın.</p>
+<h3>Saatlıq maya dəyərini haradan tapım?</h3>
+<p>Bir işçinin sizə illik ümumi xərcini il ərzində həqiqətən işə yazıla bilən saatlara bölmək lazımdır. <a href="../../../az/aletler/saatliq-maya-deyeri/">Saatlıq maya dəyəri aləti</a> bunu hesablayır və nəticəni bura ötürür.</p>
+<h3>Görünən mənfəətlə real mənfəət arasındakı fərq niyə bu qədər böyükdür?</h3>
+<p>Fakturası gələn xərclər (material, subpodratçı, daşıma) asan görünür. Öz komandanızın işə sərf etdiyi saat və şirkətin ümumi xərcləri isə faktura ilə gəlmir, çox vaxt hesaba heç düşmür. Fərq məhz bu iki maddədir.</p>
+<h3>Daxil etdiyim rəqəmlər haraya isə göndərilir?</h3>
+<p>Siz göndərməsəniz, xeyr. Hesablama tamamilə brauzerinizdə aparılır və yadda saxlanmır. Rəqəmlər bizə yalnız “Nəticəmi qiymətləndirin” formasını doldurub göndərsəniz, sizə geri dönə bilməyimiz üçün çatır.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Bütün işlərinizi bu gözlə görmək istəyirsiniz?</h3>
+    <p>Saatların və xərclərin işə yazıldığı, mənfəətin iş gedərkən göründüyü qaydanı birlikdə quraq.</p>
+    <a href="../../../az/elaqe/" class="btn btn-primary">Danışaq</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Əlaqəli yazılar</h4>
+  <a href="../../../az/blog/layihe-gelirliliyi-olcme/">Layihənin gəlirliliyi necə ölçülür? →</a>
+  <a href="../../../az/blog/qiymet-teklifi-hazirlamaq/">Qiymət təklifi prosesində itən vaxt və mənfəət →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Pulsuz rəqəmsallaşma hesabatı</h3>
+  <p>İşinizi bir neçə addımda təsvir edin; hansı işdə hansı proqrama ehtiyacınız olduğunu və haradan başlamağın lazım olduğunu göstərən hesabatı e-poçtla göndərək.</p></div>
+  <a href="../../../az/pulsuz-reqemsallasma-hesabati/" class="btn btn-primary">Hesabatımı istəyirəm</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Bağla">×</button>
+    <h2 id="penBaslik">Şablonu yükləyin</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Ad, soyad *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Şirkət *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">E-poçt *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefon</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sahə</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Seçin</option><option value="Üretim">İstehsal</option><option value="Proje / taahhüt / inşaat">Layihə / podrat / tikinti</option><option value="Mühendislik / mimarlık">Mühəndislik / memarlıq</option><option value="Ticaret / dağıtım">Ticarət / distribusiya</option><option value="Hizmet">Xidmət</option><option value="Diğer">Digər</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">İşçi sayı</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Seçin</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Əlavə etmək istədikləriniz</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span><a href="../../../az/mexfilik/" target="_blank" rel="noopener">Məlumatlandırma mətnini</a> oxudum. Məlumatlarımın mənimlə əlaqə saxlanılması məqsədilə emal edilməsinə və xidmət təminatçıları vasitəsilə xaricə ötürülməsinə açıq razılıq verirəm.</span></label>
+    <div class="hp" aria-hidden="true"><label>Bu sahəni boş saxlayın<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Yüklə</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Şablonu yükləyin</span>
+    <span data-k="fIndMetin">Məlumatlarınızı qoyun, yükləmə dərhal başlasın. Yeni şablon və alət çıxanda sizə xəbər verə bilməyimiz və suallarınızı cavablandırmağımız üçün soruşuruq.</span>
+    <span data-k="fIndDugme">Məlumatları göndər və yüklə</span>
+    <span data-k="fDegBaslik">Nəticənizi birlikdə dəyərləndirək</span>
+    <span data-k="fDegMetin">Məlumatlarınızı qoyun; daxil etdiyiniz rəqəmlər və nəticə bizə çatsın, bir iş günü ərzində sizə geri dönək. Pulsuzdur və heç bir öhdəlik yaratmır.</span>
+    <span data-k="fDegDugme">Göndər</span>
+    <span data-k="fEksik">Zəhmət olmasa ad-soyad, şirkət və düzgün e-poçt ünvanı yazın, razılıq qutusunu işarələyin.</span>
+    <span data-k="fRobot">Zəhmət olmasa “Mən robot deyiləm” qutusunu işarələyin.</span>
+    <span data-k="fGonder">Göndərilir…</span>
+    <span data-k="fIndOk">Təşəkkür edirik, yükləmə başladı. Başlamayıbsa, buradan yükləyin:</span>
+    <span data-k="fIndLink">Excel faylını yüklə</span>
+    <span data-k="fDegOk">Təşəkkür edirik, məlumatlarınız və nəticəniz bizə çatdı. Bir iş günü ərzində sizə geri dönəcəyik.</span>
+    <span data-k="fHata">Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin və ya info@vohdigital.com ünvanına yazın.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Dizayn &amp; Proqram təminatı. · <a href="../../../az/mexfilik/">Məxfilik</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../az/">Ana səhifə</a>
+      <a href="../../../az/aletler/">Alətlər</a>
+      <a href="../../../az/blog/">Bloq</a>
+      <a href="../../../az/elaqe/">Əlaqə</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>

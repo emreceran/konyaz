@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Çalışan saat maliyeti hesaplama (ücretsiz) | Konyaz</title>
+<meta name="description" content="Ücretsiz hesaplayıcı: bir çalışanın saatlik gerçek maliyeti, işveren maliyeti, yan gider, izin ve işe yazılamayan zaman dahil. Örnek hesapla, 1 dakikada.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/araclar/saat-maliyeti/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Çalışan saat maliyeti hesaplama (ücretsiz) | Konyaz">
+<meta property="og:description" content="Ücretsiz hesaplayıcı: bir çalışanın saatlik gerçek maliyeti, işveren maliyeti, yan gider, izin ve işe yazılamayan zaman dahil. Örnek hesapla, 1 dakikada.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/araclar/saat-maliyeti/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Çalışan saat maliyeti hesaplama (ücretsiz) | Konyaz">
+<meta name="twitter:description" content="Ücretsiz hesaplayıcı: bir çalışanın saatlik gerçek maliyeti, işveren maliyeti, yan gider, izin ve işe yazılamayan zaman dahil. Örnek hesapla, 1 dakikada.">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebPage", "name": "Çalışan saat maliyeti hesaplayıcı", "description": "Ücretsiz hesaplayıcı: bir çalışanın saatlik gerçek maliyeti, işveren maliyeti, yan gider, izin ve işe yazılamayan zaman dahil. Örnek hesapla, 1 dakikada.", "url": "https://emreceran.github.io/konyaz/araclar/saat-maliyeti/", "inLanguage": "tr-TR", "publisher": {"@type": "Organization", "name": "Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Bir çalışanın saat maliyeti nasıl hesaplanır?", "acceptedAnswer": {"@type": "Answer", "text": "Yıllık toplam maliyeti işe yazılan saate bölün. Örnek: aylık işveren maliyeti 40.000, yan gider 5.000, yılda 12 maaş → yıllık 540.000. Haftada 5 gün, 45 saat × 52 = 2.340 saatten 20 günlük izin ve tatil (20 × 9 = 180 saat) düşünce 2.160 mesai saati kalır; %75 verimle 1.620 saat işe yazılır. Saat maliyeti 540.000 ÷ 1.620 ≈ 333 olur. Maaşı ayın saatine bölen kolay hesap ise yalnızca 40.000 ÷ 195 ≈ 205 gösterir."}}, {"@type": "Question", "name": "İşveren maliyetini nereden bulurum?", "acceptedAnswer": {"@type": "Answer", "text": "Bordroda çalışanın brüt maaşına işveren primleri ve diğer yasal yükler eklenmiş toplam bir tutar bulunur. Muhasebecinizden ya da bordro programınızdan \"işverene toplam maliyet\" satırını alın. Bilmiyorsanız brüt maaşın yaklaşık 1,2 katıyla başlayabilirsiniz."}}, {"@type": "Question", "name": "Verimli çalışma oranı ne demek?", "acceptedAnswer": {"@type": "Answer", "text": "Mesai saatinin tamamı bir işe yazılamaz: toplantı, yol, bekleme, eğitim, ofis işleri. Sahada ve atölyede bu oran çoğu zaman %70–80, ofis ağırlıklı işlerde daha düşüktür. Saatlerinizi işe yazmıyorsanız %75 makul bir başlangıçtır."}}, {"@type": "Question", "name": "Neden maaşı ayın saatine bölmek yetmiyor?", "acceptedAnswer": {"@type": "Answer", "text": "O hesap yan giderleri, izinleri, resmî tatilleri ve işe yazılamayan zamanı dışarıda bırakır. Sonuç olduğundan düşük çıkar; bu düşük rakamla verilen teklif, iş bittiğinde beklenenden az kâr bırakır."}}, {"@type": "Question", "name": "Ekibin ortalamasını nasıl hesaplarım?", "acceptedAnswer": {"@type": "Answer", "text": "Ekibin toplam aylık işveren maliyetini ve toplam yan giderini kişi sayısına bölüp ortalama bir çalışan için hesaplayın. Ustalarla çıraklar arasında fark büyükse iki ayrı hesap yapın."}}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../blog/blog.css">
+<link rel="stylesheet" href="../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/saat-maliyeti/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/hourly-cost/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/saatliq-maya-deyeri/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/hourly-cost/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/trosak-radnog-sata/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/trosak-radnog-sata/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/kosto-per-ore/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/trosok-po-raboten-cas/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/hourly-cost/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../" class="logo"><img class="logo-img" src="../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../#hizmetler">Hizmetler</a>
+        <a href="../../#neden">Neden Biz</a>
+        <a href="../../#isler">İşler</a>
+        <a href="../../araclar/" class="active">Araçlar</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../iletisim/">İletişim</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">TR ▾</summary><div><a href="../../araclar/saat-maliyeti/" hreflang="tr" lang="tr" aria-current="true">Türkçe</a><a href="../../en/tools/hourly-cost/" hreflang="en" lang="en">English</a><a href="../../az/aletler/saatliq-maya-deyeri/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../ar/tools/hourly-cost/" hreflang="ar" lang="ar">العربية</a><a href="../../bs/alati/trosak-radnog-sata/" hreflang="bs" lang="bs">Bosanski</a><a href="../../me/alati/trosak-radnog-sata/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../sq/mjete/kosto-per-ore/" hreflang="sq" lang="sq">Shqip</a><a href="../../mk/alatki/trosok-po-raboten-cas/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../iletisim/" class="btn btn-primary">Teklif Al</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../araclar/" class="back">← Tüm araçlar</a>
+  <div class="kicker" style="margin-top:22px">Ücretsiz araç</div>
+  <h1>Çalışan saat maliyeti hesaplayıcı</h1>
+  <p class="lead">Teklif verirken ve bir işin kârını hesaplarken kullanmanız gereken saat maliyeti, maaşın ayın saatine bölünmesinden çıkan rakamdan yüksektir. Bu araç aradaki farkı gösterir.</p>
+  <div class="tgrid">
+    <form class="panel" id="sm" onsubmit="return false">
+      <h2>Bir çalışan için</h2>
+      <div class="alan"><label for="maliyet">Aylık işveren maliyeti</label><div class="girdi"><input id="maliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Bordrodaki "işverene toplam maliyet". Brüt maaş artı işveren primleri.</small></div>
+      <div class="alan"><label for="yan">Aylık yan giderler</label><div class="girdi"><input id="yan" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Yemek, yol, prim, iş kıyafeti, telefon, eğitim gibi bordro dışı harcamalar.</small></div>
+      <div class="iki">
+        <div class="alan"><label for="maasSayisi">Yılda ödenen maaş sayısı</label><div class="girdi"><input id="maasSayisi" type="number" inputmode="decimal" min="0" step="1"><span>maaş</span></div><small>İkramiye varsa 13 ya da 14 yazın.</small></div>
+        <div class="alan"><label for="izin">Yıllık izin ve resmî tatil</label><div class="girdi"><input id="izin" type="number" inputmode="decimal" min="0" step="1"><span>gün</span></div><small>Çalışılmayan iş günleri toplamı.</small></div>
+      </div>
+      <div class="iki">
+        <div class="alan"><label for="haftaSaat">Haftalık çalışma</label><div class="girdi"><input id="haftaSaat" type="number" inputmode="decimal" min="0" step="any"><span>saat</span></div></div>
+        <div class="alan"><label for="haftaGun">Haftada çalışılan gün</label><div class="girdi"><input id="haftaGun" type="number" inputmode="decimal" min="0" step="1"><span>gün</span></div></div>
+      </div>
+      <div class="alan"><label for="verim">Verimli çalışma oranı</label><div class="girdi"><input id="verim" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Mesainin bir işe ya da müşteriye yazılabilen kısmı.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Sonuç</h2>
+      <div class="buyuk">
+        <div class="kutu"><div class="ad">Mesai saati başına maliyet</div><div class="deger" id="c1">–</div></div>
+        <div class="kutu ana"><div class="ad">İşe yazılan saat başına maliyet<br>(teklifte kullanın)</div><div class="deger" id="c2">–</div></div>
+      </div>
+      <p class="yorum" id="smYorum"></p>
+      <div class="satir"><span>Yıllık toplam maliyet</span><b id="yillik">–</b></div>
+      <div class="satir"><span>Yılda çalışılan mesai</span><b id="mesaiSaat">–</b></div>
+      <div class="satir"><span>Bunun işe yazılabilen kısmı</span><b id="verimliSaat">–</b></div>
+      <div class="satir"><span>Maaşı ayın saatine bölen kolay hesap</span><b id="kolay">–</b></div>
+      <p style="margin-top:18px"><a class="btn btn-primary" id="aktar" href="../../araclar/proje-karliligi/">Bu maliyetle proje kârlılığını hesapla →</a></p>
+      <p class="not">Hesap tarayıcınızda yapılır; siz göndermedikçe rakamlarınız hiçbir yere gitmez.</p>
+    </section>
+  </div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Bu sonuç sizin için ne anlama geliyor?</h3>
+  <p>Rakamlarınızı ve sonucu bize gönderin; bir iş günü içinde değerlendirip size dönelim. Ücretsiz ve bağlayıcı değil.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Sonucumu değerlendirin</button>
+</div></div>
+<div id="metin" hidden><span data-k="saatDeger">{s} saat</span><span data-k="yFark">Maaşı ayın saatine bölen hesap {k} gösteriyor. İzin, tatil, yan gider ve işe yazılamayan zaman eklenince bir saatin gerçek maliyeti {g}, yani {f} daha fazla.</span></div>
+
+<section class="aciklama">
+  <h2>Hesap nasıl yapılıyor?</h2>
+  <ul>
+    <li><strong>Yıllık maliyet</strong> = aylık işveren maliyeti × yılda ödenen maaş sayısı + aylık yan giderler × 12</li>
+    <li><strong>Mesai saati</strong> = haftalık saat × 52 − izin ve tatil günlerinin saati</li>
+    <li><strong>İşe yazılan saat</strong> = mesai saati × verimli çalışma oranı</li>
+    <li><strong>Saat maliyeti</strong> = yıllık maliyet ÷ işe yazılan saat</li>
+  </ul>
+  <p>Teklif hazırlarken ve bir işin kârını hesaplarken kullanılması gereken rakam, işe yazılan saat başına maliyettir. Ekip bir yılda ne kadar saat çalıştığını değil, o saatin ne kadarının bir işe ya da müşteriye yazıldığını belirler. Kalan zamanın maliyeti de işlerden çıkmak zorundadır.</p>
+  <p>Bu oranı tahminle değil ölçerek bilmenin yolu, saatlerin her gün işe yazılmasıdır. Ayrıntısı <a href="../../blog/proje-karliligi-olcme/">proje kârlılığı nasıl ölçülür</a> yazısında.</p>
+  <h2>Sık sorulan sorular</h2>
+<h3>Bir çalışanın saat maliyeti nasıl hesaplanır?</h3>
+<p>Yıllık toplam maliyeti işe yazılan saate bölün. Örnek: aylık işveren maliyeti 40.000, yan gider 5.000, yılda 12 maaş → yıllık 540.000. Haftada 5 gün, 45 saat × 52 = 2.340 saatten 20 günlük izin ve tatil (20 × 9 = 180 saat) düşünce 2.160 mesai saati kalır; %75 verimle 1.620 saat işe yazılır. Saat maliyeti 540.000 ÷ 1.620 ≈ 333 olur. Maaşı ayın saatine bölen kolay hesap ise yalnızca 40.000 ÷ 195 ≈ 205 gösterir.</p>
+<h3>İşveren maliyetini nereden bulurum?</h3>
+<p>Bordroda çalışanın brüt maaşına işveren primleri ve diğer yasal yükler eklenmiş toplam bir tutar bulunur. Muhasebecinizden ya da bordro programınızdan "işverene toplam maliyet" satırını alın. Bilmiyorsanız brüt maaşın yaklaşık 1,2 katıyla başlayabilirsiniz.</p>
+<h3>Verimli çalışma oranı ne demek?</h3>
+<p>Mesai saatinin tamamı bir işe yazılamaz: toplantı, yol, bekleme, eğitim, ofis işleri. Sahada ve atölyede bu oran çoğu zaman %70–80, ofis ağırlıklı işlerde daha düşüktür. Saatlerinizi işe yazmıyorsanız %75 makul bir başlangıçtır.</p>
+<h3>Neden maaşı ayın saatine bölmek yetmiyor?</h3>
+<p>O hesap yan giderleri, izinleri, resmî tatilleri ve işe yazılamayan zamanı dışarıda bırakır. Sonuç olduğundan düşük çıkar; bu düşük rakamla verilen teklif, iş bittiğinde beklenenden az kâr bırakır.</p>
+<h3>Ekibin ortalamasını nasıl hesaplarım?</h3>
+<p>Ekibin toplam aylık işveren maliyetini ve toplam yan giderini kişi sayısına bölüp ortalama bir çalışan için hesaplayın. Ustalarla çıraklar arasında fark büyükse iki ayrı hesap yapın.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Ekibinizin saatleri işlere yazılıyor mu?</h3>
+    <p>Kimin hangi işte ne kadar çalıştığının kendiliğinden kayda geçtiği bir düzeni birlikte kuralım.</p>
+    <a href="../../iletisim/" class="btn btn-primary">Konuşalım</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>İlgili yazılar</h4>
+  <a href="../../blog/proje-karliligi-olcme/">Proje kârlılığı nasıl ölçülür? →</a>
+  <a href="../../blog/gorev-yonetimi-yazilimi/">İşler neden takipsiz kalıyor? Görev yönetimi yazılımı →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Ücretsiz dijitalleşme raporu</h3>
+  <p>İşinizi birkaç adımda anlatın; hangi işte hangi yazılıma ihtiyacınız olduğunu ve nereden başlamanız gerektiğini anlatan raporu e-postayla gönderelim.</p></div>
+  <a href="../../ucretsiz-dijitallesme-raporu/" class="btn btn-primary">Raporumu isteyin</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Kapat">×</button>
+    <h2 id="penBaslik">Şablonu indirin</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Ad soyad *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Firma *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">E-posta *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefon</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sektör</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Seçin</option><option value="Üretim">Üretim</option><option value="Proje / taahhüt / inşaat">Proje / taahhüt / inşaat</option><option value="Mühendislik / mimarlık">Mühendislik / mimarlık</option><option value="Ticaret / dağıtım">Ticaret / dağıtım</option><option value="Hizmet">Hizmet</option><option value="Diğer">Diğer</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Çalışan sayısı</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Seçin</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Eklemek istedikleriniz</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span><a href="../../kvkk/" target="_blank" rel="noopener">Aydınlatma metnini</a> okudum. Bilgilerimin benimle iletişim kurulması amacıyla işlenmesine ve hizmet sağlayıcılar aracılığıyla yurt dışına aktarılmasına açık rıza veriyorum.</span></label>
+    <div class="hp" aria-hidden="true"><label>Bu alanı boş bırakın<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">İndir</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Şablonu indirin</span>
+    <span data-k="fIndMetin">Bilgilerinizi bırakın, indirme hemen başlasın. Yeni şablon ve araç çıktığında haber verebilmemiz ve sorularınızı cevaplayabilmemiz için soruyoruz.</span>
+    <span data-k="fIndDugme">Bilgileri gönder ve indir</span>
+    <span data-k="fDegBaslik">Sonucunuzu birlikte değerlendirelim</span>
+    <span data-k="fDegMetin">Bilgilerinizi bırakın; girdiğiniz rakamlar ve sonuç bize ulaşsın, bir iş günü içinde size dönelim. Ücretsiz ve bağlayıcı değil.</span>
+    <span data-k="fDegDugme">Gönder</span>
+    <span data-k="fEksik">Lütfen ad soyad, firma ve geçerli bir e-posta yazın, onay kutusunu işaretleyin.</span>
+    <span data-k="fRobot">Lütfen “Ben robot değilim” kutusunu işaretleyin.</span>
+    <span data-k="fGonder">Gönderiliyor…</span>
+    <span data-k="fIndOk">Teşekkürler, indirme başladı. Başlamadıysa buradan indirin:</span>
+    <span data-k="fIndLink">Excel dosyasını indir</span>
+    <span data-k="fDegOk">Teşekkürler, bilgileriniz ve sonucunuz bize ulaştı. Bir iş günü içinde size döneceğiz.</span>
+    <span data-k="fHata">Bir sorun oluştu. Lütfen tekrar deneyin ya da info@vohdigital.com adresine yazın.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Tasarım &amp; Yazılım. · <a href="../../kvkk/">KVKK ve gizlilik</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../">Ana Sayfa</a>
+      <a href="../../araclar/">Araçlar</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../iletisim/">İletişim</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../araclar/arac.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="sr-Latn-ME" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Skriveni trošak vođenja posla u Excelu | Konyaz</title>
+<meta name="description" content="Izračunajte koliko vašu firmu godišnje košta ponovni unos istih podataka, ručna izrada izvještaja i greške zbog fajlova.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/me/alati/skriveni-trosak-excela/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Skriveni trošak vođenja posla u Excelu | Konyaz">
+<meta property="og:description" content="Izračunajte koliko vašu firmu godišnje košta ponovni unos istih podataka, ručna izrada izvještaja i greške zbog fajlova.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/me/alati/skriveni-trosak-excela/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="sr_ME">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Skriveni trošak vođenja posla u Excelu | Konyaz">
+<meta name="twitter:description" content="Izračunajte koliko vašu firmu godišnje košta ponovni unos istih podataka, ručna izrada izvještaja i greške zbog fajlova.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Skriveni trošak vođenja posla u Excelu","description":"Izračunajte koliko vašu firmu godišnje košta ponovni unos istih podataka, ručna izrada izvještaja i greške zbog fajlova.","url":"https://emreceran.github.io/konyaz/me/alati/skriveni-trosak-excela/","inLanguage":"sr-Latn-ME","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kako da procijenim sedmično vrijeme za ponovni unos?","acceptedAnswer":{"@type":"Answer","text":"Zamolite nekoliko ljudi iz tima da sedmicu dana bilježe koliko vremena potroše kad istu informaciju upisuju drugi put, traže fajl ili pitaju „koji je fajl najnoviji“. U većini firmi izađe 3–6 sati sedmično po osobi."}},{"@type":"Question","name":"Koje greške da računam?","acceptedAnswer":{"@type":"Answer","text":"Pogrešno ili nepotpuno isporučena narudžba, posao koji stoji zbog manjka materijala, isporuka za koju nije izdata faktura, ponuda poslata sa pogrešnom cijenom, probijen rok. Kao trošak upišite ponovnu isporuku, prekovremeni rad, odobreni popust ili izgubljeni profit."}},{"@type":"Question","name":"Da li softver uklanja cijeli ovaj trošak?","acceptedAnswer":{"@type":"Answer","text":"Ne cijeli. Ali kad se informacija unese jednom i svuda čita iz istog zapisa, nestaje veći dio vremena za ponovni unos i ručne izvještaje, kao i većina grešaka koje nastaju zbog neslaganja između fajlova."}},{"@type":"Question","name":"Da li se brojke koje unesem negdje šalju?","acceptedAnswer":{"@type":"Answer","text":"Ne, osim ako ih sami ne pošaljete. Obračun se radi u potpunosti u vašem pregledaču i ne čuva se. Brojke do nas stižu samo ako popunite i pošaljete obrazac „Procijenite moj rezultat“, kako bismo vam se mogli javiti."}}],"inLanguage":"sr-Latn-ME"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/excel-maliyeti/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/excel-hidden-cost/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/excel-xerci/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/excel-hidden-cost/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/trosak-excela/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/skriveni-trosak-excela/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/kostoja-e-excel/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/trosok-na-excel/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/excel-hidden-cost/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../me/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../me/#hizmetler">Usluge</a>
+        <a href="../../../me/#neden">Zašto mi</a>
+        <a href="../../../me/#isler">Radovi</a>
+        <a href="../../../me/alati/" class="active">Alati</a>
+        <a href="../../../me/blog/">Blog</a>
+        <a href="../../../me/kontakt/">Kontakt</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">ME ▾</summary><div><a href="../../../araclar/excel-maliyeti/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/excel-hidden-cost/" hreflang="en" lang="en">English</a><a href="../../../az/aletler/excel-xerci/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/tools/excel-hidden-cost/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/trosak-excela/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/alati/skriveni-trosak-excela/" hreflang="sr-ME" lang="sr-Latn-ME" aria-current="true">Crnogorski</a><a href="../../../sq/mjete/kostoja-e-excel/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/alatki/trosok-na-excel/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../me/kontakt/" class="btn btn-primary">Zatražite ponudu</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../me/alati/" class="back">← Svi alati</a>
+  <div class="kicker" style="margin-top:22px">Besplatan alat</div>
+  <h1>Skriveni trošak vođenja posla u Excelu</h1>
+  <p class="lead">Licenca za Excel je jeftina; skupo je kad se ista informacija posebno unosi u više fajlova, kad se izvještaji ručno sklapaju i kad nastaju greške zbog neslaganja između fajlova. Ovaj alat taj trošak pretvara u brojku.</p>
+  <div class="tgrid">
+    <form class="panel" id="em" onsubmit="return false">
+      <h2>Danas u vašoj firmi</h2>
+      <div class="alan"><label for="kisi">Broj ljudi koji posao prate kroz fajlove</label><div class="girdi"><input id="kisi" type="number" inputmode="decimal" min="0" step="1"><span>osoba</span></div><small>Oni koji narudžbe, zalihe, proizvodnju, projekte ili knjigovodstvo vode u Excelu i sličnim fajlovima.</small></div>
+      <div class="alan"><label for="tekrar">Ponovni unos i traženje fajlova po osobi</label><div class="girdi"><input id="tekrar" type="number" inputmode="decimal" min="0" step="any"><span>sati/sedmično</span></div><small>Upisivanje iste informacije drugi put, kopiranje, traženje najnovijeg fajla, provjera brojki.</small></div>
+      <div class="alan"><label for="rapor">Vrijeme za izradu izvještaja i tabela</label><div class="girdi"><input id="rapor" type="number" inputmode="decimal" min="0" step="any"><span>sati/mjesečno</span></div><small>Mjesečni izvještaj, tabela za upravu, spiskovi za kupce ili banku. Zbir za cijeli tim.</small></div>
+      <div class="iki">
+        <div class="alan"><label for="hata">Greške zbog fajlova</label><div class="girdi"><input id="hata" type="number" inputmode="decimal" min="0" step="1"><span>komada/mjesečno</span></div><small>Pogrešna narudžba, manjak materijala, neizdata faktura, probijen rok.</small></div>
+        <div class="alan"><label for="hataMaliyet">Prosječni trošak jedne greške</label><div class="girdi"><input id="hataMaliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Ponovna isporuka, prekovremeni rad, popust, izgubljeni profit.</small></div>
+      </div>
+      <div class="alan"><label for="saatMaliyet">Trošak jednog radnog sata</label><div class="girdi"><input id="saatMaliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤/sat</span></div><small>Ako ga ne znate, izračunajte ga <a href="../../../me/alati/trosak-radnog-sata/">kalkulatorom troška radnog sata</a>.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Rezultat</h2>
+      <div class="buyuk">
+        <div class="kutu ana"><div class="ad">Godišnji skriveni trošak</div><div class="deger" id="yillikM">–</div><div class="alt" id="aylikM"></div></div>
+        <div class="kutu"><div class="ad">Vrijeme potrošeno na fajlove</div><div class="deger" id="kayipSaat">–</div><div class="alt" id="kayipKisi"></div></div>
+      </div>
+      <div class="serit" id="emSerit"></div>
+      <div class="lejant"><span><b style="background:#1A9AA0"></b>Ponovni unos i traženje</span><span><b style="background:#45C4C6"></b>Ručni izvještaji</span><span><b style="background:#F87171"></b>Greške</span></div>
+      <p class="yorum" id="emYorum"></p>
+      <div class="satir"><span>Ponovni unos i traženje fajlova</span><b id="mTekrar">–</b></div>
+      <div class="satir"><span>Ručno pripremljeni izvještaji</span><b id="mRapor">–</b></div>
+      <div class="satir"><span>Greške zbog fajlova</span><b id="mHata">–</b></div>
+      <p class="not">Uzima se 48 radnih nedjelja godišnje i 1.800 sati za zaposlenog s punim radnim vremenom. Obračun se radi u vašem pregledaču; vaše brojke nigdje ne idu ako ih sami ne pošaljete.</p>
+    </section>
+  </div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Što ovaj rezultat znači za vas?</h3>
+  <p>Pošaljite nam svoje brojke i rezultat; pregledaćemo ih i javiti vam se u roku od jednog radnog dana. Besplatno i bez obaveze.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Procijenite moj rezultat</button>
+</div></div>
+<div id="metin" hidden><span data-k="ay">mjeseci</span><span data-k="saatDeger">{s} sati</span><span data-k="kisiDeger">{s} zaposlenih s punim radnim vremenom</span><span data-k="yMaliyet">Praćenje posla kroz fajlove košta vas godišnje oko {y}; od toga {b} otpada na {k}. Vaš tim godišnje {s} troši na fajlove umjesto na posao, a to je rad od {c}.</span><span data-k="kTekrar">ponovni unos i traženje fajlova</span><span data-k="kRapor">ručno pripremljene izvještaje</span><span data-k="kHata">greške</span></div>
+
+<section class="aciklama">
+  <h2>Kako se računa?</h2>
+  <ul>
+    <li><strong>Trošak ponovnog unosa</strong> = broj ljudi × sati sedmično × 48 sedmica × trošak radnog sata</li>
+    <li><strong>Trošak izvještaja</strong> = mjesečni sati za izvještaje × 12 × trošak radnog sata</li>
+    <li><strong>Trošak grešaka</strong> = broj grešaka mjesečno × 12 × trošak jedne greške</li>
+  </ul>
+  <p>Ove tri stavke se ne vide ni u jednom redu budžeta: gube se u platama, u prekovremenom radu i u greškama za koje se kaže „dešava se“. Zato se kad se priča o cijeni softvera s druge strane najčešće stavi nula. Pravo poređenje je između cijene softvera i godišnjeg zbira ove tabele. Više o tome u tekstu <a href="../../../me/blog/sa-excela-na-erp/">Sa Excela na ERP</a>.</p>
+  <h2>Česta pitanja</h2>
+<h3>Kako da procijenim sedmično vrijeme za ponovni unos?</h3>
+<p>Zamolite nekoliko ljudi iz tima da sedmicu dana bilježe koliko vremena potroše kad istu informaciju upisuju drugi put, traže fajl ili pitaju „koji je fajl najnoviji“. U većini firmi izađe 3–6 sati sedmično po osobi.</p>
+<h3>Koje greške da računam?</h3>
+<p>Pogrešno ili nepotpuno isporučena narudžba, posao koji stoji zbog manjka materijala, isporuka za koju nije izdata faktura, ponuda poslata sa pogrešnom cijenom, probijen rok. Kao trošak upišite ponovnu isporuku, prekovremeni rad, odobreni popust ili izgubljeni profit.</p>
+<h3>Da li softver uklanja cijeli ovaj trošak?</h3>
+<p>Ne cijeli. Ali kad se informacija unese jednom i svuda čita iz istog zapisa, nestaje veći dio vremena za ponovni unos i ručne izvještaje, kao i većina grešaka koje nastaju zbog neslaganja između fajlova.</p>
+<h3>Da li se brojke koje unesem negdje šalju?</h3>
+<p>Ne, osim ako ih sami ne pošaljete. Obračun se radi u potpunosti u vašem pregledaču i ne čuva se. Brojke do nas stižu samo ako popunite i pošaljete obrazac „Procijenite moj rezultat“, kako bismo vam se mogli javiti.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Koji dio ovog troška nestaje već u prvom koraku?</h3>
+    <p>Hajde da zajedno izračunamo koje praćenje prvo treba prebaciti u sistem i šta ćete time dobiti.</p>
+    <a href="../../../me/kontakt/" class="btn btn-primary">Razgovarajmo</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Povezani tekstovi</h4>
+  <a href="../../../me/blog/sa-excela-na-erp/">Sa Excela na ERP: zašto tabele prestanu da budu dovoljne? →</a>
+  <a href="../../../me/alati/erp-test-spremnosti/">Je li vrijeme za prelazak sa Excela na ERP? Test →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Besplatan izvještaj o digitalizaciji</h3>
+  <p>Opišite svoje poslovanje u nekoliko koraka, a mi ćemo vam e-mailom poslati izvještaj o tome koji softver vam treba za koji posao i odakle početi.</p></div>
+  <a href="../../../me/besplatan-izvjestaj-digitalizacija/" class="btn btn-primary">Zatražite izvještaj</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Zatvori">×</button>
+    <h2 id="penBaslik">Preuzmite šablon</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Ime i prezime *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Firma *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">E-mail *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefon</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Djelatnost</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Odaberite</option><option value="Üretim">Proizvodnja</option><option value="Proje / taahhüt / inşaat">Projekti / izvođenje radova / građevina</option><option value="Mühendislik / mimarlık">Inženjering / arhitektura</option><option value="Ticaret / dağıtım">Trgovina / distribucija</option><option value="Hizmet">Usluge</option><option value="Diğer">Ostalo</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Broj zaposlenih</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Odaberite</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Što biste željeli dodati</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span>Pročitao/la sam <a href="../../../me/privatnost/" target="_blank" rel="noopener">obavještenje o privatnosti</a>. Dajem izričit pristanak da se moji podaci obrađuju radi kontakta sa mnom i da se putem pružalaca usluga prenose u inostranstvo.</span></label>
+    <div class="hp" aria-hidden="true"><label>Ovo polje ostavite prazno<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Preuzmi</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Preuzmite šablon</span>
+    <span data-k="fIndMetin">Ostavite svoje podatke i preuzimanje počinje odmah. Pitamo da bismo vas mogli obavijestiti kada izađu novi šabloni i alati i odgovoriti na vaša pitanja.</span>
+    <span data-k="fIndDugme">Pošalji podatke i preuzmi</span>
+    <span data-k="fDegBaslik">Hajde da zajedno procijenimo vaš rezultat</span>
+    <span data-k="fDegMetin">Ostavite svoje podatke; brojke koje ste unijeli i rezultat stići će do nas, a mi ćemo vam se javiti u roku od jednog radnog dana. Besplatno i bez obaveze.</span>
+    <span data-k="fDegDugme">Pošalji</span>
+    <span data-k="fEksik">Molimo vas da upišete ime i prezime, firmu i ispravnu e-mail adresu i da označite polje za saglasnost.</span>
+    <span data-k="fRobot">Molimo označite polje „Nisam robot“.</span>
+    <span data-k="fGonder">Šalje se…</span>
+    <span data-k="fIndOk">Hvala, preuzimanje je počelo. Ako nije, preuzmite ovdje:</span>
+    <span data-k="fIndLink">Preuzmi Excel fajl</span>
+    <span data-k="fDegOk">Hvala, vaši podaci i rezultat su stigli do nas. Javićemo vam se u roku od jednog radnog dana.</span>
+    <span data-k="fHata">Došlo je do greške. Molimo pokušajte ponovo ili pišite na info@vohdigital.com.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Dizajn &amp; softver. · <a href="../../../me/privatnost/">Privatnost</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../me/">Početna</a>
+      <a href="../../../me/alati/">Alati</a>
+      <a href="../../../me/blog/">Blog</a>
+      <a href="../../../me/kontakt/">Kontakt</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Teklif fiyatı ve kâr marjı hesaplama | Konyaz</title>
+<meta name="description" content="Maliyet ve hedef marjdan doğru satış fiyatı: maliyete yüzde eklemekle marj arasındaki fark, iskontonun kârdan götürdüğü ve telafi için gereken satış.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/araclar/teklif-fiyati/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Teklif fiyatı ve kâr marjı hesaplama | Konyaz">
+<meta property="og:description" content="Maliyet ve hedef marjdan doğru satış fiyatı: maliyete yüzde eklemekle marj arasındaki fark, iskontonun kârdan götürdüğü ve telafi için gereken satış.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/araclar/teklif-fiyati/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Teklif fiyatı ve kâr marjı hesaplama | Konyaz">
+<meta name="twitter:description" content="Maliyet ve hedef marjdan doğru satış fiyatı: maliyete yüzde eklemekle marj arasındaki fark, iskontonun kârdan götürdüğü ve telafi için gereken satış.">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebPage", "name": "Teklif fiyatı ve marj hesaplayıcı", "description": "Maliyet ve hedef marjdan doğru satış fiyatı: maliyete yüzde eklemekle marj arasındaki fark, iskontonun kârdan götürdüğü ve telafi için gereken satış.", "url": "https://emreceran.github.io/konyaz/araclar/teklif-fiyati/", "inLanguage": "tr-TR", "publisher": {"@type": "Organization", "name": "Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Kâr marjı ile maliyete ekleme oranı aynı şey değil mi?", "acceptedAnswer": {"@type": "Answer", "text": "Değil. Marj, kârın satış fiyatına oranıdır; ekleme oranı (kâr payı) kârın maliyete oranıdır. 100 maliyetli bir ürüne %25 eklerseniz 125’e satarsınız, ama marjınız %20 olur. %25 marj için fiyatın 133,3 olması gerekir."}}, {"@type": "Question", "name": "Maliyete neleri katmalıyım?", "acceptedAnswer": {"@type": "Answer", "text": "Malzemenin yanında işçilik saatini, varsa taşeron ve nakliyeyi, ürüne ya da işe düşen genel gider payını da katın. İşçilik için saat maliyeti aracını kullanabilirsiniz. Eksik maliyetle hesaplanan fiyat ne kadar doğru formülle bulunursa bulunsun düşük çıkar."}}, {"@type": "Question", "name": "%10 iskonto neden kârın yarısını götürebiliyor?", "acceptedAnswer": {"@type": "Answer", "text": "İskonto fiyattan düşer ama maliyet yerinde kalır. Bu yüzden indirimin tamamı kârdan çıkar. Marj %25 iken verilen %10 iskonto, birim kârı üçte birden fazla azaltır; aynı toplam kârı korumak için çok daha fazla satmanız gerekir."}}, {"@type": "Question", "name": "Girdiğim rakamlar bir yere gönderiliyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Siz göndermedikçe hayır. Hesap tamamen tarayıcınızda yapılır ve kaydedilmez. Rakamlar yalnız “Sonucumu değerlendirin” formunu doldurup gönderirseniz, size dönebilmemiz için bize ulaşır."}}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../blog/blog.css">
+<link rel="stylesheet" href="../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/teklif-fiyati/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/quote-pricing/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/teklif-qiymeti/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/quote-pricing/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/cijena-ponude/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/cijena-ponude-marza/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/cmimi-i-ofertes/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/cena-na-ponuda/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/quote-pricing/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../" class="logo"><img class="logo-img" src="../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../#hizmetler">Hizmetler</a>
+        <a href="../../#neden">Neden Biz</a>
+        <a href="../../#isler">İşler</a>
+        <a href="../../araclar/" class="active">Araçlar</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../iletisim/">İletişim</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">TR ▾</summary><div><a href="../../araclar/teklif-fiyati/" hreflang="tr" lang="tr" aria-current="true">Türkçe</a><a href="../../en/tools/quote-pricing/" hreflang="en" lang="en">English</a><a href="../../az/aletler/teklif-qiymeti/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../ar/tools/quote-pricing/" hreflang="ar" lang="ar">العربية</a><a href="../../bs/alati/cijena-ponude/" hreflang="bs" lang="bs">Bosanski</a><a href="../../me/alati/cijena-ponude-marza/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../sq/mjete/cmimi-i-ofertes/" hreflang="sq" lang="sq">Shqip</a><a href="../../mk/alatki/cena-na-ponuda/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../iletisim/" class="btn btn-primary">Teklif Al</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../araclar/" class="back">← Tüm araçlar</a>
+  <div class="kicker" style="margin-top:22px">Ücretsiz araç</div>
+  <h1>Teklif fiyatı ve marj hesaplayıcı</h1>
+  <p class="lead">Maliyetinizi ve hedeflediğiniz kâr marjını girin. Araç doğru satış fiyatını, maliyete yüzde eklemenin nerede yanılttığını ve iskontonun kârdan ne götürdüğünü gösterir.</p>
+  <div class="tgrid">
+    <form class="panel" id="tf" onsubmit="return false">
+      <h2>Ürün ya da iş</h2>
+      <div class="alan"><label for="maliyet">Toplam maliyet</label><div class="girdi"><input id="maliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Malzeme, işçilik, taşeron, nakliye ve genel gider payı dahil. Bir ürün için birim, bir iş için toplam maliyet.</small></div>
+      <div class="alan"><label for="hedefMarj">Hedeflenen kâr marjı</label><div class="girdi"><input id="hedefMarj" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Kârın satış fiyatına oranı.</small></div>
+      <div class="alan"><label for="iskonto">Müşteriye verilecek iskonto</label><div class="girdi"><input id="iskonto" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Pazarlıkta ya da kampanyada fiyattan düşülen oran. Yoksa 0 yazın.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Sonuç</h2>
+      <div class="buyuk">
+        <div class="kutu ana"><div class="ad">Hedef marj için satış fiyatı</div><div class="deger" id="dogruFiyat">–</div><div class="alt" id="dogruMarj"></div></div>
+        <div class="kutu"><div class="ad">İskonto sonrası fiyat</div><div class="deger" id="iskFiyat">–</div><div class="alt" id="iskMarj"></div></div>
+      </div>
+      <p class="yorum" id="tfYorum"></p>
+      <div class="satir"><span>Maliyete aynı yüzdeyi ekleyince çıkan fiyat</span><b id="ekleFiyat">–</b></div>
+      <div class="satir"><span>Bu fiyatla gerçekleşen marj</span><b id="ekleMarj">–</b></div>
+      <div class="satir"><span>Hedef marj için maliyete eklenmesi gereken oran</span><b id="gerekEkle">–</b></div>
+      <div class="satir"><span>İskonto öncesi / sonrası birim kâr</span><b id="birimKar">–</b></div>
+      <div class="satir"><span>İskontoyu telafi için gereken ek satış</span><b id="telafi">–</b></div>
+      <p class="not">Hesap tarayıcınızda yapılır; siz göndermedikçe rakamlarınız hiçbir yere gitmez.</p>
+    </section>
+  </div>
+  <div class="indir"><p><strong>Tekliflerinizi tek dosyada hazırlamak için</strong>Ürün listesinden fiyat çeken teklif formu, satır satır marj kontrolü ve kazanılan / kaybedilen teklif kaydı.</p><a class="btn btn-cizgi" href="../../araclar/sablonlar/teklif-hazirlama-tr.xlsx" data-en-href="../../araclar/sablonlar/teklif-hazirlama-en.xlsx" download>Excel şablonunu indir</a></div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Bu sonuç sizin için ne anlama geliyor?</h3>
+  <p>Rakamlarınızı ve sonucu bize gönderin; bir iş günü içinde değerlendirip size dönelim. Ücretsiz ve bağlayıcı değil.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Sonucumu değerlendirin</button>
+</div></div>
+<div id="metin" hidden><span data-k="marj">marj {m}</span><span data-k="yEkle">Maliyete {h} eklerseniz fiyat {e} olur ama marjınız {h} değil {g} çıkar. Hedeflediğiniz marj için fiyat {f} olmalı; her satışta {k} eksik kalıyor.</span><span data-k="yIsk"> {i} iskonto verildiğinde marj {s} düşüyor. Aynı toplam kârı korumak için {a} daha fazla satmanız gerekir.</span><span data-k="yIskZarar"> {i} iskonto verildiğinde fiyat maliyetin altına iniyor: bu iskontoyla her satış zarar eder.</span><span data-k="yok">telafi edilemez</span></div>
+
+<section class="aciklama">
+  <h2>Hesap nasıl yapılıyor?</h2>
+  <ul>
+    <li><strong>Hedef marj için fiyat</strong> = maliyet ÷ (1 − hedef marj)</li>
+    <li><strong>Maliyete ekleyerek bulunan fiyat</strong> = maliyet × (1 + oran). Bu fiyatın marjı her zaman eklenen orandan düşüktür.</li>
+    <li><strong>İskonto sonrası marj</strong> = 1 − maliyet ÷ (fiyat × (1 − iskonto))</li>
+    <li><strong>Telafi için gereken ek satış</strong> = iskonto öncesi birim kâr ÷ iskonto sonrası birim kâr − 1</li>
+  </ul>
+  <h3>Marj ve maliyete ekleme oranı karşılığı</h3>
+  <table class="tablo">
+    <tr><th>İstenen marj</th><th>Maliyete eklenmesi gereken</th></tr>
+    <tr><td>%10</td><td>%11,1</td></tr>
+    <tr><td>%15</td><td>%17,6</td></tr>
+    <tr><td>%20</td><td>%25</td></tr>
+    <tr><td>%25</td><td>%33,3</td></tr>
+    <tr><td>%30</td><td>%42,9</td></tr>
+    <tr><td>%40</td><td>%66,7</td></tr>
+  </table>
+  <p>Teklifte en sık yapılan hata, marj hedefini maliyete eklenen yüzde gibi kullanmaktır. İkinci hata, maliyete işçilik saatini ve genel gideri katmamaktır. İkisi birleşince yıl sonunda hedeflenen kârın çok altında bir tablo çıkar. Teklif hazırlarken fiyat ve maliyet aynı yerden geliyorsa her satırın marjı teklif gitmeden görülür. Ayrıntısı <a href="../../blog/teklif-sureci/">teklif sürecinde kaybolan zaman ve kâr</a> yazısında.</p>
+  <h2>Sık sorulan sorular</h2>
+<h3>Kâr marjı ile maliyete ekleme oranı aynı şey değil mi?</h3>
+<p>Değil. Marj, kârın satış fiyatına oranıdır; ekleme oranı (kâr payı) kârın maliyete oranıdır. 100 maliyetli bir ürüne %25 eklerseniz 125’e satarsınız, ama marjınız %20 olur. %25 marj için fiyatın 133,3 olması gerekir.</p>
+<h3>Maliyete neleri katmalıyım?</h3>
+<p>Malzemenin yanında işçilik saatini, varsa taşeron ve nakliyeyi, ürüne ya da işe düşen genel gider payını da katın. İşçilik için <a href="../../araclar/saat-maliyeti/">saat maliyeti aracını</a> kullanabilirsiniz. Eksik maliyetle hesaplanan fiyat ne kadar doğru formülle bulunursa bulunsun düşük çıkar.</p>
+<h3>%10 iskonto neden kârın yarısını götürebiliyor?</h3>
+<p>İskonto fiyattan düşer ama maliyet yerinde kalır. Bu yüzden indirimin tamamı kârdan çıkar. Marj %25 iken verilen %10 iskonto, birim kârı üçte birden fazla azaltır; aynı toplam kârı korumak için çok daha fazla satmanız gerekir.</p>
+<h3>Girdiğim rakamlar bir yere gönderiliyor mu?</h3>
+<p>Siz göndermedikçe hayır. Hesap tamamen tarayıcınızda yapılır ve kaydedilmez. Rakamlar yalnız “Sonucumu değerlendirin” formunu doldurup gönderirseniz, size dönebilmemiz için bize ulaşır.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Teklifleriniz birkaç dakikada ve doğru marjla çıksın</h3>
+    <p>Ürün, fiyat ve maliyetin tek yerde durduğu, her teklifin marjının gitmeden görüldüğü bir düzen kuralım.</p>
+    <a href="../../iletisim/" class="btn btn-primary">Konuşalım</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>İlgili yazılar</h4>
+  <a href="../../blog/teklif-sureci/">Teklif sürecinde kaybolan zaman ve kâr →</a>
+  <a href="../../blog/proje-karliligi-olcme/">Proje kârlılığı nasıl ölçülür? →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Ücretsiz dijitalleşme raporu</h3>
+  <p>İşinizi birkaç adımda anlatın; hangi işte hangi yazılıma ihtiyacınız olduğunu ve nereden başlamanız gerektiğini anlatan raporu e-postayla gönderelim.</p></div>
+  <a href="../../ucretsiz-dijitallesme-raporu/" class="btn btn-primary">Raporumu isteyin</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Kapat">×</button>
+    <h2 id="penBaslik">Şablonu indirin</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Ad soyad *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Firma *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">E-posta *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefon</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sektör</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Seçin</option><option value="Üretim">Üretim</option><option value="Proje / taahhüt / inşaat">Proje / taahhüt / inşaat</option><option value="Mühendislik / mimarlık">Mühendislik / mimarlık</option><option value="Ticaret / dağıtım">Ticaret / dağıtım</option><option value="Hizmet">Hizmet</option><option value="Diğer">Diğer</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Çalışan sayısı</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Seçin</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Eklemek istedikleriniz</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span><a href="../../kvkk/" target="_blank" rel="noopener">Aydınlatma metnini</a> okudum. Bilgilerimin benimle iletişim kurulması amacıyla işlenmesine ve hizmet sağlayıcılar aracılığıyla yurt dışına aktarılmasına açık rıza veriyorum.</span></label>
+    <div class="hp" aria-hidden="true"><label>Bu alanı boş bırakın<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">İndir</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Şablonu indirin</span>
+    <span data-k="fIndMetin">Bilgilerinizi bırakın, indirme hemen başlasın. Yeni şablon ve araç çıktığında haber verebilmemiz ve sorularınızı cevaplayabilmemiz için soruyoruz.</span>
+    <span data-k="fIndDugme">Bilgileri gönder ve indir</span>
+    <span data-k="fDegBaslik">Sonucunuzu birlikte değerlendirelim</span>
+    <span data-k="fDegMetin">Bilgilerinizi bırakın; girdiğiniz rakamlar ve sonuç bize ulaşsın, bir iş günü içinde size dönelim. Ücretsiz ve bağlayıcı değil.</span>
+    <span data-k="fDegDugme">Gönder</span>
+    <span data-k="fEksik">Lütfen ad soyad, firma ve geçerli bir e-posta yazın, onay kutusunu işaretleyin.</span>
+    <span data-k="fRobot">Lütfen “Ben robot değilim” kutusunu işaretleyin.</span>
+    <span data-k="fGonder">Gönderiliyor…</span>
+    <span data-k="fIndOk">Teşekkürler, indirme başladı. Başlamadıysa buradan indirin:</span>
+    <span data-k="fIndLink">Excel dosyasını indir</span>
+    <span data-k="fDegOk">Teşekkürler, bilgileriniz ve sonucunuz bize ulaştı. Bir iş günü içinde size döneceğiz.</span>
+    <span data-k="fHata">Bir sorun oluştu. Lütfen tekrar deneyin ya da info@vohdigital.com adresine yazın.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Tasarım &amp; Yazılım. · <a href="../../kvkk/">KVKK ve gizlilik</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../">Ana Sayfa</a>
+      <a href="../../araclar/">Araçlar</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../iletisim/">İletişim</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../araclar/arac.js" defer></script>
+</body>
+</html>

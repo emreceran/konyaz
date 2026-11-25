@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Excel ile iş takibinin gizli maliyeti | Konyaz</title>
+<meta name="description" content="Aynı bilgiyi tekrar tekrar girmenin, elle rapor hazırlamanın ve dosya kaynaklı hataların işletmenize yıllık maliyetini hesaplayın.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/araclar/excel-maliyeti/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Excel ile iş takibinin gizli maliyeti | Konyaz">
+<meta property="og:description" content="Aynı bilgiyi tekrar tekrar girmenin, elle rapor hazırlamanın ve dosya kaynaklı hataların işletmenize yıllık maliyetini hesaplayın.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/araclar/excel-maliyeti/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Excel ile iş takibinin gizli maliyeti | Konyaz">
+<meta name="twitter:description" content="Aynı bilgiyi tekrar tekrar girmenin, elle rapor hazırlamanın ve dosya kaynaklı hataların işletmenize yıllık maliyetini hesaplayın.">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebPage", "name": "Excel ile iş takibinin gizli maliyeti", "description": "Aynı bilgiyi tekrar tekrar girmenin, elle rapor hazırlamanın ve dosya kaynaklı hataların işletmenize yıllık maliyetini hesaplayın.", "url": "https://emreceran.github.io/konyaz/araclar/excel-maliyeti/", "inLanguage": "tr-TR", "publisher": {"@type": "Organization", "name": "Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Haftalık tekrar giriş süresini nasıl tahmin ederim?", "acceptedAnswer": {"@type": "Answer", "text": "Bir hafta boyunca ekipten birkaç kişiye, bir bilgiyi ikinci kez bir yere yazdıkları, dosya aradıkları ya da \"hangi dosya güncel\" diye sordukları süreyi not etmelerini isteyin. Çoğu firmada kişi başı haftada 3–6 saat çıkar."}}, {"@type": "Question", "name": "Hangi hataları saymalıyım?", "acceptedAnswer": {"@type": "Answer", "text": "Yanlış ya da eksik giden sipariş, eksik malzeme yüzünden duran iş, faturası kesilmeyen teslimat, yanlış fiyatla giden teklif, kaçan termin. Maliyet olarak tekrar sevkiyatı, fazla mesaiyi, verilen indirimi ya da kaybedilen kârı yazın."}}, {"@type": "Question", "name": "Bu maliyetin tamamı bir yazılımla ortadan kalkar mı?", "acceptedAnswer": {"@type": "Answer", "text": "Tamamı değil. Ama bilgi bir kez girilip her yerde aynı kayıttan okunduğunda tekrar giriş ve elle rapor süresinin büyük kısmı, dosyalar arası tutarsızlıktan doğan hataların çoğu ortadan kalkar."}}, {"@type": "Question", "name": "Girdiğim rakamlar bir yere gönderiliyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Siz göndermedikçe hayır. Hesap tamamen tarayıcınızda yapılır ve kaydedilmez. Rakamlar yalnız “Sonucumu değerlendirin” formunu doldurup gönderirseniz, size dönebilmemiz için bize ulaşır."}}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../blog/blog.css">
+<link rel="stylesheet" href="../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/excel-maliyeti/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/excel-hidden-cost/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/excel-xerci/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/excel-hidden-cost/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/trosak-excela/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/skriveni-trosak-excela/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/kostoja-e-excel/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/trosok-na-excel/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/excel-hidden-cost/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../" class="logo"><img class="logo-img" src="../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../#hizmetler">Hizmetler</a>
+        <a href="../../#neden">Neden Biz</a>
+        <a href="../../#isler">İşler</a>
+        <a href="../../araclar/" class="active">Araçlar</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../iletisim/">İletişim</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">TR ▾</summary><div><a href="../../araclar/excel-maliyeti/" hreflang="tr" lang="tr" aria-current="true">Türkçe</a><a href="../../en/tools/excel-hidden-cost/" hreflang="en" lang="en">English</a><a href="../../az/aletler/excel-xerci/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../ar/tools/excel-hidden-cost/" hreflang="ar" lang="ar">العربية</a><a href="../../bs/alati/trosak-excela/" hreflang="bs" lang="bs">Bosanski</a><a href="../../me/alati/skriveni-trosak-excela/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../sq/mjete/kostoja-e-excel/" hreflang="sq" lang="sq">Shqip</a><a href="../../mk/alatki/trosok-na-excel/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../iletisim/" class="btn btn-primary">Teklif Al</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../araclar/" class="back">← Tüm araçlar</a>
+  <div class="kicker" style="margin-top:22px">Ücretsiz araç</div>
+  <h1>Excel ile iş takibinin gizli maliyeti</h1>
+  <p class="lead">Excel'in lisansı ucuzdur; pahalı olan, aynı bilginin birkaç dosyaya ayrı ayrı girilmesi, raporların elle derlenmesi ve dosyalar arası tutarsızlıktan doğan hatalardır. Bu araç o maliyeti rakama döker.</p>
+  <div class="tgrid">
+    <form class="panel" id="em" onsubmit="return false">
+      <h2>İşletmenizde bugün</h2>
+      <div class="alan"><label for="kisi">Takibi dosyalarla yapan kişi sayısı</label><div class="girdi"><input id="kisi" type="number" inputmode="decimal" min="0" step="1"><span>kişi</span></div><small>Sipariş, stok, üretim, proje ya da muhasebe takibini Excel ve benzeri dosyalarla yürütenler.</small></div>
+      <div class="alan"><label for="tekrar">Kişi başı tekrar giriş ve dosya arama</label><div class="girdi"><input id="tekrar" type="number" inputmode="decimal" min="0" step="any"><span>saat/hafta</span></div><small>Aynı bilgiyi ikinci kez yazmak, kopyalamak, güncel dosyayı bulmak, rakam teyit etmek.</small></div>
+      <div class="alan"><label for="rapor">Rapor ve tablo hazırlamaya giden süre</label><div class="girdi"><input id="rapor" type="number" inputmode="decimal" min="0" step="any"><span>saat/ay</span></div><small>Ay sonu raporu, yönetim tablosu, müşteriye ya da bankaya giden listeler. Bütün ekip toplamı.</small></div>
+      <div class="iki">
+        <div class="alan"><label for="hata">Dosya kaynaklı hata</label><div class="girdi"><input id="hata" type="number" inputmode="decimal" min="0" step="1"><span>adet/ay</span></div><small>Yanlış sipariş, eksik malzeme, kesilmeyen fatura, kaçan termin.</small></div>
+        <div class="alan"><label for="hataMaliyet">Bir hatanın ortalama maliyeti</label><div class="girdi"><input id="hataMaliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Tekrar sevkiyat, fazla mesai, indirim, kaybedilen kâr.</small></div>
+      </div>
+      <div class="alan"><label for="saatMaliyet">Bir çalışma saatinin maliyeti</label><div class="girdi"><input id="saatMaliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤/saat</span></div><small>Bilmiyorsanız <a href="../../araclar/saat-maliyeti/">saat maliyeti aracıyla</a> hesaplayın.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Sonuç</h2>
+      <div class="buyuk">
+        <div class="kutu ana"><div class="ad">Yıllık gizli maliyet</div><div class="deger" id="yillikM">–</div><div class="alt" id="aylikM"></div></div>
+        <div class="kutu"><div class="ad">Dosyaya giden zaman</div><div class="deger" id="kayipSaat">–</div><div class="alt" id="kayipKisi"></div></div>
+      </div>
+      <div class="serit" id="emSerit"></div>
+      <div class="lejant"><span><b style="background:#1A9AA0"></b>Tekrar giriş ve arama</span><span><b style="background:#45C4C6"></b>Elle rapor</span><span><b style="background:#F87171"></b>Hatalar</span></div>
+      <p class="yorum" id="emYorum"></p>
+      <div class="satir"><span>Tekrar giriş ve dosya arama</span><b id="mTekrar">–</b></div>
+      <div class="satir"><span>Elle hazırlanan raporlar</span><b id="mRapor">–</b></div>
+      <div class="satir"><span>Dosya kaynaklı hatalar</span><b id="mHata">–</b></div>
+      <p class="not">Yılda 48 çalışma haftası ve tam zamanlı bir çalışan için 1.800 saat esas alınır. Hesap tarayıcınızda yapılır; siz göndermedikçe rakamlarınız hiçbir yere gitmez.</p>
+    </section>
+  </div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Bu sonuç sizin için ne anlama geliyor?</h3>
+  <p>Rakamlarınızı ve sonucu bize gönderin; bir iş günü içinde değerlendirip size dönelim. Ücretsiz ve bağlayıcı değil.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Sonucumu değerlendirin</button>
+</div></div>
+<div id="metin" hidden><span data-k="ay">ay</span><span data-k="saatDeger">{s} saat</span><span data-k="kisiDeger">{s} tam zamanlı çalışan</span><span data-k="yMaliyet">Dosyalarla yürüyen takip size yılda yaklaşık {y} mal oluyor; bunun {b} kısmı {k}. Ekibin yılda {s} işe değil dosyaya gidiyor, bu {c} demek.</span><span data-k="kTekrar">tekrar giriş ve dosya arama</span><span data-k="kRapor">elle hazırlanan raporlar</span><span data-k="kHata">hatalar</span></div>
+
+<section class="aciklama">
+  <h2>Hesap nasıl yapılıyor?</h2>
+  <ul>
+    <li><strong>Tekrar giriş maliyeti</strong> = kişi sayısı × haftalık saat × 48 hafta × saat maliyeti</li>
+    <li><strong>Rapor maliyeti</strong> = aylık rapor saati × 12 × saat maliyeti</li>
+    <li><strong>Hata maliyeti</strong> = aylık hata sayısı × 12 × bir hatanın maliyeti</li>
+  </ul>
+  <p>Bu üç kalem bütçede hiçbir satırda görünmez: maaşın içinde, fazla mesainin içinde, "olur böyle şeyler" denen hataların içinde kaybolur. Bu yüzden bir yazılımın maliyeti konuşulurken karşısına çoğu zaman sıfır konur. Gerçek karşılaştırma, yazılımın maliyeti ile bu tablonun yıllık toplamı arasındadır. Ayrıntısı <a href="../../blog/excelden-erpye/">Excel'den ERP'ye</a> yazısında.</p>
+  <h2>Sık sorulan sorular</h2>
+<h3>Haftalık tekrar giriş süresini nasıl tahmin ederim?</h3>
+<p>Bir hafta boyunca ekipten birkaç kişiye, bir bilgiyi ikinci kez bir yere yazdıkları, dosya aradıkları ya da "hangi dosya güncel" diye sordukları süreyi not etmelerini isteyin. Çoğu firmada kişi başı haftada 3–6 saat çıkar.</p>
+<h3>Hangi hataları saymalıyım?</h3>
+<p>Yanlış ya da eksik giden sipariş, eksik malzeme yüzünden duran iş, faturası kesilmeyen teslimat, yanlış fiyatla giden teklif, kaçan termin. Maliyet olarak tekrar sevkiyatı, fazla mesaiyi, verilen indirimi ya da kaybedilen kârı yazın.</p>
+<h3>Bu maliyetin tamamı bir yazılımla ortadan kalkar mı?</h3>
+<p>Tamamı değil. Ama bilgi bir kez girilip her yerde aynı kayıttan okunduğunda tekrar giriş ve elle rapor süresinin büyük kısmı, dosyalar arası tutarsızlıktan doğan hataların çoğu ortadan kalkar.</p>
+<h3>Girdiğim rakamlar bir yere gönderiliyor mu?</h3>
+<p>Siz göndermedikçe hayır. Hesap tamamen tarayıcınızda yapılır ve kaydedilmez. Rakamlar yalnız “Sonucumu değerlendirin” formunu doldurup gönderirseniz, size dönebilmemiz için bize ulaşır.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Bu maliyetin hangi kısmı ilk adımda kalkar?</h3>
+    <p>Hangi takibin önce sisteme taşınması gerektiğini ve bunun size ne kazandıracağını birlikte hesaplayalım.</p>
+    <a href="../../iletisim/" class="btn btn-primary">Konuşalım</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>İlgili yazılar</h4>
+  <a href="../../blog/excelden-erpye/">Excel'den ERP'ye: tablolar neden yetmez oluyor? →</a>
+  <a href="../../araclar/erp-hazirlik-testi/">Excel'den ERP'ye geçme zamanı geldi mi? Test →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Ücretsiz dijitalleşme raporu</h3>
+  <p>İşinizi birkaç adımda anlatın; hangi işte hangi yazılıma ihtiyacınız olduğunu ve nereden başlamanız gerektiğini anlatan raporu e-postayla gönderelim.</p></div>
+  <a href="../../ucretsiz-dijitallesme-raporu/" class="btn btn-primary">Raporumu isteyin</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Kapat">×</button>
+    <h2 id="penBaslik">Şablonu indirin</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Ad soyad *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Firma *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">E-posta *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefon</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sektör</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Seçin</option><option value="Üretim">Üretim</option><option value="Proje / taahhüt / inşaat">Proje / taahhüt / inşaat</option><option value="Mühendislik / mimarlık">Mühendislik / mimarlık</option><option value="Ticaret / dağıtım">Ticaret / dağıtım</option><option value="Hizmet">Hizmet</option><option value="Diğer">Diğer</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Çalışan sayısı</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Seçin</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Eklemek istedikleriniz</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span><a href="../../kvkk/" target="_blank" rel="noopener">Aydınlatma metnini</a> okudum. Bilgilerimin benimle iletişim kurulması amacıyla işlenmesine ve hizmet sağlayıcılar aracılığıyla yurt dışına aktarılmasına açık rıza veriyorum.</span></label>
+    <div class="hp" aria-hidden="true"><label>Bu alanı boş bırakın<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">İndir</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Şablonu indirin</span>
+    <span data-k="fIndMetin">Bilgilerinizi bırakın, indirme hemen başlasın. Yeni şablon ve araç çıktığında haber verebilmemiz ve sorularınızı cevaplayabilmemiz için soruyoruz.</span>
+    <span data-k="fIndDugme">Bilgileri gönder ve indir</span>
+    <span data-k="fDegBaslik">Sonucunuzu birlikte değerlendirelim</span>
+    <span data-k="fDegMetin">Bilgilerinizi bırakın; girdiğiniz rakamlar ve sonuç bize ulaşsın, bir iş günü içinde size dönelim. Ücretsiz ve bağlayıcı değil.</span>
+    <span data-k="fDegDugme">Gönder</span>
+    <span data-k="fEksik">Lütfen ad soyad, firma ve geçerli bir e-posta yazın, onay kutusunu işaretleyin.</span>
+    <span data-k="fRobot">Lütfen “Ben robot değilim” kutusunu işaretleyin.</span>
+    <span data-k="fGonder">Gönderiliyor…</span>
+    <span data-k="fIndOk">Teşekkürler, indirme başladı. Başlamadıysa buradan indirin:</span>
+    <span data-k="fIndLink">Excel dosyasını indir</span>
+    <span data-k="fDegOk">Teşekkürler, bilgileriniz ve sonucunuz bize ulaştı. Bir iş günü içinde size döneceğiz.</span>
+    <span data-k="fHata">Bir sorun oluştu. Lütfen tekrar deneyin ya da info@vohdigital.com adresine yazın.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Tasarım &amp; Yazılım. · <a href="../../kvkk/">KVKK ve gizlilik</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../">Ana Sayfa</a>
+      <a href="../../araclar/">Araçlar</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../iletisim/">İletişim</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../araclar/arac.js" defer></script>
+</body>
+</html>

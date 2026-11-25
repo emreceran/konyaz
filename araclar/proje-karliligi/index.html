@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Proje kârlılığı hesaplama aracı | Konyaz</title>
+<meta name="description" content="Teklif tutarı, malzeme, işçilik saati ve genel gideri girin; bir işin görünen kârını ve gerçek kârını, zarar etmeden çalışılabilecek saati görün.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/araclar/proje-karliligi/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Proje kârlılığı hesaplama aracı | Konyaz">
+<meta property="og:description" content="Teklif tutarı, malzeme, işçilik saati ve genel gideri girin; bir işin görünen kârını ve gerçek kârını, zarar etmeden çalışılabilecek saati görün.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/araclar/proje-karliligi/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Proje kârlılığı hesaplama aracı | Konyaz">
+<meta name="twitter:description" content="Teklif tutarı, malzeme, işçilik saati ve genel gideri girin; bir işin görünen kârını ve gerçek kârını, zarar etmeden çalışılabilecek saati görün.">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebPage", "name": "Proje kârlılığı hesaplayıcı", "description": "Teklif tutarı, malzeme, işçilik saati ve genel gideri girin; bir işin görünen kârını ve gerçek kârını, zarar etmeden çalışılabilecek saati görün.", "url": "https://emreceran.github.io/konyaz/araclar/proje-karliligi/", "inLanguage": "tr-TR", "publisher": {"@type": "Organization", "name": "Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Genel gider payını kaç yazmalıyım?", "acceptedAnswer": {"@type": "Answer", "text": "Geçen yılın kira, ofis personeli, araç, yazılım gibi projeye doğrudan yazılmayan giderlerini toplayıp yıllık cironuza bölün. Çıkan oran sizin genel gider payınızdır. Bilmiyorsanız %10–15 ile başlayıp sonucu bir de %20 ile deneyin."}}, {"@type": "Question", "name": "Saat maliyetini nereden bulacağım?", "acceptedAnswer": {"@type": "Answer", "text": "Bir çalışanın size yıllık toplam maliyetini, yıl içinde gerçekten işe yazılabilen saate bölmeniz gerekir. Saat maliyeti aracı bunu hesaplar ve sonucu buraya aktarır."}}, {"@type": "Question", "name": "Görünen kâr ile gerçek kâr arasındaki fark neden bu kadar büyük?", "acceptedAnswer": {"@type": "Answer", "text": "Faturası gelen giderler (malzeme, taşeron, nakliye) kolay görülür. Kendi ekibinizin işe harcadığı saat ve firmanın genel giderleri ise faturayla gelmez, çoğu zaman hesaba hiç girmez. Fark tam olarak bu iki kalemdir."}}, {"@type": "Question", "name": "Girdiğim rakamlar bir yere gönderiliyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Siz göndermedikçe hayır. Hesap tamamen tarayıcınızda yapılır ve kaydedilmez. Rakamlar yalnız “Sonucumu değerlendirin” formunu doldurup gönderirseniz, size dönebilmemiz için bize ulaşır."}}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../blog/blog.css">
+<link rel="stylesheet" href="../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/proje-karliligi/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/project-profitability/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/layihe-gelirliliyi/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/project-profitability/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/profitabilnost-projekta/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/profitabilnost-projekta/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/perfitueshmeria-e-projektit/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/profitabilnost-na-proekt/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/project-profitability/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../" class="logo"><img class="logo-img" src="../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../#hizmetler">Hizmetler</a>
+        <a href="../../#neden">Neden Biz</a>
+        <a href="../../#isler">İşler</a>
+        <a href="../../araclar/" class="active">Araçlar</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../iletisim/">İletişim</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">TR ▾</summary><div><a href="../../araclar/proje-karliligi/" hreflang="tr" lang="tr" aria-current="true">Türkçe</a><a href="../../en/tools/project-profitability/" hreflang="en" lang="en">English</a><a href="../../az/aletler/layihe-gelirliliyi/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../ar/tools/project-profitability/" hreflang="ar" lang="ar">العربية</a><a href="../../bs/alati/profitabilnost-projekta/" hreflang="bs" lang="bs">Bosanski</a><a href="../../me/alati/profitabilnost-projekta/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../sq/mjete/perfitueshmeria-e-projektit/" hreflang="sq" lang="sq">Shqip</a><a href="../../mk/alatki/profitabilnost-na-proekt/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../iletisim/" class="btn btn-primary">Teklif Al</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../araclar/" class="back">← Tüm araçlar</a>
+  <div class="kicker" style="margin-top:22px">Ücretsiz araç</div>
+  <h1>Proje kârlılığı hesaplayıcı</h1>
+  <p class="lead">Bir işin teklif tutarını ve giderlerini girin. Araç, faturası gelen giderlere bakınca görünen kârı ve ekip saatiyle genel gider eklenince kalan gerçek kârı yan yana gösterir.</p>
+  <div class="tgrid">
+    <form class="panel" id="pk" onsubmit="return false">
+      <h2>İşin rakamları</h2>
+      <div class="alan"><label for="tutar">Teklif / sözleşme tutarı</label><div class="girdi"><input id="tutar" type="number" inputmode="decimal" min="0" step="any"><span>¤ · KDV hariç</span></div></div>
+      <div class="iki">
+        <div class="alan"><label for="malzeme">Malzeme ve dış alım</label><div class="girdi"><input id="malzeme" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div></div>
+        <div class="alan"><label for="taseron">Taşeron ve dış hizmet</label><div class="girdi"><input id="taseron" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div></div>
+      </div>
+      <div class="alan"><label for="diger">Diğer doğrudan giderler</label><div class="girdi"><input id="diger" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Nakliye, yol, konaklama, kiralık ekipman gibi bu işe özel harcamalar.</small></div>
+      <div class="iki">
+        <div class="alan"><label for="saat">Ekibin bu işe harcadığı saat</label><div class="girdi"><input id="saat" type="number" inputmode="decimal" min="0" step="any"><span>saat</span></div><small>Bütün çalışanların toplamı.</small></div>
+        <div class="alan"><label for="saatMaliyet">Bir çalışma saatinin maliyeti</label><div class="girdi"><input id="saatMaliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤/saat</span></div><small>Bilmiyorsanız <a href="../../araclar/saat-maliyeti/" style="color:var(--accent)">saat maliyeti aracıyla</a> hesaplayın.</small></div>
+      </div>
+      <div class="alan"><label for="genel">Genel gider payı</label><div class="girdi"><input id="genel" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Kira, ofis, yönetim, araç gibi giderlerin cirodaki oranı.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Sonuç</h2>
+      <div class="buyuk">
+        <div class="kutu"><div class="ad">Görünen kâr<br>(yalnız faturalı giderler)</div><div class="deger" id="gorunen">–</div><div class="alt" id="gorunenMarj"></div></div>
+        <div class="kutu ana"><div class="ad">Gerçek kâr<br>(ekip saati ve genel gider dahil)</div><div class="deger" id="gercek">–</div><div class="alt" id="gercekMarj"></div></div>
+      </div>
+      <div class="serit" id="serit"></div>
+      <div class="lejant"><span><b style="background:#1A9AA0"></b>Malzeme</span><span><b style="background:#45C4C6"></b>Taşeron</span><span><b style="background:#94A3B8"></b>Diğer</span><span><b style="background:#F59E0B"></b>Ekip saati</span><span><b style="background:#7FA3C7"></b>Genel gider</span><span><b style="background:#34D399"></b>Kâr</span></div>
+      <p class="yorum" id="pkYorum"></p>
+      <div class="satir"><span>Zarar etmeden çalışılabilecek en fazla saat</span><b id="basabas">–</b></div>
+      <div class="satir"><span>Bu işte çalışılan her saatin getirdiği</span><b id="saatKazanc">–</b></div>
+      <div class="satir"><span>İşçilik %20 uzarsa gerçek kâr</span><b id="sapma">–</b></div>
+      <p class="not">Hesap tarayıcınızda yapılır; siz göndermedikçe rakamlarınız hiçbir yere gitmez.</p>
+    </section>
+  </div>
+  <div class="indir"><p><strong>Bütün projelerinizi takip etmek için</strong>Proje başına bütçe ve gerçekleşen, saat ve gider kaydı, sapma uyarısı olan Excel şablonu.</p><a class="btn btn-cizgi" href="../../araclar/sablonlar/proje-karlilik-takibi-tr.xlsx" data-en-href="../../araclar/sablonlar/proje-karlilik-takibi-en.xlsx" download>Excel şablonunu indir</a></div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>Bu sonuç sizin için ne anlama geliyor?</h3>
+  <p>Rakamlarınızı ve sonucu bize gönderin; bir iş günü içinde değerlendirip size dönelim. Ücretsiz ve bağlayıcı değil.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Sonucumu değerlendirin</button>
+</div></div>
+<div id="metin" hidden><span data-k="marj">marj {m}</span><span data-k="saatDeger">{s} saat</span><span data-k="yok">hesaplanamaz</span><span data-k="yZarar">Bu iş zarar ediyor. Faturası gelen giderlere bakınca kârlı görünüyor; ekibin saati ve genel gider eklenince {f} fark çıkıyor ve kâr eksiye düşüyor.</span><span data-k="yInce">Kâr var ama ince: gerçek marj {m}. Görünen kârla aradaki {f} fark, ekip saati ve genel giderden geliyor. İşçilik biraz uzarsa kâr hızla erir.</span><span data-k="yIyi">Bu iş kâr bırakıyor, gerçek marj {m}. Yine de görünen kârla aradaki {f} fark, ekip saati yazılmadan bakılan hesabın ne kadar yanılttığını gösteriyor.</span></div>
+
+<section class="aciklama">
+  <h2>Hesap nasıl yapılıyor?</h2>
+  <p>Proje bazlı çalışan firmaların çoğu bir işin kârını teklif tutarından malzeme ve taşeron faturalarını düşerek hesaplar. Bu rakam yanıltıcıdır, çünkü işi yapan kendi ekibinizin saati ve firmayı ayakta tutan genel giderler faturayla gelmez.</p>
+  <ul>
+    <li><strong>Görünen kâr</strong> = teklif tutarı − malzeme − taşeron − diğer doğrudan giderler</li>
+    <li><strong>Gerçek kâr</strong> = görünen kâr − (çalışılan saat × saat maliyeti) − (teklif tutarı × genel gider payı)</li>
+    <li><strong>Zarar etmeden çalışılabilecek saat</strong>, ekip saati dışındaki bütün giderler düşüldükten sonra kalan tutarın saat maliyetine bölünmesiyle bulunur. İş bu saati aşarsa zarar başlar.</li>
+  </ul>
+  <p>En çok yanılan kalem saattir. Teklif verilirken öngörülen saat ile iş bittiğinde harcanan saat çoğu zaman aynı değildir ve bu fark ancak saatler işe yazılıyorsa görünür. Saatlerin her gün işe yazıldığı bir sistemde bu tablo iş bitmeden, iş sürerken izlenebilir. Ayrıntısı <a href="../../blog/proje-karliligi-olcme/">proje kârlılığı nasıl ölçülür</a> yazısında.</p>
+  <h2>Sık sorulan sorular</h2>
+<h3>Genel gider payını kaç yazmalıyım?</h3>
+<p>Geçen yılın kira, ofis personeli, araç, yazılım gibi projeye doğrudan yazılmayan giderlerini toplayıp yıllık cironuza bölün. Çıkan oran sizin genel gider payınızdır. Bilmiyorsanız %10–15 ile başlayıp sonucu bir de %20 ile deneyin.</p>
+<h3>Saat maliyetini nereden bulacağım?</h3>
+<p>Bir çalışanın size yıllık toplam maliyetini, yıl içinde gerçekten işe yazılabilen saate bölmeniz gerekir. <a href="../../araclar/saat-maliyeti/">Saat maliyeti aracı</a> bunu hesaplar ve sonucu buraya aktarır.</p>
+<h3>Görünen kâr ile gerçek kâr arasındaki fark neden bu kadar büyük?</h3>
+<p>Faturası gelen giderler (malzeme, taşeron, nakliye) kolay görülür. Kendi ekibinizin işe harcadığı saat ve firmanın genel giderleri ise faturayla gelmez, çoğu zaman hesaba hiç girmez. Fark tam olarak bu iki kalemdir.</p>
+<h3>Girdiğim rakamlar bir yere gönderiliyor mu?</h3>
+<p>Siz göndermedikçe hayır. Hesap tamamen tarayıcınızda yapılır ve kaydedilmez. Rakamlar yalnız “Sonucumu değerlendirin” formunu doldurup gönderirseniz, size dönebilmemiz için bize ulaşır.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Bütün işlerinizi bu gözle görmek ister misiniz?</h3>
+    <p>Saatlerin ve giderlerin işe yazıldığı, kârın iş sürerken görüldüğü bir düzeni birlikte kuralım.</p>
+    <a href="../../iletisim/" class="btn btn-primary">Konuşalım</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>İlgili yazılar</h4>
+  <a href="../../blog/proje-karliligi-olcme/">Proje kârlılığı nasıl ölçülür? →</a>
+  <a href="../../blog/teklif-sureci/">Teklif sürecinde kaybolan zaman ve kâr →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Ücretsiz dijitalleşme raporu</h3>
+  <p>İşinizi birkaç adımda anlatın; hangi işte hangi yazılıma ihtiyacınız olduğunu ve nereden başlamanız gerektiğini anlatan raporu e-postayla gönderelim.</p></div>
+  <a href="../../ucretsiz-dijitallesme-raporu/" class="btn btn-primary">Raporumu isteyin</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Kapat">×</button>
+    <h2 id="penBaslik">Şablonu indirin</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Ad soyad *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Firma *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">E-posta *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Telefon</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sektör</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Seçin</option><option value="Üretim">Üretim</option><option value="Proje / taahhüt / inşaat">Proje / taahhüt / inşaat</option><option value="Mühendislik / mimarlık">Mühendislik / mimarlık</option><option value="Ticaret / dağıtım">Ticaret / dağıtım</option><option value="Hizmet">Hizmet</option><option value="Diğer">Diğer</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Çalışan sayısı</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Seçin</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Eklemek istedikleriniz</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span><a href="../../kvkk/" target="_blank" rel="noopener">Aydınlatma metnini</a> okudum. Bilgilerimin benimle iletişim kurulması amacıyla işlenmesine ve hizmet sağlayıcılar aracılığıyla yurt dışına aktarılmasına açık rıza veriyorum.</span></label>
+    <div class="hp" aria-hidden="true"><label>Bu alanı boş bırakın<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">İndir</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Şablonu indirin</span>
+    <span data-k="fIndMetin">Bilgilerinizi bırakın, indirme hemen başlasın. Yeni şablon ve araç çıktığında haber verebilmemiz ve sorularınızı cevaplayabilmemiz için soruyoruz.</span>
+    <span data-k="fIndDugme">Bilgileri gönder ve indir</span>
+    <span data-k="fDegBaslik">Sonucunuzu birlikte değerlendirelim</span>
+    <span data-k="fDegMetin">Bilgilerinizi bırakın; girdiğiniz rakamlar ve sonuç bize ulaşsın, bir iş günü içinde size dönelim. Ücretsiz ve bağlayıcı değil.</span>
+    <span data-k="fDegDugme">Gönder</span>
+    <span data-k="fEksik">Lütfen ad soyad, firma ve geçerli bir e-posta yazın, onay kutusunu işaretleyin.</span>
+    <span data-k="fRobot">Lütfen “Ben robot değilim” kutusunu işaretleyin.</span>
+    <span data-k="fGonder">Gönderiliyor…</span>
+    <span data-k="fIndOk">Teşekkürler, indirme başladı. Başlamadıysa buradan indirin:</span>
+    <span data-k="fIndLink">Excel dosyasını indir</span>
+    <span data-k="fDegOk">Teşekkürler, bilgileriniz ve sonucunuz bize ulaştı. Bir iş günü içinde size döneceğiz.</span>
+    <span data-k="fHata">Bir sorun oluştu. Lütfen tekrar deneyin ya da info@vohdigital.com adresine yazın.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Tasarım &amp; Yazılım. · <a href="../../kvkk/">KVKK ve gizlilik</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../">Ana Sayfa</a>
+      <a href="../../araclar/">Araçlar</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../iletisim/">İletişim</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../araclar/arac.js" defer></script>
+</body>
+</html>

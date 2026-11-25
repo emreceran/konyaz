@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Production lead time: when will it be done? | Konyaz</title>
+<meta name="description" content="Enter quantity, output per hour, working hours and work queued on the machine; see when the order will be done and whether it meets the due date.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/en/tools/lead-time-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Production lead time: when will it be done? | Konyaz">
+<meta property="og:description" content="Enter quantity, output per hour, working hours and work queued on the machine; see when the order will be done and whether it meets the due date.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/en/tools/lead-time-calculator/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Production lead time: when will it be done? | Konyaz">
+<meta name="twitter:description" content="Enter quantity, output per hour, working hours and work queued on the machine; see when the order will be done and whether it meets the due date.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Production lead time calculator","description":"Enter quantity, output per hour, working hours and work queued on the machine; see when the order will be done and whether it meets the due date.","url":"https://emreceran.github.io/konyaz/en/tools/lead-time-calculator/","inLanguage":"en","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What should I enter as the efficiency rate?","acceptedAnswer":{"@type":"Answer","text":"The ratio between the machine's rated speed and what it actually turns out. Breakdowns, setups, waiting for materials and defects lower this rate. If you haven't measured it, start with 60–70%; you can find your own rate with the OEE tool."}},{"@type":"Question","name":"Why does work queued on the machine matter?","acceptedAnswer":{"@type":"Answer","text":"If the order doesn't go on the machine today, the finish date slips by that much too. The item most often forgotten when promising a date is the work that has to be finished first. For jobs that go through several machines, go by the machine with the longest queue."}},{"@type":"Question","name":"Are public holidays taken into account?","acceptedAnswer":{"@type":"Answer","text":"No, only weekends are. If there are public holidays in between, add those days to the \"work queued on the machine\" field. Our Excel template has a holiday list."}},{"@type":"Question","name":"Are the numbers I enter sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"Not unless you send it. The calculation is done entirely in your browser and nothing is saved. Your details reach us only if you fill in and send the “Evaluate my result” form, so that we can get back to you."}}],"inLanguage":"en"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/termin-hesaplama/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/lead-time-calculator/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/tehvil-tarixi/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/lead-time-calculator/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/rok-isporuke/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/rok-proizvodnje/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/afati-i-prodhimit/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/rok-na-proizvodstvo/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/lead-time-calculator/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../en/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../en/#hizmetler">Services</a>
+        <a href="../../../en/#neden">Why Us</a>
+        <a href="../../../en/#isler">Work</a>
+        <a href="../../../en/tools/" class="active">Tools</a>
+        <a href="../../../en/blog/">Blog</a>
+        <a href="../../../en/contact/">Contact</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">EN ▾</summary><div><a href="../../../araclar/termin-hesaplama/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/lead-time-calculator/" hreflang="en" lang="en" aria-current="true">English</a><a href="../../../az/aletler/tehvil-tarixi/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/tools/lead-time-calculator/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/rok-isporuke/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/alati/rok-proizvodnje/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/mjete/afati-i-prodhimit/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/alatki/rok-na-proizvodstvo/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../en/contact/" class="btn btn-primary">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../en/tools/" class="back">← All tools</a>
+  <div class="kicker" style="margin-top:22px">Free tool</div>
+  <h1>Production lead time calculator</h1>
+  <p class="lead">When a customer asks "when can you deliver?", answer with a calculation, not a guess. The tool shows when the order will be finished and whether it meets the requested date.</p>
+  <div class="tgrid">
+    <form class="panel" id="tm" onsubmit="return false">
+      <h2>Order and machine</h2>
+      <div class="iki">
+        <div class="alan"><label for="adet">Order quantity</label><div class="girdi"><input id="adet" type="number" inputmode="decimal" min="0" step="1"><span>units</span></div></div>
+        <div class="alan"><label for="hiz">Output per hour</label><div class="girdi"><input id="hiz" type="number" inputmode="decimal" min="0" step="any"><span>units/hour</span></div><small>The normal speed of the machine or line.</small></div>
+      </div>
+      <div class="iki">
+        <div class="alan"><label for="gunSaat">Working hours per day</label><div class="girdi"><input id="gunSaat" type="number" inputmode="decimal" min="0" step="any"><span>hours</span></div><small>Enter 16 for two shifts.</small></div>
+        <div class="alan"><label for="haftaGun">Working days per week</label><div class="girdi"><input id="haftaGun" type="number" inputmode="decimal" min="0" step="1"><span>days</span></div></div>
+      </div>
+      <div class="iki">
+        <div class="alan"><label for="verim">Efficiency rate</label><div class="girdi"><input id="verim" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Allowance for downtime, setups and defects.</small></div>
+        <div class="alan"><label for="kurulum">Preparation and setup time</label><div class="girdi"><input id="kurulum" type="number" inputmode="decimal" min="0" step="any"><span>hours</span></div><small>Mould change, first-article approval.</small></div>
+      </div>
+      <div class="alan"><label for="bekleyen">Work queued ahead on the machine</label><div class="girdi"><input id="bekleyen" type="number" inputmode="decimal" min="0" step="any"><span>working days</span></div><small>Time for the jobs that must be finished before this order can start.</small></div>
+      <div class="alan"><label for="terminTarih">Customer's requested date</label><div class="girdi"><input id="terminTarih" type="date"></div></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Result</h2>
+      <div class="buyuk">
+        <div class="kutu ana"><div class="ad">Estimated finish date</div><div class="deger" id="bitis">–</div><div class="alt" id="bitisAlt"></div></div>
+        <div class="kutu"><div class="ad">Production time</div><div class="deger" id="sure">–</div><div class="alt" id="sureSaat"></div></div>
+      </div>
+      <p class="yorum" id="tmYorum"></p>
+      <div class="satir"><span>Production start date</span><b id="baslama">–</b></div>
+      <div class="satir"><span>Left from today to the requested date</span><b id="kalan">–</b></div>
+      <div class="satir"><span>Work needed to meet the date</span><b id="gerekSaat">–</b></div>
+      <div class="satir"><span>Finish at 100% efficiency</span><b id="tamVerim">–</b></div>
+      <p class="not">Public holidays are not taken into account. The calculation is done in your browser; your details go nowhere unless you send them.</p>
+    </section>
+  </div>
+  <div class="indir"><p><strong>To plan all orders in machine sequence</strong>An Excel template with capacity per machine, order sequence, deadline alerts, holidays and a day-by-day schedule.</p><a class="btn btn-cizgi" href="../../../araclar/sablonlar/uretim-plani-kapasite-tr.xlsx" data-en-href="../../../araclar/sablonlar/uretim-plani-kapasite-en.xlsx" download>Download the Excel template</a></div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>What does this result mean for you?</h3>
+  <p>Send us your figures and the result; we'll review them and get back to you within one business day. Free and non-binding.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Evaluate my result</button>
+</div></div>
+<div id="metin" hidden><span data-k="gunDeger">{s} working days</span><span data-k="saatDeger">{s} hours</span><span data-k="saatGun">{s} hours a day</span><span data-k="yYetisir">The order meets the requested date, with {g} working days to spare between finish and due date.</span><span data-k="ySinir">The order only just meets the due date, with {g} working days to spare. One breakdown or late material delivery and the date is missed.</span><span data-k="yGec">The order misses the requested date by {g} working days. To make it you'd have to work {s} hours a day, or promise {t} as the date instead.</span><span data-k="yImkansiz">The order misses the requested date by {g} working days and can't start until the work ahead of it is done. Promise {t} as the date instead, or change the sequence.</span><span data-k="yok">won't make it</span></div>
+
+<section class="aciklama">
+  <h2>How is it calculated?</h2>
+  <ul>
+    <li><strong>Production time (hours)</strong> = quantity ÷ (output per hour × efficiency rate) + setup time</li>
+    <li><strong>Production time (working days)</strong> = production hours ÷ working hours per day, rounded up</li>
+    <li><strong>The start date</strong> is the first working day after the work queued on the machine is done. The finish date is found by counting the production time in working days from the start.</li>
+  </ul>
+  <p>Working out the due date for a single order is easy. The hard part is recalculating the sequence of dozens of orders sharing the same machine every time something changes. When a rush job comes in, the finish date of every order behind it slips, and you only see that if the whole plan is kept in one place. More on this in the <a href="../../../en/blog/production-management-software/">production management software</a> article.</p>
+  <h2>Frequently asked questions</h2>
+<h3>What should I enter as the efficiency rate?</h3>
+<p>The ratio between the machine's rated speed and what it actually turns out. Breakdowns, setups, waiting for materials and defects lower this rate. If you haven't measured it, start with 60–70%; you can find your own rate with the <a href="../../../en/tools/oee-calculator/">OEE tool</a>.</p>
+<h3>Why does work queued on the machine matter?</h3>
+<p>If the order doesn't go on the machine today, the finish date slips by that much too. The item most often forgotten when promising a date is the work that has to be finished first. For jobs that go through several machines, go by the machine with the longest queue.</p>
+<h3>Are public holidays taken into account?</h3>
+<p>No, only weekends are. If there are public holidays in between, add those days to the "work queued on the machine" field. Our Excel template has a holiday list.</p>
+<h3>Are the numbers I enter sent anywhere?</h3>
+<p>Not unless you send it. The calculation is done entirely in your browser and nothing is saved. Your details reach us only if you fill in and send the “Evaluate my result” form, so that we can get back to you.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Stop working out due dates one order at a time</h3>
+    <p>Let's set up a production plan where the machine sequence and finish dates of orders update on their own.</p>
+    <a href="../../../en/contact/" class="btn btn-primary">Let's talk</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Related articles</h4>
+  <a href="../../../en/blog/production-management-software/">When do you really need production management software? →</a>
+  <a href="../../../en/blog/production-project-tracking/">Project-based production tracking for precast and other manufacturers →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Free digitalization report</h3>
+  <p>Tell us about your business in a few steps, and we'll email you a report on which software you need for which part of your work and where to start.</p></div>
+  <a href="../../../en/free-digitalization-report/" class="btn btn-primary">Request my report</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Close">×</button>
+    <h2 id="penBaslik">Download the template</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Full name *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Company *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">Email *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Phone</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sector</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Select</option><option value="Üretim">Manufacturing</option><option value="Proje / taahhüt / inşaat">Projects / contracting / construction</option><option value="Mühendislik / mimarlık">Engineering / architecture</option><option value="Ticaret / dağıtım">Trade / distribution</option><option value="Hizmet">Services</option><option value="Diğer">Other</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Number of employees</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Select</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Anything you'd like to add</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span>I have read the <a href="../../../en/privacy/" target="_blank" rel="noopener">privacy notice</a>. I give my explicit consent to my details being processed so that I can be contacted, and to their transfer abroad through service providers.</span></label>
+    <div class="hp" aria-hidden="true"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Download</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Download the template</span>
+    <span data-k="fIndMetin">Leave your details and the download starts right away. We ask so we can let you know when new templates and tools come out, and answer your questions.</span>
+    <span data-k="fIndDugme">Send details and download</span>
+    <span data-k="fDegBaslik">Let's go over your result together</span>
+    <span data-k="fDegMetin">Leave your details; the figures you entered and the result will reach us, and we'll get back to you within one business day. Free and non-binding.</span>
+    <span data-k="fDegDugme">Send</span>
+    <span data-k="fEksik">Please enter your full name, company and a valid email address, and tick the consent box.</span>
+    <span data-k="fRobot">Please tick the “I'm not a robot” box.</span>
+    <span data-k="fGonder">Sending…</span>
+    <span data-k="fIndOk">Thank you, the download has started. If it didn't, download it here:</span>
+    <span data-k="fIndLink">Download the Excel file</span>
+    <span data-k="fDegOk">Thank you, we've received your details and your result. We'll get back to you within one business day.</span>
+    <span data-k="fHata">Something went wrong. Please try again or write to info@vohdigital.com.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Design &amp; Software. · <a href="../../../en/privacy/">Privacy</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../en/">Home</a>
+      <a href="../../../en/tools/">Tools</a>
+      <a href="../../../en/blog/">Blog</a>
+      <a href="../../../en/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>

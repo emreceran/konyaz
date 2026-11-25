@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>Quote price and profit margin calculator | Konyaz</title>
+<meta name="description" content="The right selling price from cost and target margin: markup vs. margin, what a discount takes out of profit and the extra sales needed to make up for it.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/en/tools/quote-pricing/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quote price and profit margin calculator | Konyaz">
+<meta property="og:description" content="The right selling price from cost and target margin: markup vs. margin, what a discount takes out of profit and the extra sales needed to make up for it.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/en/tools/quote-pricing/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Quote price and profit margin calculator | Konyaz">
+<meta name="twitter:description" content="The right selling price from cost and target margin: markup vs. margin, what a discount takes out of profit and the extra sales needed to make up for it.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Quote price and margin calculator","description":"The right selling price from cost and target margin: markup vs. margin, what a discount takes out of profit and the extra sales needed to make up for it.","url":"https://emreceran.github.io/konyaz/en/tools/quote-pricing/","inLanguage":"en","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Aren't profit margin and markup the same thing?","acceptedAnswer":{"@type":"Answer","text":"No. Margin is profit as a share of the selling price; markup is profit as a share of cost. If you add 25% to a product that costs 100, you sell it for 125, but your margin is 20%. For a 25% margin the price has to be 133.3."}},{"@type":"Question","name":"What should I include in the cost?","acceptedAnswer":{"@type":"Answer","text":"Besides materials, include labour hours, any subcontractors and transport, and the share of overheads that falls on the product or job. For labour you can use the hourly cost tool. A price calculated on incomplete costs comes out too low, however correct the formula."}},{"@type":"Question","name":"Why can a 10% discount wipe out half your profit?","acceptedAnswer":{"@type":"Answer","text":"A discount comes off the price, but the cost stays the same. So the whole discount comes out of profit. At a 25% margin, a 10% discount cuts the profit per unit by more than a third; to keep the same total profit you have to sell a lot more."}},{"@type":"Question","name":"Are the numbers I enter sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"Not unless you send them. The calculation is done entirely in your browser and nothing is saved. Your figures reach us only if you fill in and send the “Evaluate my result” form, so that we can get back to you."}}],"inLanguage":"en"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/teklif-fiyati/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/quote-pricing/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/teklif-qiymeti/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/quote-pricing/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/cijena-ponude/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/cijena-ponude-marza/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/cmimi-i-ofertes/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/cena-na-ponuda/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/quote-pricing/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../en/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../en/#hizmetler">Services</a>
+        <a href="../../../en/#neden">Why Us</a>
+        <a href="../../../en/#isler">Work</a>
+        <a href="../../../en/tools/" class="active">Tools</a>
+        <a href="../../../en/blog/">Blog</a>
+        <a href="../../../en/contact/">Contact</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">EN ▾</summary><div><a href="../../../araclar/teklif-fiyati/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/quote-pricing/" hreflang="en" lang="en" aria-current="true">English</a><a href="../../../az/aletler/teklif-qiymeti/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/tools/quote-pricing/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/cijena-ponude/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/alati/cijena-ponude-marza/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/mjete/cmimi-i-ofertes/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/alatki/cena-na-ponuda/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../en/contact/" class="btn btn-primary">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../en/tools/" class="back">← All tools</a>
+  <div class="kicker" style="margin-top:22px">Free tool</div>
+  <h1>Quote price and margin calculator</h1>
+  <p class="lead">Enter your cost and the profit margin you're aiming for. The tool shows the right selling price, where adding a percentage to cost misleads you and what a discount takes out of profit.</p>
+  <div class="tgrid">
+    <form class="panel" id="tf" onsubmit="return false">
+      <h2>Product or job</h2>
+      <div class="alan"><label for="maliyet">Total cost</label><div class="girdi"><input id="maliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Including materials, labour, subcontractors, transport and a share of overheads. Unit cost for a product, total cost for a job.</small></div>
+      <div class="alan"><label for="hedefMarj">Target profit margin</label><div class="girdi"><input id="hedefMarj" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>Profit as a share of the selling price.</small></div>
+      <div class="alan"><label for="iskonto">Discount to the customer</label><div class="girdi"><input id="iskonto" type="number" inputmode="decimal" min="0" step="any"><span>%</span></div><small>The rate taken off the price in negotiation or a promotion. Enter 0 if none.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Result</h2>
+      <div class="buyuk">
+        <div class="kutu ana"><div class="ad">Selling price for target margin</div><div class="deger" id="dogruFiyat">–</div><div class="alt" id="dogruMarj"></div></div>
+        <div class="kutu"><div class="ad">Price after discount</div><div class="deger" id="iskFiyat">–</div><div class="alt" id="iskMarj"></div></div>
+      </div>
+      <p class="yorum" id="tfYorum"></p>
+      <div class="satir"><span>Price when the same percentage is added to cost</span><b id="ekleFiyat">–</b></div>
+      <div class="satir"><span>Actual margin at this price</span><b id="ekleMarj">–</b></div>
+      <div class="satir"><span>Markup needed for the target margin</span><b id="gerekEkle">–</b></div>
+      <div class="satir"><span>Profit per unit before / after discount</span><b id="birimKar">–</b></div>
+      <div class="satir"><span>Extra sales needed to make up for the discount</span><b id="telafi">–</b></div>
+      <p class="not">The calculation is done in your browser; your figures go nowhere unless you send them.</p>
+    </section>
+  </div>
+  <div class="indir"><p><strong>To prepare all your quotes in one file</strong>A quote form that pulls prices from the product list, a margin check on every line and a log of won / lost quotes.</p><a class="btn btn-cizgi" href="../../../araclar/sablonlar/teklif-hazirlama-tr.xlsx" data-en-href="../../../araclar/sablonlar/teklif-hazirlama-en.xlsx" download>Download the Excel template</a></div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>What does this result mean for you?</h3>
+  <p>Send us your figures and the result; we'll review them and get back to you within one business day. Free and non-binding.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Evaluate my result</button>
+</div></div>
+<div id="metin" hidden><span data-k="marj">margin {m}</span><span data-k="yEkle">If you add {h} to cost, the price is {e}, but your margin comes out at {g}, not {h}. For the margin you're aiming for, the price should be {f}; every sale is {k} short.</span><span data-k="yIsk"> With a {i} discount the margin drops by {s}. To keep the same total profit you need to sell {a} more.</span><span data-k="yIskZarar"> With a {i} discount the price falls below cost: at this discount every sale loses money.</span><span data-k="yok">can't be made up</span></div>
+
+<section class="aciklama">
+  <h2>How is it calculated?</h2>
+  <ul>
+    <li><strong>Price for target margin</strong> = cost ÷ (1 − target margin)</li>
+    <li><strong>Price found by adding to cost</strong> = cost × (1 + markup). The margin at this price is always lower than the markup added.</li>
+    <li><strong>Margin after discount</strong> = 1 − cost ÷ (price × (1 − discount))</li>
+    <li><strong>Extra sales needed to make up</strong> = profit per unit before discount ÷ profit per unit after discount − 1</li>
+  </ul>
+  <h3>Margin and the matching markup</h3>
+  <table class="tablo">
+    <tr><th>Target margin</th><th>Markup on cost</th></tr>
+    <tr><td>%10</td><td>%11,1</td></tr>
+    <tr><td>%15</td><td>%17,6</td></tr>
+    <tr><td>%20</td><td>%25</td></tr>
+    <tr><td>%25</td><td>%33,3</td></tr>
+    <tr><td>%30</td><td>%42,9</td></tr>
+    <tr><td>%40</td><td>%66,7</td></tr>
+  </table>
+  <p>The most common mistake in quoting is treating the target margin as a percentage added to cost. The second is leaving labour hours and overheads out of the cost. Put the two together and at year end you're looking at far less profit than you aimed for. If prices and costs come from the same place when you prepare a quote, the margin on every line is visible before the quote goes out. More on this in the article <a href="../../../en/blog/quoting-process/">time and profit lost in the quoting process</a>.</p>
+  <h2>Frequently asked questions</h2>
+<h3>Aren't profit margin and markup the same thing?</h3>
+<p>No. Margin is profit as a share of the selling price; markup is profit as a share of cost. If you add 25% to a product that costs 100, you sell it for 125, but your margin is 20%. For a 25% margin the price has to be 133.3.</p>
+<h3>What should I include in the cost?</h3>
+<p>Besides materials, include labour hours, any subcontractors and transport, and the share of overheads that falls on the product or job. For labour you can use the <a href="../../../en/tools/hourly-cost/">hourly cost tool</a>. A price calculated on incomplete costs comes out too low, however correct the formula.</p>
+<h3>Why can a 10% discount wipe out half your profit?</h3>
+<p>A discount comes off the price, but the cost stays the same. So the whole discount comes out of profit. At a 25% margin, a 10% discount cuts the profit per unit by more than a third; to keep the same total profit you have to sell a lot more.</p>
+<h3>Are the numbers I enter sent anywhere?</h3>
+<p>Not unless you send them. The calculation is done entirely in your browser and nothing is saved. Your figures reach us only if you fill in and send the “Evaluate my result” form, so that we can get back to you.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Get quotes out in minutes, with the right margin</h3>
+    <p>Let's set up a system where products, prices and costs sit in one place and every quote's margin is visible before it goes out.</p>
+    <a href="../../../en/contact/" class="btn btn-primary">Let's talk</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Related articles</h4>
+  <a href="../../../en/blog/quoting-process/">Time and profit lost in the quoting process →</a>
+  <a href="../../../en/blog/measuring-project-profitability/">How do you measure project profitability? →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Free digitalization report</h3>
+  <p>Tell us about your business in a few steps, and we'll email you a report on which software you need for which part of your work and where to start.</p></div>
+  <a href="../../../en/free-digitalization-report/" class="btn btn-primary">Request my report</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Close">×</button>
+    <h2 id="penBaslik">Download the template</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Full name *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Company *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">Email *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Phone</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sector</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Select</option><option value="Üretim">Manufacturing</option><option value="Proje / taahhüt / inşaat">Projects / contracting / construction</option><option value="Mühendislik / mimarlık">Engineering / architecture</option><option value="Ticaret / dağıtım">Trade / distribution</option><option value="Hizmet">Services</option><option value="Diğer">Other</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Number of employees</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Select</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Anything you'd like to add</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span>I have read the <a href="../../../en/privacy/" target="_blank" rel="noopener">privacy notice</a>. I give my explicit consent to my details being processed so that I can be contacted, and to their transfer abroad through service providers.</span></label>
+    <div class="hp" aria-hidden="true"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Download</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Download the template</span>
+    <span data-k="fIndMetin">Leave your details and the download starts right away. We ask so we can let you know when new templates and tools come out, and answer your questions.</span>
+    <span data-k="fIndDugme">Send details and download</span>
+    <span data-k="fDegBaslik">Let's go over your result together</span>
+    <span data-k="fDegMetin">Leave your details; the figures you entered and the result will reach us, and we'll get back to you within one business day. Free and non-binding.</span>
+    <span data-k="fDegDugme">Send</span>
+    <span data-k="fEksik">Please enter your full name, company and a valid email address, and tick the consent box.</span>
+    <span data-k="fRobot">Please tick the “I'm not a robot” box.</span>
+    <span data-k="fGonder">Sending…</span>
+    <span data-k="fIndOk">Thank you, the download has started. If it didn't, download it here:</span>
+    <span data-k="fIndLink">Download the Excel file</span>
+    <span data-k="fDegOk">Thank you, we've received your details and your result. We'll get back to you within one business day.</span>
+    <span data-k="fHata">Something went wrong. Please try again or write to info@vohdigital.com.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Design &amp; Software. · <a href="../../../en/privacy/">Privacy</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../en/">Home</a>
+      <a href="../../../en/tools/">Tools</a>
+      <a href="../../../en/blog/">Blog</a>
+      <a href="../../../en/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>The hidden cost of running on Excel | Konyaz</title>
+<meta name="description" content="Calculate what entering the same data over and over, building reports by hand and spreadsheet errors cost your business each year.">
+<link rel="canonical" href="https://emreceran.github.io/konyaz/en/tools/excel-hidden-cost/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The hidden cost of running on Excel | Konyaz">
+<meta property="og:description" content="Calculate what entering the same data over and over, building reports by hand and spreadsheet errors cost your business each year.">
+<meta property="og:url" content="https://emreceran.github.io/konyaz/en/tools/excel-hidden-cost/">
+<meta property="og:site_name" content="Konyaz">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The hidden cost of running on Excel | Konyaz">
+<meta name="twitter:description" content="Calculate what entering the same data over and over, building reports by hand and spreadsheet errors cost your business each year.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"The hidden cost of running your business on Excel","description":"Calculate what entering the same data over and over, building reports by hand and spreadsheet errors cost your business each year.","url":"https://emreceran.github.io/konyaz/en/tools/excel-hidden-cost/","inLanguage":"en","publisher":{"@type":"Organization","name":"Konyaz"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I estimate the weekly time spent re-entering data?","acceptedAnswer":{"@type":"Answer","text":"For one week, ask a few people on the team to note the time they spend typing the same information in a second place, looking for files or asking \"which file is the latest?\". In most companies it comes to 3–6 hours per person per week."}},{"@type":"Question","name":"Which errors should I count?","acceptedAnswer":{"@type":"Answer","text":"Wrong or incomplete orders shipped, work stopped because of missing materials, deliveries never invoiced, quotes sent with the wrong price, missed deadlines. As the cost, enter the repeat shipment, the overtime, the discount given or the profit lost."}},{"@type":"Question","name":"Does software make all of this cost go away?","acceptedAnswer":{"@type":"Answer","text":"Not all of it. But when information is entered once and read from the same record everywhere, most of the time spent on re-entry and manual reports disappears, along with most of the errors caused by files that don't match."}},{"@type":"Question","name":"Are the numbers I enter sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"Not unless you send them. The calculation is done entirely in your browser and nothing is saved. Your figures reach us only if you fill in and send the “Evaluate my result” form, so that we can get back to you."}}],"inLanguage":"en"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../blog/blog.css">
+<link rel="stylesheet" href="../../../araclar/arac.css">
+<!-- hreflang:bas -->
+<link rel="alternate" hreflang="tr" href="https://emreceran.github.io/konyaz/araclar/excel-maliyeti/">
+<link rel="alternate" hreflang="en" href="https://emreceran.github.io/konyaz/en/tools/excel-hidden-cost/">
+<link rel="alternate" hreflang="az" href="https://emreceran.github.io/konyaz/az/aletler/excel-xerci/">
+<link rel="alternate" hreflang="ar" href="https://emreceran.github.io/konyaz/ar/tools/excel-hidden-cost/">
+<link rel="alternate" hreflang="bs" href="https://emreceran.github.io/konyaz/bs/alati/trosak-excela/">
+<link rel="alternate" hreflang="sr-ME" href="https://emreceran.github.io/konyaz/me/alati/skriveni-trosak-excela/">
+<link rel="alternate" hreflang="sq" href="https://emreceran.github.io/konyaz/sq/mjete/kostoja-e-excel/">
+<link rel="alternate" hreflang="mk" href="https://emreceran.github.io/konyaz/mk/alatki/trosok-na-excel/">
+<link rel="alternate" hreflang="x-default" href="https://emreceran.github.io/konyaz/en/tools/excel-hidden-cost/">
+<!-- hreflang:son -->
+<!-- dil-stil:bas -->
+<link rel="icon" href="../../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/konyaz-ikon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../../assets/konyaz-ikon-192.png">
+<link rel="apple-touch-icon" href="../../../assets/konyaz-ikon-180.png">
+<style>
+.vl{position:relative;margin-inline-start:auto;font-size:.88rem}
+.vl+.btn{margin-inline-start:12px}
+.vl summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border,#E6EAF0);border-radius:10px;color:var(--muted,#5B6575);font-weight:600;white-space:nowrap}
+.vl summary::-webkit-details-marker{display:none}
+.vl[open] summary,.vl summary:hover{color:var(--accent,#1A9AA0);border-color:var(--accent,#1A9AA0)}
+.vl div{position:absolute;top:calc(100% + 8px);inset-inline-end:0;background:var(--surface,#fff);border:1px solid var(--border,#E6EAF0);border-radius:12px;box-shadow:0 16px 40px rgba(15,23,42,.12);padding:6px;min-width:170px;z-index:60}
+.vl div a{display:block;padding:8px 12px;border-radius:8px;color:var(--text,#0F172A);font-weight:500;white-space:nowrap}
+.vl div a:hover,.vl div a[aria-current]{background:var(--surface2,#F5F7FA);color:var(--accent,#1A9AA0)}
+@media(max-width:520px){.vl summary{padding:8px 9px}.vl+.btn{margin-inline-start:8px;padding:9px 12px!important}}
+.nav-links{margin-inline-start:auto;margin-inline-end:26px}.vl{margin-inline-start:0}
+</style>
+<!-- dil-stil:son -->
+<script>(function(){var S='https://form.155-117-43-218.sslip.io/konyaz/form',f=window.fetch.bind(window);window.fetch=function(u,o){
+if((u==='/'||u==='/api/lead')&&o&&o.method==='POST'){var d={},b=o.body;
+if(typeof b==='string'&&b.charAt(0)==='{'){d=JSON.parse(b);}else{new URLSearchParams(b).forEach(function(v,k){d[k]=v;});}
+d['form-name']=d['form-name']||'contact';d.sayfa=d.sayfa||location.pathname;
+return f(S,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+return f(u,o);};})();</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="../../../en/" class="logo"><img class="logo-img" src="../../../assets/konyaz-logo-koyu-zemin.svg" alt="Konyaz"></a>
+      <div class="nav-links">
+        <a href="../../../en/#hizmetler">Services</a>
+        <a href="../../../en/#neden">Why Us</a>
+        <a href="../../../en/#isler">Work</a>
+        <a href="../../../en/tools/" class="active">Tools</a>
+        <a href="../../../en/blog/">Blog</a>
+        <a href="../../../en/contact/">Contact</a>
+      </div>
+      <!-- dil-secici:bas --><details class="vl"><summary aria-label="Language">EN ▾</summary><div><a href="../../../araclar/excel-maliyeti/" hreflang="tr" lang="tr">Türkçe</a><a href="../../../en/tools/excel-hidden-cost/" hreflang="en" lang="en" aria-current="true">English</a><a href="../../../az/aletler/excel-xerci/" hreflang="az" lang="az">Azərbaycanca</a><a href="../../../ar/tools/excel-hidden-cost/" hreflang="ar" lang="ar">العربية</a><a href="../../../bs/alati/trosak-excela/" hreflang="bs" lang="bs">Bosanski</a><a href="../../../me/alati/skriveni-trosak-excela/" hreflang="sr-ME" lang="sr-Latn-ME">Crnogorski</a><a href="../../../sq/mjete/kostoja-e-excel/" hreflang="sq" lang="sq">Shqip</a><a href="../../../mk/alatki/trosok-na-excel/" hreflang="mk" lang="mk">Македонски</a></div></details><!-- dil-secici:son -->
+      <a href="../../../en/contact/" class="btn btn-primary">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main class="tool">
+  <a href="../../../en/tools/" class="back">← All tools</a>
+  <div class="kicker" style="margin-top:22px">Free tool</div>
+  <h1>The hidden cost of running your business on Excel</h1>
+  <p class="lead">An Excel licence is cheap. What's expensive is entering the same information separately into several files, compiling reports by hand and the errors caused by files that don't match. This tool puts a number on that cost.</p>
+  <div class="tgrid">
+    <form class="panel" id="em" onsubmit="return false">
+      <h2>In your business today</h2>
+      <div class="alan"><label for="kisi">People who track work in files</label><div class="girdi"><input id="kisi" type="number" inputmode="decimal" min="0" step="1"><span>people</span></div><small>Those who run order, stock, production, project or accounting tracking in Excel and similar files.</small></div>
+      <div class="alan"><label for="tekrar">Re-entry and file searching per person</label><div class="girdi"><input id="tekrar" type="number" inputmode="decimal" min="0" step="any"><span>hours/week</span></div><small>Typing the same information a second time, copying, finding the latest file, double-checking figures.</small></div>
+      <div class="alan"><label for="rapor">Time spent preparing reports and tables</label><div class="girdi"><input id="rapor" type="number" inputmode="decimal" min="0" step="any"><span>hours/month</span></div><small>Month-end report, management summary, lists for customers or the bank. Total for the whole team.</small></div>
+      <div class="iki">
+        <div class="alan"><label for="hata">Errors caused by files</label><div class="girdi"><input id="hata" type="number" inputmode="decimal" min="0" step="1"><span>per month</span></div><small>Wrong orders, missing materials, uninvoiced deliveries, missed deadlines.</small></div>
+        <div class="alan"><label for="hataMaliyet">Average cost of one error</label><div class="girdi"><input id="hataMaliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤</span></div><small>Repeat shipment, overtime, discount, lost profit.</small></div>
+      </div>
+      <div class="alan"><label for="saatMaliyet">Cost of one working hour</label><div class="girdi"><input id="saatMaliyet" type="number" inputmode="decimal" min="0" step="any"><span>¤/hour</span></div><small>If you don't know it, work it out with the <a href="../../../en/tools/hourly-cost/">hourly cost tool</a>.</small></div>
+    </form>
+    <section class="panel sonuc" aria-live="polite">
+      <h2>Result</h2>
+      <div class="buyuk">
+        <div class="kutu ana"><div class="ad">Annual hidden cost</div><div class="deger" id="yillikM">–</div><div class="alt" id="aylikM"></div></div>
+        <div class="kutu"><div class="ad">Time lost to files</div><div class="deger" id="kayipSaat">–</div><div class="alt" id="kayipKisi"></div></div>
+      </div>
+      <div class="serit" id="emSerit"></div>
+      <div class="lejant"><span><b style="background:#1A9AA0"></b>Re-entry and searching</span><span><b style="background:#45C4C6"></b>Manual reports</span><span><b style="background:#F87171"></b>Errors</span></div>
+      <p class="yorum" id="emYorum"></p>
+      <div class="satir"><span>Re-entry and file searching</span><b id="mTekrar">–</b></div>
+      <div class="satir"><span>Reports prepared by hand</span><b id="mRapor">–</b></div>
+      <div class="satir"><span>Errors caused by files</span><b id="mHata">–</b></div>
+      <p class="not">Based on 48 working weeks a year and 1,800 hours for a full-time employee. The calculation is done in your browser; your figures go nowhere unless you send them.</p>
+    </section>
+  </div>
+</main>
+<div class="aciklama"><div class="degerlendir">
+  <div><h3>What does this result mean for you?</h3>
+  <p>Send us your figures and the result; we'll review them and get back to you within one business day. Free and non-binding.</p></div>
+  <button type="button" class="btn btn-primary" data-degerlendir>Evaluate my result</button>
+</div></div>
+<div id="metin" hidden><span data-k="ay">month</span><span data-k="saatDeger">{s} hours</span><span data-k="kisiDeger">{s} full-time employees</span><span data-k="yMaliyet">Running things on files costs you about {y} a year, and {b} of that goes on {k}. Your team spends {s} a year on files instead of actual work, which equals {c}.</span><span data-k="kTekrar">re-entering data and searching for files</span><span data-k="kRapor">reports prepared by hand</span><span data-k="kHata">errors</span></div>
+
+<section class="aciklama">
+  <h2>How is it calculated?</h2>
+  <ul>
+    <li><strong>Re-entry cost</strong> = number of people × weekly hours × 48 weeks × hourly cost</li>
+    <li><strong>Report cost</strong> = monthly report hours × 12 × hourly cost</li>
+    <li><strong>Error cost</strong> = errors per month × 12 × cost of one error</li>
+  </ul>
+  <p>None of these three items shows up on any line of the budget: they get lost in salaries, in overtime and in errors written off as "these things happen". That's why, when the cost of software is discussed, it is usually weighed against zero. The real comparison is between the cost of the software and the annual total in this table. More on this in the <a href="../../../en/blog/excel-to-erp/">Excel to ERP</a> article.</p>
+  <h2>Frequently asked questions</h2>
+<h3>How do I estimate the weekly time spent re-entering data?</h3>
+<p>For one week, ask a few people on the team to note the time they spend typing the same information in a second place, looking for files or asking "which file is the latest?". In most companies it comes to 3–6 hours per person per week.</p>
+<h3>Which errors should I count?</h3>
+<p>Wrong or incomplete orders shipped, work stopped because of missing materials, deliveries never invoiced, quotes sent with the wrong price, missed deadlines. As the cost, enter the repeat shipment, the overtime, the discount given or the profit lost.</p>
+<h3>Does software make all of this cost go away?</h3>
+<p>Not all of it. But when information is entered once and read from the same record everywhere, most of the time spent on re-entry and manual reports disappears, along with most of the errors caused by files that don't match.</p>
+<h3>Are the numbers I enter sent anywhere?</h3>
+<p>Not unless you send them. The calculation is done entirely in your browser and nothing is saved. Your figures reach us only if you fill in and send the “Evaluate my result” form, so that we can get back to you.</p>
+
+</section>
+<div class="aciklama">
+  <div class="cta-box">
+    <h3>Which part of this cost goes away in the first step?</h3>
+    <p>Let's work out together which tracking should move into a system first and what that will save you.</p>
+    <a href="../../../en/contact/" class="btn btn-primary">Let's talk</a>
+  </div>
+
+</div>
+<div class="related">
+  <h4>Related articles</h4>
+  <a href="../../../en/blog/excel-to-erp/">From Excel to ERP: why spreadsheets stop being enough →</a>
+  <a href="../../../en/tools/erp-readiness-test/">Is it time to move from Excel to ERP? Take the test →</a>
+</div>
+<!-- rapor-tanitim:bas --><div class="aciklama"><div class="degerlendir">
+  <div><h3>Free digitalization report</h3>
+  <p>Tell us about your business in a few steps, and we'll email you a report on which software you need for which part of your work and where to start.</p></div>
+  <a href="../../../en/free-digitalization-report/" class="btn btn-primary">Request my report</a>
+</div></div><!-- rapor-tanitim:son -->
+
+<dialog class="pencere" id="aracPencere" aria-labelledby="penBaslik">
+  <form id="aracForm" name="arac-form" method="POST" novalidate>
+    <input type="hidden" name="form-name" value="arac-form">
+    <input type="hidden" name="tur"><input type="hidden" name="sablon"><input type="hidden" name="dil"><input type="hidden" name="sayfa"><input type="hidden" name="arac">
+    <textarea name="sonuc" hidden></textarea>
+    <button type="button" class="kapat" id="penKapat" aria-label="Close">×</button>
+    <h2 id="penBaslik">Download the template</h2>
+    <p id="penMetin"></p>
+    <div class="iki">
+      <div class="alan"><label id="pf-ad-e">Full name *</label><div class="girdi"><input id="pf-ad" name="ad" type="text" aria-labelledby="pf-ad-e" required autocomplete="name"></div></div>
+      <div class="alan"><label id="pf-firma-e">Company *</label><div class="girdi"><input id="pf-firma" name="firma" type="text" aria-labelledby="pf-firma-e" required autocomplete="organization"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-eposta-e">Email *</label><div class="girdi"><input id="pf-eposta" name="eposta" type="email" aria-labelledby="pf-eposta-e" required autocomplete="email"></div></div>
+      <div class="alan"><label id="pf-telefon-e">Phone</label><div class="girdi"><input id="pf-telefon" name="telefon" type="tel" aria-labelledby="pf-telefon-e" autocomplete="tel"></div></div>
+    </div>
+    <div class="iki">
+      <div class="alan"><label id="pf-sektor-e">Sector</label><div class="girdi"><select id="pf-sektor" name="sektor" aria-labelledby="pf-sektor-e"><option value="">Select</option><option value="Üretim">Manufacturing</option><option value="Proje / taahhüt / inşaat">Projects / contracting / construction</option><option value="Mühendislik / mimarlık">Engineering / architecture</option><option value="Ticaret / dağıtım">Trade / distribution</option><option value="Hizmet">Services</option><option value="Diğer">Other</option></select></div></div>
+      <div class="alan"><label id="pf-calisan-e">Number of employees</label><div class="girdi"><select id="pf-calisan" name="calisan" aria-labelledby="pf-calisan-e"><option value="">Select</option><option value="1–10">1–10</option><option value="11–50">11–50</option><option value="51–200">51–200</option><option value="200+">200+</option></select></div></div>
+    </div>
+    <div class="alan pf-not"><label id="pf-not-e">Anything you'd like to add</label><div class="girdi"><textarea id="pf-not" name="not" rows="3" aria-labelledby="pf-not-e"></textarea></div></div>
+    <label class="onay"><input type="checkbox" name="izin" value="Evet" required><span>I have read the <a href="../../../en/privacy/" target="_blank" rel="noopener">privacy notice</a>. I give my explicit consent to my details being processed so that I can be contacted, and to their transfer abroad through service providers.</span></label>
+    <div class="hp" aria-hidden="true"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="robot"></div>
+    <button type="submit" class="btn btn-primary" id="penDugme">Download</button>
+    <p class="form-durum" id="penDurum" role="status" aria-live="polite"></p>
+  </form>
+  <div id="formMetin" hidden>
+    <span data-k="fIndBaslik">Download the template</span>
+    <span data-k="fIndMetin">Leave your details and the download starts right away. We ask so we can let you know when new templates and tools come out, and answer your questions.</span>
+    <span data-k="fIndDugme">Send details and download</span>
+    <span data-k="fDegBaslik">Let's go over your result together</span>
+    <span data-k="fDegMetin">Leave your details; the figures you entered and the result will reach us, and we'll get back to you within one business day. Free and non-binding.</span>
+    <span data-k="fDegDugme">Send</span>
+    <span data-k="fEksik">Please enter your full name, company and a valid email address, and tick the consent box.</span>
+    <span data-k="fRobot">Please tick the “I'm not a robot” box.</span>
+    <span data-k="fGonder">Sending…</span>
+    <span data-k="fIndOk">Thank you, the download has started. If it didn't, download it here:</span>
+    <span data-k="fIndLink">Download the Excel file</span>
+    <span data-k="fDegOk">Thank you, we've received your details and your result. We'll get back to you within one business day.</span>
+    <span data-k="fHata">Something went wrong. Please try again or write to info@vohdigital.com.</span>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Konyaz — Design &amp; Software. · <a href="../../../en/privacy/">Privacy</a></div>
+    <div style="display:flex;gap:22px">
+      <a href="../../../en/">Home</a>
+      <a href="../../../en/tools/">Tools</a>
+      <a href="../../../en/blog/">Blog</a>
+      <a href="../../../en/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const h=document.getElementById('hdr');
+  addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10));
+</script>
+<script src="../../../araclar/arac.js" defer></script>
+</body>
+</html>
